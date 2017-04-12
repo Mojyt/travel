@@ -8,30 +8,19 @@
   list-style: none;
   font-size: 0.12rem;
   font-family: song,sans-serif;
-}
-@font-face{
-  font-family:'song';
-  src:('../fonts/文悦古体仿宋.otf');
-}
-html{
-  $screen:320px,360px,375px,412px,414px;
-  @each $name in $screen{
-    @media screen and (min-width:#{$name}){
-      font-size:100*($name/750);
-    }
-  }
+  -webkit-tap-highlight-color: transparent;
 }
 body{
   width: 100%;
   height: 100%;
   background: url("../../images/body-bj.png")center no-repeat;
-  background-size:100%;
+  background-size:115%;
 }
 $img:'../../images/';
 ////////////////////index//////////////////////
 //head
 .head{
-  @include cube(100%,1rem);
+  @include cube(100%,1.2rem);
   background:#030012;
   display: flex;
   justify-content: center;
@@ -55,6 +44,37 @@ $img:'../../images/';
     float: right;
     background:url($img + 'search.png')center no-repeat;
     background-size:100%;
+  }
+  .titleBox{
+    @include cube(38%,100%);
+    margin-left:-0.4rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    .left-r,.right-r{
+      @include cube(0.51rem,0.13rem);
+      background: url($img + 'xiaoleft.png')center/cover no-repeat;
+    }
+    .title{
+      @include cube(2rem,0.8rem);
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content: center;
+      .chinese{
+        @include font(0.3rem,#fff,400);
+        font-family:guyue,sans-serif;
+      }
+      .english{
+        margin-top:2%;
+        text-align: center;
+        @include font(0.18rem,#fff,400);
+        font-family:guyue,sans-serif;
+      }
+    }
+    .right-r{
+      background:url($img + 'right.png')center/cover no-repeat;
+    }
   }
 }
 
@@ -568,25 +588,84 @@ $img:'../../images/';
   @include cube(100%,1.01rem);
 }
 //foot
-.foot{
-  @include cube(100%,1.01rem);
-  position:fixed;
-  bottom:0;
-  z-index: 1;
-  .foot-inner{
-    @include cube(94%,1.01rem);
-    margin:0 auto;
-    display: flex;
-  }
-  .foot-1{
-    flex:1;
-    background: red;
-  }
-}
-///////////////////voice//////////////////////////
-.voice{
-  @include cube(100%,100%);
+.footer_table{
+  position: fixed;
+  bottom: 0;
+  @include cube(100%,0.99rem);
   background: #000;
-  background:url($img + "voice-bj.png");
-  background-size:105%;
+  margin-top:0.15rem;
+  .inner{
+    @include cube(100%,100%);
+    padding:0 5%;
+  }
+  .inner .content{
+    @include cube(100%,100%);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    .foot{
+      @include cube(1.685rem,100%);
+      position:relative;
+      .con{
+        @include cube(0.72rem,0.77rem);
+        @include center;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+        align-content: space-around;
+      }
+      .img{
+        @include cube(0.04rem,0.34rem);
+        @include tb;
+        right:0;
+        background:url($img + 'wzj-footer.png') center/cover no-repeat;
+      }
+      //.rightL{
+      //  @include cube(0.04rem,0.34rem);
+      //  @include tb;
+      //  right:0;
+      //  z-index: 20;
+      //  display: flex;
+      //  flex-wrap: wrap;
+      //  justify-content: space-between;
+      //  align-content: center;
+      //}
+    }
+    .foot .con .title{
+      @include cube(0.63rem,0.5rem);
+      color:#fff;
+      font-size: 0.24rem;
+      font-family: '方正仿宋繁体',sans-serif;
+    }
+    .foot .con .first{
+      position: absolute;
+      top:0;
+      left:0.26rem;
+    }
+    .foot .con img{
+      @include cube(0.05rem,0.25rem);
+      position: absolute;
+      top:0;left:0.52rem;
+    }
+    .foot .con .en{
+      @include cube(0.72rem,0.27rem);
+      color:#fff;
+      font-size: 0.12rem;
+    }
+    .foot .con .shouye{
+      position: absolute;
+      bottom:0;
+      left:0;
+    }
+    //.foot .rightL .circle{
+    //  display: block;
+    //  @include circle(0.03rem);
+    //  background: #656666;
+    //}
+    //.foot .rightL .line{
+    //  display:block;
+    //  @include cube(0.01rem,0.3rem);
+    //  background: #656666;
+    //}
+  }
 }

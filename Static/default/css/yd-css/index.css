@@ -66,41 +66,18 @@ body {
   cursor: pointer;
   list-style: none;
   font-size: 0.12rem;
-  font-family: song,sans-serif; }
-
-@font-face {
-  font-family: 'song';
-  src: "../fonts/文悦古体仿宋.otf"; }
-
-@media screen and (min-width: 320px) {
-  html {
-    font-size: 42.66667px; } }
-
-@media screen and (min-width: 360px) {
-  html {
-    font-size: 48px; } }
-
-@media screen and (min-width: 375px) {
-  html {
-    font-size: 50px; } }
-
-@media screen and (min-width: 412px) {
-  html {
-    font-size: 54.93333px; } }
-
-@media screen and (min-width: 414px) {
-  html {
-    font-size: 55.2px; } }
+  font-family: song,sans-serif;
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   width: 100%;
   height: 100%;
   background: url("../../images/body-bj.png") center no-repeat;
-  background-size: 100%; }
+  background-size: 115%; }
 
 .head {
   width: 100%;
-  height: 1rem;
+  height: 1.2rem;
   background: #030012;
   display: flex;
   justify-content: center; }
@@ -125,6 +102,38 @@ body {
     float: right;
     background: url("../../images/search.png") center no-repeat;
     background-size: 100%; }
+  .head .titleBox {
+    width: 38%;
+    height: 100%;
+    margin-left: -0.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .head .titleBox .left-r, .head .titleBox .right-r {
+      width: 0.51rem;
+      height: 0.13rem;
+      background: url("../../images/xiaoleft.png") center/cover no-repeat; }
+    .head .titleBox .title {
+      width: 2rem;
+      height: 0.8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .head .titleBox .title .chinese {
+        font-size: 0.3rem;
+        color: #fff;
+        font-weight: 400;
+        font-family: guyue,sans-serif; }
+      .head .titleBox .title .english {
+        margin-top: 2%;
+        text-align: center;
+        font-size: 0.18rem;
+        color: #fff;
+        font-weight: 400;
+        font-family: guyue,sans-serif; }
+    .head .titleBox .right-r {
+      background: url("../../images/right.png") center/cover no-repeat; }
 
 .banner {
   width: 100%;
@@ -628,24 +637,71 @@ body {
   width: 100%;
   height: 1.01rem; }
 
-.foot {
-  width: 100%;
-  height: 1.01rem;
+.footer_table {
   position: fixed;
   bottom: 0;
-  z-index: 1; }
-  .foot .foot-inner {
-    width: 94%;
-    height: 1.01rem;
-    margin: 0 auto;
-    display: flex; }
-  .foot .foot-1 {
-    flex: 1;
-    background: red; }
-
-.voice {
   width: 100%;
-  height: 100%;
+  height: 0.99rem;
   background: #000;
-  background: url("../../images/voice-bj.png");
-  background-size: 105%; }
+  margin-top: 0.15rem; }
+  .footer_table .inner {
+    width: 100%;
+    height: 100%;
+    padding: 0 5%; }
+  .footer_table .inner .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .footer_table .inner .content .foot {
+      width: 1.685rem;
+      height: 100%;
+      position: relative; }
+      .footer_table .inner .content .foot .con {
+        width: 0.72rem;
+        height: 0.77rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-around; }
+      .footer_table .inner .content .foot .img {
+        width: 0.04rem;
+        height: 0.34rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 0;
+        background: url("../../images/wzj-footer.png") center/cover no-repeat; }
+    .footer_table .inner .content .foot .con .title {
+      width: 0.63rem;
+      height: 0.5rem;
+      color: #fff;
+      font-size: 0.24rem;
+      font-family: '方正仿宋繁体',sans-serif; }
+    .footer_table .inner .content .foot .con .first {
+      position: absolute;
+      top: 0;
+      left: 0.26rem; }
+    .footer_table .inner .content .foot .con img {
+      width: 0.05rem;
+      height: 0.25rem;
+      position: absolute;
+      top: 0;
+      left: 0.52rem; }
+    .footer_table .inner .content .foot .con .en {
+      width: 0.72rem;
+      height: 0.27rem;
+      color: #fff;
+      font-size: 0.12rem; }
+    .footer_table .inner .content .foot .con .shouye {
+      position: absolute;
+      bottom: 0;
+      left: 0; }

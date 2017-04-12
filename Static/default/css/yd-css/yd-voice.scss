@@ -14,6 +14,13 @@ $img:'../../images/';
 //  background-size:100%;
 //}
 .voice{
+  @include cube(100%,100%);
+  //background:url($img +'voice-bj.png')center no-repeat;
+  //background-size:100%;
+  //.line{
+  //  background:url($img + 'yd-voiv-line.png')no-repeat;
+  //  background-size:100%;
+  // }
   .table{
     height:1.2rem;
     display: flex;
@@ -103,8 +110,14 @@ $img:'../../images/';
   .voice-line{
     @include cube(100%,2.49rem);
     margin-top: 0.98rem;
+    //background:url($img +'yd-vio.png')center no-repeat;
+    //background-size:100%;
+    //.voice-container{
+    //  @include cube(100%,100%);
+    //}
   }
   .voice-button{
+    margin-top:0.3rem;
     @include cube(100%,1.05rem);
   }
   .voice-button-inner{
