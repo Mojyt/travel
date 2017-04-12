@@ -62,7 +62,7 @@ class indexController extends Framework
     //私人订制
     public function tailor()
     {
-        $this->display('');
+        $this->display('default/process/overview.html');
     }
 
     public function order_route(){
