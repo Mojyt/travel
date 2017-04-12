@@ -1,0 +1,123 @@
+@import "../mixin";
+@import "../fonts";
+
+$img:"../../images/";
+.inner{
+  @include cube(100%,100%);
+  padding:0 5%;
+}
+body{
+  @include cube(100%,100%);
+  background: url($img + 'bx-background.jpg') center/cover no-repeat;
+}
+
+.table{
+  @include cube(100%,1.2rem);
+  padding-top:0.22rem;
+  //background:#020202;
+  .content{
+    @include cube(100%,100%);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .content .go-prev{
+    display:block;
+    @include circle(0.60rem);
+    background:#c6b390;
+    @include font(0.3rem,#fff,700);
+    text-align: center;
+    line-height: 0.6rem;
+    font-family: 'leftp',sans-serif;
+    &::before{
+      content:'\e60b';
+    }
+  }
+  .content .titleBox{
+    @include cube(60%,100%);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    .title{
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content: center;
+      flex-wrap: wrap;
+      .chinese{
+        @include font(0.46rem,#fff,400);
+        font-family:'Wyue',sans-serif;
+      }
+      .line{
+        @include cube(0.84rem,0.1rem);
+        background: url($img + 'wzj-gz5.png') center/cover no-repeat;
+      }
+      .english{
+        margin-top:2%;
+        @include font(0.23rem,#fff,400);
+        font-family:'Wyue',sans-serif;
+      }
+    }
+  }
+  .content .people{
+    display:block;
+    @include circle(0.60rem);
+    background:#c6b390;
+    text-align: center;
+    line-height: 0.6rem;
+    font-family: 'peo',sans-serif;
+    @include font(0.3rem,#fff,700);
+    &::before{
+      content:'\e61d';
+    }
+  }
+}
+
+.tellWindows{
+  height:10.52rem;
+  margin-top:0.27rem;
+  .tell_window{
+    @include cube(100%,10.52rem);
+    height:100%;
+    background: url($img + 'wzj-tell1.png') center/cover no-repeat;
+    border-radius: 0.15rem;
+  }
+  .tell_window .con{
+    height:8.16rem;
+    padding:0.7rem 0.27rem 0;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    .doing{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .doing.friends{
+      @include cube(4.65rem,1.65rem);
+      position: relative;
+      .head{
+        @include cube(1.11rem,1.05rem);
+        background: url($img + 'wzj-tell4.png') center/cover no-repeat;
+        position: relative;
+        z-index: 12;
+        img{
+          @include circle(1.06rem);
+        }
+      }
+      .cont{
+        @include cube(3.85rem,1.65rem);
+        background: url($img + 'wzj-tell2.png') center/cover no-repeat;
+        position: absolute;
+        top:0;
+        left:0.8rem;
+      }
+    }
+    .doing.me{
+      @include cube(3.58rem,1.46rem);
+    }
+    .time{
+      @include cube(1.38rem,0.56rem);
+    }
+  }
+}

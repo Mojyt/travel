@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/*函数*/
+/*@function bg(){
+	$r:floor(random()*56+200);
+	$g:floor(random()*56);
+	$b:floor(random()*56);
+	$color:rgb($r,$g,$b);
+	@debug $color;  
+	@return $color;
+}*/
+@import url(../base.css);
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 365px) {
+  html {
+    font-size: 48.66667px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body {
+  font-size: 16px; }
+
+.content {
+  flex-wrap: wrap; }
+
+.historyBox {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .historyBox .inner {
+    width: 99%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .historyBox .historySearch {
+    width: 1.7rem;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+    .historyBox .historySearch h3 {
+      margin: 0;
+      width: 100%; }
+    .historyBox .historySearch .the {
+      color: #ffffff;
+      font-size: 0.22rem; }
+    .historyBox .historySearch .xuan {
+      color: #e3b08b;
+      font-size: 0.22rem; }
+    .historyBox .historySearch .HistoryText {
+      color: #ffffff;
+      font-size: 0.28rem; }
+      .historyBox .historySearch .HistoryText span:nth-child(3), .historyBox .historySearch .HistoryText span:nth-child(4) {
+        display: inline-block;
+        width: 0.07rem;
+        height: 0.07rem;
+        border-radius: 50%;
+        background: #e62923;
+        margin-left: 0.04rem; }
+    .historyBox .historySearch .circle {
+      display: flex; }
+      .historyBox .historySearch .circle span {
+        display: inline-block;
+        margin-right: 0.05rem;
+        width: 0.04rem;
+        height: 0.04rem;
+        border-radius: 50%;
+        background: #fff; }
+        .historyBox .historySearch .circle span:nth-child(1), .historyBox .historySearch .circle span:nth-child(10) {
+          background: #e62923; }
+  .historyBox .historyChange {
+    width: 1.2rem;
+    height: 0.45rem;
+    background: url("../../images/xiaochange_03.png") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.24rem; }
+    .historyBox .historyChange a {
+      color: #ffffff;
+      text-decoration: none; }
+  .historyBox .level {
+    margin-top: 0.35rem;
+    width: 5rem;
+    height: 0.04rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .historyBox .level span {
+      display: inline-block; }
+      .historyBox .level span:nth-child(2) {
+        width: 4.9rem;
+        height: 0.015rem;
+        background: #c6b390; }
+      .historyBox .level span:nth-child(1), .historyBox .level span:nth-child(3) {
+        width: 0.06rem;
+        height: 0.06rem;
+        border-radius: 50%;
+        background: #e62923; }
+
+.make {
+  width: 100%;
+  height: 1.5rem;
+  background: url("../../images/zl-bjt_03.png") center/cover no-repeat;
+  margin: 0.3rem 0; }
+
+.footer {
+  background: #000;
+  width: 100%;
+  height: 0.98rem;
+  position: fixed;
+  bottom: 0;
+  left: 0; }

@@ -30,7 +30,7 @@ class indexController extends Framework
         $this->display('');
     }
 
-    //搜索首页
+    //搜索
     public function search(){
         $this->display('default/GE/search.html');
     }
@@ -62,7 +62,7 @@ class indexController extends Framework
     //私人订制
     public function tailor()
     {
-        $this->display('');
+        $this->display('default/process/overview.html');
     }
 
     public function order_route(){
@@ -95,12 +95,42 @@ class indexController extends Framework
         $this->display('default/wzj_personal/follow_detail.html');
     }
 
+    public function tell(){
+        $this->display('default/wzj_personal/tell.html');
+    }
+
 //旅游圈
     public
     function travel()
     {
         $this->display('');
 
+    }
+
+
+    //支付
+    public function payment(){
+        $this->display('default/bx/payment.html');
+    }
+
+    public function confirm_add(){
+        $this->display('default/bx/confirm-add.html');
+    }
+
+    public function choose_card(){
+        $this->display('default/bx/choose-card.html');
+    }
+
+    public function add_card(){
+        $this->display('default/bx/add-card.html');
+    }
+
+    public function password(){
+        $this->display('default/bx/password.html');
+    }
+
+    public function success(){
+        $this->display('default/bx/success.html');
     }
 }
 

@@ -340,8 +340,71 @@ body {
     font-size: 0.18rem;
     line-height: 0.17rem; }
 
-.footer {
+.footer_table {
+  position: fixed;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 0.98rem;
   background: #000;
   margin-top: 0.15rem; }
+  .footer_table .inner {
+    width: 100%;
+    height: 100%;
+    padding: 0 5%;
+    display: flex;
+    justify-content: center; }
+  .footer_table .inner .content {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .footer_table .inner .content .foot {
+      display: block;
+      width: 1.685rem;
+      height: 100%;
+      position: relative; }
+      .footer_table .inner .content .foot .con {
+        width: 0.72rem;
+        height: 0.77rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-around; }
+      .footer_table .inner .content .foot .img {
+        width: 0.04rem;
+        height: 0.34rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 0;
+        background: url("../../images/wzj-footer.png") center/cover no-repeat; }
+    .footer_table .inner .content .foot .con .title {
+      width: 0.63rem;
+      height: 0.5rem;
+      color: #fff;
+      font-size: 0.24rem;
+      font-family: '方正仿宋繁体',sans-serif; }
+    .footer_table .inner .content .foot .con .first {
+      position: absolute;
+      top: 0;
+      left: 0.26rem; }
+    .footer_table .inner .content .foot .con img {
+      width: 0.05rem;
+      height: 0.25rem;
+      position: absolute;
+      top: 0;
+      left: 0.52rem; }
+    .footer_table .inner .content .foot .con .en {
+      width: 0.72rem;
+      height: 0.27rem;
+      color: #fff;
+      font-size: 0.12rem; }
