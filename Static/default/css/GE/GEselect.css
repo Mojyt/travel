@@ -49,10 +49,6 @@
 body {
   font-size: 16px; }
 
-@font-face {
-  font-family: guyue;
-  src: url(../../fonts/文悦古体仿宋.otf); }
-
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0; }
@@ -60,7 +56,7 @@ h1, h2, h3, h4, h5, h6, p {
 body {
   width: 100%;
   height: 100%;
-  background: url("../../img/xiao1.png") center/cover no-repeat; }
+  background: url("../../images/xiao1.png") center/cover no-repeat; }
 
 .headerTop {
   width: 100%;
@@ -97,7 +93,7 @@ body {
     display: inline-block;
     width: 100%;
     height: 100%;
-    background: url("../../img/more_03.png") center/cover no-repeat; }
+    background: url("../../images/xiaomore_03.png") center/cover no-repeat; }
 
 .headerCon .titleBox {
   width: 38%;
@@ -108,7 +104,7 @@ body {
   .headerCon .titleBox .left-r, .headerCon .titleBox .right-r {
     width: 0.51rem;
     height: 0.13rem;
-    background: url("../../img/xiaoleft.png") center/cover no-repeat; }
+    background: url("../../images/xiaoleft.png") center/cover no-repeat; }
   .headerCon .titleBox .title {
     width: 2rem;
     height: 0.8rem;
@@ -129,7 +125,7 @@ body {
       font-weight: 400;
       font-family: guyue,sans-serif; }
   .headerCon .titleBox .right-r {
-    background: url("../../img/right.png") center/cover no-repeat; }
+    background: url("../../images/right.png") center/cover no-repeat; }
 
 .headerCon .mapBut {
   width: 0.62rem;
@@ -138,7 +134,7 @@ body {
     display: inline-block;
     width: 100%;
     height: 100%;
-    background: url("../../img/map_03.png") center/cover no-repeat; }
+    background: url("../../images/xiaomap_03.png") center/cover no-repeat; }
 
 .searchWrap {
   width: 100%;
@@ -167,7 +163,7 @@ body {
     display: inline-block;
     width: 0.36rem;
     height: 0.36rem;
-    background: url("../../img/search_03.png") center/cover no-repeat;
+    background: url("../../images/xiaosearch_03.png") center/cover no-repeat;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -177,7 +173,7 @@ body {
     display: inline-block;
     width: 0.36rem;
     height: 0.36rem;
-    background: url("../../img/mic_03.png") center/cover no-repeat;
+    background: url("../../images/xiaomic_03.png") center/cover no-repeat;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -201,7 +197,7 @@ body {
     .searchWrap .position .positionIcon {
       width: 100%;
       height: 100%;
-      background: url("../../img/xiaopisition_03.png") center/contain no-repeat; }
+      background: url("../../images/xiaopisition_03.png") center/contain no-repeat; }
     .searchWrap .position .place {
       color: #c3b08e;
       font-size: 0.24rem;
@@ -268,7 +264,7 @@ body {
   .historyBox .historyChange {
     width: 1.2rem;
     height: 0.45rem;
-    background: url("../../img/change_03.png") center/cover no-repeat;
+    background: url("../../images/xiaochange_03.png") center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,7 +313,7 @@ body {
     .historyPlace .inner .rankSon {
       width: 2.28rem;
       height: 0.83rem;
-      background: #000 url("../../img/xiao12_03.png") center/cover no-repeat;
+      background: #000 url("../../images/xiao12_03.png") center/cover no-repeat;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -331,7 +327,7 @@ body {
           display: inline-block;
           width: 0.17rem;
           height: 0.17rem;
-          background: url("../../img/xiao14_03.png") center/cover no-repeat; }
+          background: url("../../images/xiao14_03.png") center/cover no-repeat; }
       .historyPlace .inner .rankSon p {
         color: #171717;
         font-size: 0.1rem;
@@ -378,7 +374,7 @@ body {
   .historyBox2 .historyChange {
     width: 1.2rem;
     height: 0.45rem;
-    background: url("../../img/change_03.png") center/cover no-repeat;
+    background: url("../../images/xiaochange_03.png") center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -418,7 +414,7 @@ body {
   .selectPlace .place {
     width: 5.87rem;
     height: 5.9rem;
-    background: url("../../img/xiaodizhi_03.png") center/cover no-repeat;
+    background: url("../../images/xiaodizhi_03.png") center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -453,10 +449,10 @@ body {
         width: 0.19rem;
         height: 0.11rem;
         display: inline-block;
-        background: url("../../img/xiaobj_03.png") center/cover no-repeat; }
+        background: url("../../images/xiaobj_03.png") center/cover no-repeat; }
       .selectPlace .letter p::after {
         content: '';
         width: 0.19rem;
         height: 0.11rem;
         display: inline-block;
-        background: url("../../img/xiaobj_03.png") center/cover no-repeat; }
+        background: url("../../images/xiaobj_03.png") center/cover no-repeat; }
