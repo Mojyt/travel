@@ -1,0 +1,76 @@
+@import "mixin";
+@import "font";
+$device-list:320px ,360px, 375px,384px,  412px, 414px , 600px, 640px,  750px;
+html{
+  @each $index in $device-list{
+    @media screen and (min-width:$index){
+      font-size:100 * ($index/750)
+    }
+  }
+}
+
+*{
+  border:0;
+  padding:0;
+  margin:0;
+  list-style:none;
+  box-sizing: border-box;
+}
+$imgs:"../../img/bx/";
+.inner{
+  @include cube(100%,100%);
+  padding:0 5%;
+}
+
+.table{
+  @include cube(100%,1.2rem);
+  padding-top:0.22rem;
+  background:#020202;
+  .content{
+    @include cube(100%,100%);
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .content .go-prev{
+    @include circle(0.60rem);
+    background:#c6b390;
+    @include font(0.3rem,#fff,700);
+    text-align: center;
+    line-height: 0.6rem;
+    font-family: leftp,sans-serif;
+    &::before{
+      content:'\e60b';
+    }
+  }
+  .content .titleBox{
+    @include cube(38%,100%);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    .left-r,.right-r{
+      @include cube(20%,0.13rem);
+      background: url($imgs + 'left.png')center/cover no-repeat;
+    }
+    .title{
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content: center;
+      flex-wrap: wrap;
+      .chinese{
+        @include font(0.3rem,#fff,400);
+        font-family:guyue,sans-serif;
+      }
+      .english{
+        margin-top:2%;
+        @include font(0.18rem,#fff,400);
+        font-family:guyue,sans-serif;
+      }
+    }
+    .right-r{
+      background:url($imgs + 'right.png')center/cover no-repeat;
+    }
+  }
+}

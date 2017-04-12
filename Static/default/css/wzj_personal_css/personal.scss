@@ -1,0 +1,319 @@
+@import "../mixin";
+@import "../trip/fonts";
+@import "../trip/fonts";
+
+body{
+  background: #EAEAEA;
+}
+
+$img:'../../images/';
+.header{
+  @include cube(100%,4.96rem);
+  background: url($img + 'wzj-beijing.png') center/cover no-repeat;
+  .content{
+    padding-top:1.73rem;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+  }
+  .content .headPortrait {
+    flex: 100%;
+    height: 1.89rem;
+    .info {
+      width: 65.3%;
+      margin-left: 2.6rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .info .left {
+      @include cube(1.81rem, 1.87rem);
+      position: relative;
+      .edit {
+        background: url($img + 'wzj-edit_03.png') center/cover no-repeat;
+        position: absolute;
+        bottom: 0;
+        right: 0.06rem;
+        @include circle(0.47rem);
+        z-index: 2;
+        display: block;
+        text-align: center;
+      }
+      .edit ._edit {
+        font-family: 'edit', sans-serif;
+        color: #F2110D;
+        font-size: 0.3rem;
+        line-height: 0.47rem;
+        &::before {
+          content: "\e6b7";
+        }
+      }
+    }
+    .info .left img{
+      @include circle(1.81rem);
+    }
+    .info .set{
+      @include cube(1.92rem,0.8rem);
+      background: url($img + 'wzj-button_03.png') center/cover no-repeat;
+      background-color: #EAEAEA;
+      border-radius: 0.8rem;
+      border:0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .info .set .wrap{
+      color:#fff;
+      display: flex;
+      flex-direction: column;
+      ._set{
+        display: flex;
+        align-items: center;
+      }
+    }
+    .info .set .wrap ._set span:nth-child(1){
+      font-size: 0.3rem;
+      font-family: 'Wyue',sans-serif;
+      padding-right:0.14rem;
+    }
+    .info .set .wrap ._set span:nth-child(2){
+      background: #fff;
+      display: block;
+      @include circle(0.08rem);
+      position: relative;
+      .circle{
+        background: #D11E33;
+        @include circle(0.04rem);
+        @include center;
+      }
+    }
+    .info .set .wrap ._set span:nth-child(3){
+      font-size: 0.3rem;
+      font-family: 'Wyue',sans-serif;
+      padding-left:0.14rem;
+    }
+    .info .set .wrap .en{
+      font-size: 0.15rem;
+      font-family: 'Wyue',sans-serif;
+    }
+  }
+  .content .userName{
+    flex: 100%;
+    height:0.93rem;
+    display: flex;
+    justify-content: center;
+    .information{
+      height:100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .information .name{
+      font-family: 'Wyue',sans-serif;
+      font-size: 0.48rem;
+      color:#646262;
+    }
+    .information .line{
+      background: url($img + 'wzj-line.png') center/cover no-repeat;
+      width:0.36rem;
+      height:0.07rem;
+      margin:0 auto;
+    }
+    .information .star{
+      display: flex;
+      justify-content: space-between;
+      height:0.24rem;
+      span{
+        background: url($img + 'wzj-star.png') center/cover no-repeat;
+        width:0.24rem;
+      }
+    }
+  }
+  .content .autograph{
+    flex: 100%;
+    height:0.43rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span{
+      font-family: 'Wyue',sans-serif;
+      font-size: 0.24rem;
+      color:#646262;
+    }
+  }
+}
+
+.my{
+  margin-top: 0.47rem;
+  height:3.71rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  .mys{
+    @include cube(6.34rem,3.08rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .mys .row{
+    height:1.48rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  .mys .row .widths{
+    width:3.05rem;
+    background: url($img + 'wzj-my_03.png') center/cover no-repeat;
+    display: flex;
+    .left{
+      width:1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .left img{
+      @include circle(0.86rem);
+    }
+    .right{
+      width:1.88rem;
+      display: flex;
+      align-items: center;
+    }
+    .right .common{
+      width:1.31rem;
+      height:0.9rem;
+      margin-left: 0.16rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: center;
+    }
+    .right .common ._common{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      span{
+        font-family: 'Wyue',sans-serif;
+        font-size: 0.28rem;
+      }
+    }
+    .right .common .eng{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span:nth-child(1){
+        background: url($img + 'wzj-sql.png') center/cover no-repeat;
+        @include cube(0.1rem,0.07rem);
+      }
+      span:nth-child(2){
+        color:#F2110D;
+        font-size: 0.22rem;
+        font-family: 'Wyue',sans-serif;
+      }
+      span:nth-child(3){
+        color:#999999;
+        font-size: 0.22rem;
+        font-family: 'Wyue',sans-serif;
+      }
+      span:nth-child(4){
+        background: url($img + 'wzj-sqr.png') center/cover no-repeat;
+        @include cube(0.13rem,0.07rem);
+      }
+    }
+    .right .common .num{
+      display: flex;
+      justify-content: center;
+      font-size: 0.32rem;
+    }
+  }
+  .mys .row .widths.dynamic .plus{
+    @include circle(0.30rem);
+    border:0.04rem solid #fff;
+    background: #F2110D;
+    bottom: -0.17rem;
+    @include lr;
+    color:#fff;
+    text-align: center;
+    font-size: 0.18rem;
+    line-height: 0.17rem;
+  }
+}
+
+.main{
+  @include cube(7.02rem,2.52rem);
+  margin:0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  ._main{
+    height:0.94rem;
+    background: #CEBFA3;
+    border-radius: 0.08rem;
+    display: flex;
+  }
+  ._main .left{
+    width:1.01rem;
+    height:100%;
+    position: relative;
+    .square{
+      @include square(0.74rem);
+      background:#FF0000;
+      left:0.26rem;
+      @include tb;
+      transform:rotate(15deg);
+    }
+    img{
+      @include square(0.74rem);
+      left:0.27rem;
+      @include tb;
+    }
+  }
+  ._main .right{
+    @include cube(6.01rem,100%);
+    background: #fff;
+    box-shadow: 0.01rem 0.05rem 0.1rem #CBCBCB;
+    border-radius: 0.05rem;
+  }
+  ._main .right .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:5.38rem;
+    height:100%;
+    margin-left:0.41rem;
+    .title{
+      display: flex;
+      flex-direction: column;
+    }
+    .title h3{
+      font-size: 0.3rem;
+      font-weight:normal;
+    }
+    .title .english span{
+      font-size: 0.24rem;
+    }
+    .title .english span:nth-child(1){
+      color:#F32925;
+      font-size: 0.24rem;
+    }
+    .arrow{
+      background: #FF0000;
+      @include circle(0.47rem);
+      color:#fff;
+      text-align: center;
+      line-height: 0.47rem;
+      font-family: 'leftp',sans-serif;
+      transform:rotate(180deg);
+      font-size: 0.36rem;
+      &::before{
+        content: "\e60b";
+      }
+    }
+  }
+}
+
+.footer{
+  @include cube(100%,0.98rem);
+  background: #000;
+  margin-top:0.15rem;
+}

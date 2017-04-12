@@ -1,0 +1,232 @@
+@import "../base.css";
+@import "../mixin";
+@import "table";
+@import "fonts";
+
+.parcel {
+  @include cube(100%, 13.34rem);
+  background: url($Img + "Appbackground.jpg");
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  [class~='parcel-tag'] {
+    width: 100%;
+    &:nth-child(1) {
+      padding-top: 14px;
+      background: rgba(2, 2, 2, 0.8);
+    }
+    &:nth-child(2) {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    &:nth-child(3) {
+      background: #000000;
+      padding: 0 -0.24rem;
+      height: 0.98rem;
+      align-self: center;
+    }
+  }
+}
+
+.parcel-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .parcel-main-scenic-adjust-list {
+    flex: 1;
+    margin: 0 0.04rem 0 0.11rem;
+    box-sizing: border-box;
+    .parcel-main-scenic-adjust-item {
+      margin: 0.25rem 0;
+      display: flex;
+      justify-content: center;
+      .parcel-main-scenic-adjust-item-parcel-img {
+        width: 2rem;
+        background: url($Img + "yy-trip-header-bg.png");
+        background-size: 100%;
+        padding: 0 0.12rem 0 0.01rem;
+        .parcel-main-scenic-adjust-item-img {
+          overflow: hidden;
+          height: 1.89rem;
+          width: 1.89rem;
+          border-radius: 0.1rem;
+          img {
+            @include center;
+          }
+        }
+      }
+
+      .parcel-main-scenic-adjust-item-text {
+        width: 3.78rem;
+        margin-left: 0.07rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content:space-around;
+        justify-content: center;
+        .item-title{
+          display: flex;
+          width: 100%;
+          .parcel-main-scenic-adjust-item-text-title {
+            font-size: 0.3rem;
+            color: #fdfcfc;
+            font-family: Wyue, sans-serif;
+          }
+          .parcel-main-scenic-adjust-item-text-time {
+            font-size: 0.18rem;
+            color: #999999;
+            font-family: Wyue, sans-serif;
+          }
+        }
+        .parcel-main-scenic-adjust-item-text-subtitle {
+          font-size: 0.24rem;
+          color: #666666;
+          font-family: Wyue, sans-serif;
+          span {
+            color: #ff0000;
+            font-family: Wyue, sans-serif;
+          }
+        }
+        .parcel-main-scenic-adjust-item-text-line {
+          @include cube(3.61rem, 0.02rem);
+          background: #bfbfbf;
+          .parcel-main-scenic-adjust-item-text-point {
+            display: block;
+            @include circle(0.1rem);
+            background: #ff0000;
+            @include tb;
+            font-size: 0;
+            left: -0.05rem;
+            &::after {
+              content: '';
+              display: block;
+              @include circle(0.1rem);
+              background: #ff0000;
+              @include tb;
+              left: 3.63rem;
+            }
+          }
+        }
+        .parcel-main-scenic-adjust-item-text-describe {
+          font-size: 0.24rem;
+          color: #bcb9b9;
+          font-family: Wyue, sans-serif;
+        }
+        .parcel-main-scenic-adjust-item-text-dis-evaluation-parcel {
+          margin-left: 0.28rem;
+          width: 100%;
+          display: flex;
+          h3, span {
+            font-size: 0.18rem;
+          }
+          h3 {
+            display: block;
+            &::after {
+              content: '';
+              display: block;
+              @include circle(0.1rem);
+              background: #d0c0a4;
+              @include tb;
+              left: -0.2rem;
+            }
+            margin-left: 0.87rem;
+            &:nth-child(1) {
+              margin: 0;
+            }
+          }
+        }
+      }
+
+      .parcel-main-scenic-adjust-item-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .parcel-main-scenic-adjust-item-btn {
+          display: flex;
+          flex-direction: column;
+          .button {
+            border: 0.03rem solid #fbfbfe;
+            background: #d0c0a4;
+            @include circle(0.66rem);
+            font-family: 'pitch',sans-serif;
+            text-align: center;
+            color: #fff;
+            font-size: 0.4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &::after{
+              content: '\e67e';
+            }
+            &.active{
+              background: #ff0000;
+              &::after{
+                content: '\e707';
+              }
+            }
+          }
+          .button.active .icon{
+            display: block;
+          }
+          .button .icon{
+            display: none;
+            @include circle(0.05rem);
+            background: #f7454c;
+            position: absolute;
+            @include tb;
+            left: -0.1rem;
+            &::after{
+              content: '';
+              display: block;
+              @include circle(0.05rem);
+              background:#f7454c;
+              @include tb;
+              left: 0.8rem;
+            }
+          }
+          span {
+            font-size: 0.24rem;
+            color: #f4444b;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.parcel-footer {
+  article {
+    @include cube(100%,100%);
+    a{
+      display: block;
+      @include cube(100%,100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.2404rem;
+    }
+  }
+  span {
+    font-family: Wyue, sans-serif;
+    &:nth-child(1) {
+      color: #cebfa3;
+    }
+    &:nth-child(2) {
+      color: #ebebeb;
+    }
+  }
+  s {
+    font-size: 0;
+    width: 0.05rem;
+    height: 0.25rem;
+    background: url($Img + "yy-parcel-footer-bg.png");
+    @include tb;
+    right: 28%;
+  }
+}

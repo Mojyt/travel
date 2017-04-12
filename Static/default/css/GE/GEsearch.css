@@ -1,0 +1,388 @@
+@charset "UTF-8";
+@import url(../bootstrap.min.css);
+/*函数*/
+/*@function bg(){
+	$r:floor(random()*56+200);
+	$g:floor(random()*56);
+	$b:floor(random()*56);
+	$color:rgb($r,$g,$b);
+	@debug $color;  
+	@return $color;
+}*/
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 365px) {
+  html {
+    font-size: 48.66667px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body {
+  font-size: 16px; }
+
+@font-face {
+  font-family: guyue;
+  src: url(../../fonts/文悦古体仿宋.otf); }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100%;
+  height: 100%;
+  background: url("../../images/xiao1.png") center/cover no-repeat; }
+
+.headerTop {
+  width: 100%;
+  height: 1.57rem;
+  position: relative; }
+  .headerTop .headerInfo {
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .headerTop .headerCon {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    top: 0; }
+
+.headerCon .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 93%;
+  height: 100%;
+  margin: 0 auto; }
+
+.headerCon .moreBut {
+  width: 0.62rem;
+  height: 0.62rem; }
+  .headerCon .moreBut a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url("../../images/xiaomore_03.png") center/cover no-repeat; }
+
+.headerCon .titleBox {
+  width: 38%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .headerCon .titleBox .left-r, .headerCon .titleBox .right-r {
+    width: 0.51rem;
+    height: 0.13rem;
+    background: url("../../images/xiaoleft.png") center/cover no-repeat; }
+  .headerCon .titleBox .title {
+    width: 2rem;
+    height: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .headerCon .titleBox .title .chinese {
+      font-size: 0.3rem;
+      color: #fff;
+      font-weight: 400;
+      font-family: guyue,sans-serif; }
+    .headerCon .titleBox .title .english {
+      margin-top: 2%;
+      text-align: center;
+      font-size: 0.18rem;
+      color: #fff;
+      font-weight: 400;
+      font-family: guyue,sans-serif; }
+  .headerCon .titleBox .right-r {
+    background: url("../../images/right.png") center/cover no-repeat; }
+
+.headerCon .mapBut {
+  width: 0.62rem;
+  height: 0.62rem; }
+  .headerCon .mapBut a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url("../../images/xiaomap_03.png") center/cover no-repeat; }
+
+.searchWrap {
+  width: 100%;
+  height: 1.5rem;
+  position: relative; }
+  .searchWrap .boxWrap {
+    width: 93%;
+    height: 0.75rem;
+    position: absolute;
+    top: -25%;
+    left: 0.24rem; }
+  .searchWrap .searchBox {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: 1px solid #58585a;
+    border-radius: 0.1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #999999;
+    font-family: f, sans-serif;
+    font-size: 0.24rem; }
+  .searchWrap .searchBut {
+    display: inline-block;
+    width: 0.36rem;
+    height: 0.36rem;
+    background: url("../../images/xiaosearch_03.png") center/cover no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0.23rem; }
+  .searchWrap .micBut {
+    display: inline-block;
+    width: 0.36rem;
+    height: 0.36rem;
+    background: url("../../images/xiaomic_03.png") center/cover no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0.23rem; }
+  .searchWrap .position {
+    width: 2.4rem;
+    height: 0.62rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .searchWrap .position a {
+      display: inline-block;
+      width: 0.36rem;
+      height: 0.36rem; }
+    .searchWrap .position .positionIcon {
+      width: 100%;
+      height: 100%;
+      background: url("../../images/xiaopisition_03.png") center/contain no-repeat; }
+    .searchWrap .position .place {
+      color: #c3b08e;
+      font-size: 0.24rem;
+      font-family: '苹方',sans-serif; }
+    .searchWrap .position .city {
+      color: #a8a7a7;
+      font-size: 0.24rem;
+      font-family: '苹方',sans-serif; }
+
+.historyBox {
+  margin-top: 0.3rem;
+  width: 100%;
+  height: 1rem; }
+  .historyBox .inner {
+    width: 93%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+  .historyBox .historySearch {
+    width: 1.7rem;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+    .historyBox .historySearch h3 {
+      margin: 0;
+      width: 100%; }
+    .historyBox .historySearch .the {
+      color: #ffffff;
+      font-size: 0.22rem; }
+    .historyBox .historySearch .xuan {
+      color: #e3b08b;
+      font-size: 0.22rem; }
+    .historyBox .historySearch .HistoryText {
+      color: #ffffff;
+      font-size: 0.28rem; }
+      .historyBox .historySearch .HistoryText span:nth-child(3), .historyBox .historySearch .HistoryText span:nth-child(4) {
+        display: inline-block;
+        width: 0.07rem;
+        height: 0.07rem;
+        border-radius: 50%;
+        background: #e62923;
+        margin-left: 0.04rem; }
+    .historyBox .historySearch .circle {
+      display: flex; }
+      .historyBox .historySearch .circle span {
+        display: inline-block;
+        margin-right: 0.05rem;
+        width: 0.04rem;
+        height: 0.04rem;
+        border-radius: 50%;
+        background: #fff; }
+        .historyBox .historySearch .circle span:nth-child(1), .historyBox .historySearch .circle span:nth-child(10) {
+          background: #e62923; }
+  .historyBox .historyChange {
+    width: 1.2rem;
+    height: 0.45rem;
+    background: url("../../images/xiaochange_03.png") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.24rem; }
+    .historyBox .historyChange a {
+      color: #ffffff;
+      text-decoration: none; }
+  .historyBox .level {
+    width: 3.7rem;
+    height: 0.04rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .historyBox .level span {
+      display: inline-block; }
+      .historyBox .level span:nth-child(2) {
+        width: 3.63rem;
+        height: 0.015rem;
+        background: #c6b390; }
+      .historyBox .level span:nth-child(1), .historyBox .level span:nth-child(3) {
+        width: 0.06rem;
+        height: 0.06rem;
+        border-radius: 50%;
+        background: #e62923; }
+
+.historyPlace {
+  width: 100%;
+  height: 3.95rem; }
+  .historyPlace .inner {
+    width: 93%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0.3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    .historyPlace .inner .rank {
+      width: 100%;
+      height: 1rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      .historyPlace .inner .rank:nth-child(1), .historyPlace .inner .rank:nth-child(3) {
+        width: 66.5%; }
+    .historyPlace .inner .rankSon {
+      width: 2.28rem;
+      height: 0.83rem;
+      background: #000 url("../../images/xiao12_03.png") center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      padding-top: 0.1rem; }
+      .historyPlace .inner .rankSon h1 {
+        color: #030308;
+        font-size: 0.26rem; }
+        .historyPlace .inner .rankSon h1::after {
+          content: '';
+          display: inline-block;
+          width: 0.17rem;
+          height: 0.17rem;
+          background: url("../../images/xiao14_03.png") center/cover no-repeat; }
+      .historyPlace .inner .rankSon p {
+        color: #171717;
+        font-size: 0.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around; }
+        .historyPlace .inner .rankSon p span {
+          font-size: 0.15rem; }
+          .historyPlace .inner .rankSon p span:nth-child(1), .historyPlace .inner .rankSon p span:nth-child(4) {
+            display: inline-block;
+            width: 0.2rem;
+            height: 0.01rem;
+            background: #171717; }
+
+.hotSearch {
+  width: 100%;
+  height: 4.08rem; }
+  .hotSearch .inner {
+    width: 93%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 0.25rem; }
+    .hotSearch .inner .zhujia, .hotSearch .inner .shaoxing {
+      width: 100%;
+      height: 1.7rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap; }
+    .hotSearch .inner .zhujiaImg {
+      width: 1.88rem;
+      height: 100%;
+      background: url("../../images/xiaozhuj_03.png") center/contain no-repeat; }
+    .hotSearch .inner .shaoxingImg {
+      width: 1.88rem;
+      height: 100%;
+      background: url("../../images/xiaoshao_03.png") center/contain no-repeat; }
+    .hotSearch .inner .introduce {
+      width: 5.09rem;
+      height: 100%;
+      background: url("../../images/xiaointroduce_03.png") center/contain no-repeat;
+      padding: 0.1rem 0.2rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap; }
+      .hotSearch .inner .introduce p {
+        width: 100%; }
+    .hotSearch .inner .title {
+      font-size: 0.28rem; }
+    .hotSearch .inner .dian span {
+      display: inline-block;
+      width: 0.05rem;
+      height: 0.05rem;
+      border-radius: 50%;
+      background: #cfcfcf; }
+    .hotSearch .inner .english, .hotSearch .inner .intro {
+      font-size: 0.2rem; }

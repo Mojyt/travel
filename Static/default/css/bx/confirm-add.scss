@@ -1,0 +1,285 @@
+@import "mixin";
+@import "font";
+
+$device-list: 320px, 360px, 375px, 384px, 412px, 414px, 600px, 640px, 750px;
+html {
+  @each $index in $device-list {
+    @media screen and (min-width: $index) {
+      font-size: 100 * ($index/750)
+    }
+  }
+}
+
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+$imgs: "../../images/bx-";
+
+body {
+  background-color: #EBEBEB;
+}
+
+.inner {
+  @include cube(100%, 100%);
+  padding: 0 5%;
+}
+
+.choose-card-top {
+  @include cube(100%, 5.26rem);
+  background: url($imgs + 'choose-banner.png') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .table {
+    @include cube(100%, 1.2rem);
+    padding-top: 0.22rem;
+    .content {
+      @include cube(100%, 100%);
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .content .go-prev {
+      @include circle(0.60rem);
+      background: #c6b390;
+      @include font(0.3rem, #fff, 700);
+      text-align: center;
+      line-height: 0.6rem;
+      font-family: leftp, sans-serif;
+      &::before {
+        content: '\e60b';
+      }
+    }
+
+  }
+
+  .header {
+    @include cube(100%, 2.84rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .photo-box {
+      @include circle(1.5rem);
+      background: #fff;
+      position: relative;
+      .photo {
+        @include center;
+        @include circle(1.42rem);
+        background: url($imgs +'head.jpg') center/cover no-repeat;
+      }
+    }
+    .user-name {
+      @include font(0.44rem, #646262, 700);
+      font-family: guyue, sans-serif;
+    }
+    .motto {
+      @include font(0.24rem, #646262, 300);
+      font-family: guyue, sans-serif;
+    }
+
+  }
+
+}
+
+.add-card-info{
+  @include cube(100%,6.7rem);
+  .inner{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+  }
+
+  .inner .add-card{
+    @include cube(100%,31%);
+    padding-top:3%;
+    .card{
+      @include cube(85%,1.52rem);
+      background-color:#ebebeb;
+      margin:0 auto;
+      background:url($imgs + 'add-bank.png')center/cover no-repeat;
+      box-shadow:
+              0 -5px 10px #CECECE,
+              5px 0 10px #CECECE,
+              -5px 0 10px #CECECE;
+      .bank-logo{
+        @include cube(20%,100%);
+        float: left;
+        padding-top:0.28rem;
+        .bank{
+          @include cube(0.82rem,0.56rem);
+          background: #fff;
+          float: right;
+          border-radius: 40px;
+          position: relative;
+          @include font(0.22rem,#fff,400);
+          font-family:"San Francisco Display B",sans-serif;
+          text-align: center;
+          line-height: 0.56rem;
+          .bank-c{
+            @include circle(0.42rem);
+            background:#FFCC00;
+            position: absolute;
+            top:50%;
+            margin-top:-0.21rem;
+            opacity: 0.7;
+          }
+          .bank-c:nth-child(1){
+            left:10%;
+          }
+          .bank-c:nth-child(2){
+            background:#007FE2;
+            right:10%;
+          }
+          i{
+            @include center;
+          }
+        }
+      }
+
+      .card-info{
+        @include cube(80%,100%);
+        padding-right:8%;
+        padding-left:2%;
+        float: right;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: flex-start;
+        .card-item{
+          @include font(0.25rem,#fff,400);
+          font-family: "San Francisco Display B",sans-serif;
+        }
+        .card-item:nth-child(1){
+          position: relative;
+          .point{
+            position: absolute;
+            @include font(0.50rem,#fff,300);
+            font-family: "San Francisco Display se",sans-serif;
+            right:-20%;top:-129%;
+          }
+        }
+        .card-item:nth-child(2){
+          @include cube(100%,1%);
+          background:#DB0809;
+          margin:3% 0;
+        }
+        .card-item:nth-child(3){
+          @include font(0.31rem,#fff,400);
+          font-family: "San Francisco Display se",sans-serif;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+  .inner .h1{
+    @include cube(100%,25%);
+    display:flex;
+    justify-content: start;
+    align-items:center;
+    .lion{
+      @include cube(0.85rem,0.61rem);
+
+      background: url($imgs + 'lion.png')center/cover no-repeat;
+    }
+    h1{
+      @include font(0.36rem,#f50102,400);
+      font-family: guyue,sans-serif;
+      margin-left:2%;
+    }
+  }
+  .inner .add-user-info{
+    @include cube(100%,43.5%);
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    .info{
+      @include cube(100%,0.97rem);
+      border-bottom:1px solid #c0c0c0;
+      display:flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .info .info-kind{
+      @include cube(24%,100%);
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      font-family: guyue, sans-serif;
+      h3{
+        @include font(0.3rem,#333,300);
+      }
+      h6{
+        @include font(0.2rem,#8e8e8e,300);
+      }
+    }
+    .info input{
+      @include cube(55%,100%);
+      @include font(0.30rem,#666,300);
+      font-family: guyue, sans-serif;
+      padding-left:4%;
+      letter-spacing: 2px;
+      line-height: 0.97rem;
+      background:#EBEBEB;
+      outline: none;
+    }
+  }
+  .inner .agree{
+    @include cube(100%,12%);
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    .confirm{
+      @include circle(0.38rem);
+      background:#f7454c;
+      @include font(0.30rem,#fff,300);
+      text-align: center;
+      line-height: 0.38rem;
+    }
+    .agree-http{
+      padding-left:3%;
+      @include font(0.28rem,#666,300);
+      font-family: guyue, sans-serif;
+    }
+  }
+}
+
+.footer{
+  @include cube(100%,0.96rem);
+  background:#020202;
+  margin-top:4.5%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  .chinese{
+    @include font(0.24rem,#cebfa3,400);
+    font-family: guyue, sans-serif;
+    position: relative;
+    .yy-parcel{
+      @include cube(0.1rem,0.24rem);
+      position: absolute;
+      right:-22%;top:0;
+      img{
+        height:0.24rem;
+      }
+
+    }
+  }
+  .english{
+    @include font(0.12rem,#fff,300);
+    font-family:adob, sans-serif;
+    padding-top:0.05rem;
+  }
+
+}

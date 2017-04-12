@@ -1,0 +1,105 @@
+@import "mixin";
+*{
+  margin:0;
+  padding: 0;
+  cursor: pointer;
+  list-style: none;
+  font-size: 20px;
+}
+html{
+  $screen:320px,360px,375px,412px,414px;
+  @each $name in $screen{
+    @media screen and (min-width:#{$name}){
+      font-size:100*($name/750);
+    }
+  }
+}
+////////////////////index//////////////////////
+
+.head{
+  @include cube(100%,1rem);
+  background:#030012;
+  display: flex;
+  justify-content: center;
+  .head-inner{
+    margin: 0 23px;
+    @include cube(100%,100%);
+    display: flex;
+    justify-content: space-between;
+  }
+  .head-back{
+    @include cube(0.37rem,100%);
+  }
+  .head-logo{
+    @include cube(3.08rem,100%);
+    background:url(../img/head-logo.png)center no-repeat;
+    background-size:100%;
+  }
+  .head-search{
+    @include cube(0.37rem,100%);
+    align-self: flex-end;
+    float: right;
+    background:url(../img/search.png)center no-repeat;
+    background-size:100%;
+  }
+}
+//banner
+
+.banner{
+  @include cube(100%,4.01rem);
+  background: url('../img/banner-bj.png')center no-repeat;
+  background-size:100%;
+  display: flex;
+  align-items: center;
+  .banner-logo{
+    @include cube(100%,0.36rem);
+    background: url('../img/banner-logo.png')center no-repeat;
+    background-size:40%;
+  }
+}
+.lunbo{
+  @include cube(100%,4.29rem);
+  background: #000;
+  //display: flex;
+  //justify-content: center;
+  //flex-wrap: wrap;
+  .lunbo-inner{
+    //margin: 0 23px;
+    @include cube(94%,100%);
+    background: #f40;
+    overflow: hidden;
+    margin: 0 auto;
+    //display: flex;
+    //flex-direction: row;
+    //justify-content: space-between;
+  }
+  .lunbo-max-inner{
+    //background: #fff;
+    display: flex;
+    align-items: center;
+    //justify-content: space-between;
+  }
+  .lunbo-common{
+    @include cube(2.06rem,3.46rem);
+    background: #fff;
+  }
+  .lunbo-1{
+
+  }
+  .lunbo-2{
+  }
+  .lunbo-1{
+
+  }
+}
+///////////////////voice//////////////////////////
+.voice{
+  @include cube(100%,100%);
+  background: #000;
+  background:url("../img/voice-bj.png");
+  background-size:105%;
+}
+body{
+  width: 100%;
+  height: 100%;
+}

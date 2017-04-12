@@ -1,0 +1,221 @@
+@import "../mixin";
+@import "../base.css";
+body{
+  @include cube(100%,100%);
+  background:url(../../images/voice-bj.png)no-repeat;
+  background-size:100%;
+}
+$img:'../../images/';
+//%close{
+//  height:100%;
+//  flex: 1;
+//  margin: 0.1rem;
+//  background: url($img +'yd-voice-more.png')center no-repeat;
+//  background-size:100%;
+//}
+.voice{
+  .table{
+    height:1.2rem;
+    display: flex;
+    align-items: center;
+    a{
+      display: block;
+      background: url($img +'voice-back.png')center no-repeat;
+      @include circle(0.6rem);
+      margin-left: 4%;
+      line-height: 0.6rem;
+      font-family: 'leftp',sans-serif;
+
+    }
+  }
+  .content{
+    padding-top:0.53rem;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+  }
+  .head-img{
+    @include cube(100%,2.05rem);
+    .head-img-inner{
+      @include square(2.05rem);
+      margin: 0 auto;
+      background: url($img + 'voice-head1.png')center no-repeat;
+      background-size:100%;
+      overflow: hidden;
+      img{
+        display: block;
+        @include circle(2rem);
+        margin: 0 auto;
+      }
+    }
+  }
+  .voice-call{
+    @include cube(100%,0.75rem);
+  }
+  .voice-call-span{
+    @include cube(2.86rem,100%);
+    display: block;
+    margin: 0 auto;
+    background: url($img +'yd-voice-call.png')center no-repeat;
+    background-size:100%;
+  }
+  .voice-time{
+    @include cube(100%,1.38rem);
+  }
+  .voice-time-span{
+    @include cube(2.86rem,100%);
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    line-height:1.38rem;
+    font-size: 0.8rem;
+  }
+  .voice-last{
+    color:red;
+  }
+  .voice-transit{
+    @include cube(100%,0.36rem);
+    .transit-inner{
+      margin: 0 auto;
+      @include cube(2.86rem,100%);
+    }
+    .transit-circle{
+      flex: 1;
+      display: inline-block;
+      background: url($img + 'yd-vioce-transit.png')center no-repeat;
+      background-size:100%;
+    }
+    .transit-dian{
+      flex: 1;
+      display: block;
+      color: red;
+      text-align: center;
+      line-height:0.18rem;
+      font-size:0.3rem;
+    }
+    .transit-inner-span{
+      @include cube(1.21rem,100%);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  .voice-line{
+    @include cube(100%,2.49rem);
+    margin-top: 0.98rem;
+  }
+  .voice-button{
+    @include cube(100%,1.05rem);
+  }
+  .voice-button-inner{
+    @include cube(3.37rem,100%);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .button-sound{
+    flex: 1;
+    margin: 0.1rem;
+    height:100%;
+    background: url($img +'yd-voice-mic.png')center no-repeat;
+    background-size:100%;
+  }
+  .button-close{
+    flex: 1;
+    height:100%;
+    margin: 0.1rem;
+    background: url($img +'yd-voice-close.png')center no-repeat;
+    background-size:100%;
+  }
+  .button-more{
+    height:100%;
+    flex: 1;
+    margin: 0.1rem;
+    background: url($img +'yd-voice-more.png')center no-repeat;
+    background-size:100%;
+  }
+  }
+.voice-shade{
+  @include cube(100%,100%);
+  position: absolute;
+  top:0;
+  left:0;
+  background:rgba(0,0,0,0.6);
+}
+.voice-deer{
+  @include cube(100%,5.3rem);
+  @include center();
+
+  .deer-inner{
+    @include cube(6.44rem,100%);
+    margin: 0 auto;
+    background: url($img +'yd-deer.png')center no-repeat;
+    background-size:100%;
+  }
+  .button-close{
+    @include circle(0.62rem);
+    background: url($img +'yd-voice-close.png')center no-repeat;
+    background-size:100%;
+    position: absolute;
+    top:20%;
+    right:7%;
+  }
+  .deer-span-black{
+    //background:#000;
+    @include cube(1.8rem,0.7rem);
+    position: absolute;
+    bottom:6%;
+    left:24%;
+
+  }
+  .deer-span-white{
+    @include cube(1.8rem,0.7rem);
+    //background:#000;
+    position: absolute;
+    bottom:6%;
+    right:24%;
+    color:#3F4448;
+  }
+  .wrap{
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    ._set{
+      display: flex;
+      align-items: center;
+    }
+  }
+  .wrap ._set span:nth-child(1){
+    font-size: 0.3rem;
+    font-family: 'Wyue',sans-serif;
+    padding-right:0.06rem;
+  }
+  .wrap ._set span:nth-child(2),span:nth-child(4),span:nth-child(6){
+    background: #fff;
+    display: block;
+    @include circle(0.08rem);
+    position: relative;
+    .circle{
+      background: #D11E33;
+      @include circle(0.04rem);
+      @include center;
+    }
+  }
+  .wrap ._set span:nth-child(3),span:nth-child(5),span:nth-child(7){
+    font-size: 0.3rem;
+    font-family: 'Wyue',sans-serif;
+    padding-left:0.06rem;
+    padding-right:0.06rem;
+
+  }
+  .wrap .en{
+    font-size: 0.15rem;
+    text-align: center;
+    font-family: 'Wyue',sans-serif;
+  }
+  .wrap ._white{
+    color:#3F4448;
+  }
+
+}

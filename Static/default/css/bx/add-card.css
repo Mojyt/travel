@@ -1,0 +1,324 @@
+@charset "UTF-8";
+/*函数*/
+/*@function bg(){
+	$r:floor(random()*56+200);
+	$g:floor(random()*56);
+	$b:floor(random()*56);
+	$color:rgb($r,$g,$b);
+	@debug $color;
+	@return $color;
+}*/
+@font-face {
+  font-family: leftp;
+  src: url(../../fonts/font_pnt9i8feioyfogvi/iconfont.woff); }
+
+@font-face {
+  font-family: guyue;
+  src: url(../../fonts/文悦古体仿宋.otf); }
+
+@font-face {
+  font-family: adob;
+  src: url(../../fonts/字体); }
+
+@font-face {
+  font-family: "San Francisco Display B";
+  src: url(../../fonts/字体/sanfranciscodisplay-bold-webfont.ttf); }
+
+@font-face {
+  font-family: "San Francisco Display se";
+  src: url(../../fonts/字体/sanfranciscodisplay-semibold-webfont.ttf); }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px; } }
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 85.33333px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none; }
+
+body {
+  background-color: #EBEBEB; }
+
+.inner {
+  width: 100%;
+  height: 100%;
+  padding: 0 5%; }
+
+.choose-card-top {
+  width: 100%;
+  height: 5.26rem;
+  background: url("../../images/bx-choose-banner.png") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .choose-card-top .table {
+    width: 100%;
+    height: 1.2rem;
+    padding-top: 0.22rem; }
+    .choose-card-top .table .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .choose-card-top .table .content .go-prev {
+      width: 0.6rem;
+      height: 0.6rem;
+      border-radius: 50%;
+      background: #c6b390;
+      font-size: 0.3rem;
+      color: #fff;
+      font-weight: 700;
+      text-align: center;
+      line-height: 0.6rem;
+      font-family: leftp, sans-serif; }
+      .choose-card-top .table .content .go-prev::before {
+        content: '\e60b'; }
+  .choose-card-top .header {
+    width: 100%;
+    height: 2.84rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    .choose-card-top .header .photo-box {
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background: #fff;
+      position: relative; }
+      .choose-card-top .header .photo-box .photo {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 1.42rem;
+        height: 1.42rem;
+        border-radius: 50%;
+        background: url("../../images/bx-head.jpg") center/cover no-repeat; }
+    .choose-card-top .header .user-name {
+      font-size: 0.44rem;
+      color: #646262;
+      font-weight: 700;
+      font-family: guyue, sans-serif; }
+    .choose-card-top .header .motto {
+      font-size: 0.24rem;
+      color: #646262;
+      font-weight: 300;
+      font-family: guyue, sans-serif; }
+
+.add-card-info {
+  width: 100%;
+  height: 6.7rem; }
+  .add-card-info .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
+  .add-card-info .inner .add-card {
+    width: 100%;
+    height: 40%;
+    padding-top: 10%; }
+    .add-card-info .inner .add-card .card {
+      width: 85%;
+      height: 1.52rem;
+      background-color: #ebebeb;
+      margin: 0 auto;
+      background: url("../../images/bx-add-bank.png") center/cover no-repeat;
+      box-shadow: 0 -5px 10px #CECECE, 5px 0 10px #CECECE, -5px 0 10px #CECECE; }
+      .add-card-info .inner .add-card .card .bank-logo {
+        width: 20%;
+        height: 100%;
+        float: left;
+        padding-top: 0.28rem; }
+        .add-card-info .inner .add-card .card .bank-logo .bank {
+          width: 0.82rem;
+          height: 0.56rem;
+          background: #fff;
+          float: right;
+          border-radius: 40px;
+          position: relative;
+          font-size: 0.22rem;
+          color: #fff;
+          font-weight: 400;
+          font-family: "San Francisco Display B",sans-serif;
+          text-align: center;
+          line-height: 0.56rem; }
+          .add-card-info .inner .add-card .card .bank-logo .bank .bank-c {
+            width: 0.42rem;
+            height: 0.42rem;
+            border-radius: 50%;
+            background: #FFCC00;
+            position: absolute;
+            top: 50%;
+            margin-top: -0.21rem;
+            opacity: 0.7; }
+          .add-card-info .inner .add-card .card .bank-logo .bank .bank-c:nth-child(1) {
+            left: 10%; }
+          .add-card-info .inner .add-card .card .bank-logo .bank .bank-c:nth-child(2) {
+            background: #007FE2;
+            right: 10%; }
+          .add-card-info .inner .add-card .card .bank-logo .bank i {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto; }
+      .add-card-info .inner .add-card .card .card-info {
+        width: 80%;
+        height: 100%;
+        padding-right: 8%;
+        padding-left: 2%;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; }
+        .add-card-info .inner .add-card .card .card-info .card-item {
+          font-size: 0.25rem;
+          color: #fff;
+          font-weight: 400;
+          font-family: "San Francisco Display B",sans-serif; }
+        .add-card-info .inner .add-card .card .card-info .card-item:nth-child(1) {
+          position: relative; }
+          .add-card-info .inner .add-card .card .card-info .card-item:nth-child(1) .point {
+            position: absolute;
+            font-size: 0.5rem;
+            color: #fff;
+            font-weight: 300;
+            font-family: "San Francisco Display se",sans-serif;
+            right: -20%;
+            top: -129%; }
+        .add-card-info .inner .add-card .card .card-info .card-item:nth-child(2) {
+          width: 100%;
+          height: 1%;
+          background: #DB0809;
+          margin: 3% 0; }
+        .add-card-info .inner .add-card .card .card-info .card-item:nth-child(3) {
+          font-size: 0.31rem;
+          color: #fff;
+          font-weight: 400;
+          font-family: "San Francisco Display se",sans-serif;
+          letter-spacing: 1px; }
+  .add-card-info .inner .add-user-info {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
+    .add-card-info .inner .add-user-info .info {
+      width: 100%;
+      height: 0.97rem;
+      border-bottom: 1px solid #c0c0c0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+    .add-card-info .inner .add-user-info .info .info-kind {
+      width: 24%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: guyue, sans-serif; }
+      .add-card-info .inner .add-user-info .info .info-kind h3 {
+        font-size: 0.3rem;
+        color: #333;
+        font-weight: 300; }
+      .add-card-info .inner .add-user-info .info .info-kind h6 {
+        font-size: 0.2rem;
+        color: #8e8e8e;
+        font-weight: 300; }
+    .add-card-info .inner .add-user-info .info input {
+      width: 55%;
+      height: 100%;
+      font-size: 0.3rem;
+      color: #666;
+      font-weight: 300;
+      font-family: guyue, sans-serif;
+      padding-left: 4%;
+      letter-spacing: 2px;
+      line-height: 0.97rem;
+      background: #EBEBEB;
+      outline: none; }
+    .add-card-info .inner .add-user-info .info .red-id {
+      width: 1.04rem;
+      height: 0.42rem;
+      background: #ff2121;
+      border-radius: 20px;
+      font-size: 0.24rem;
+      color: #fff;
+      font-weight: 300;
+      font-family: guyue, sans-serif;
+      text-align: center;
+      line-height: 0.42rem; }
+
+.footer {
+  width: 100%;
+  height: 0.96rem;
+  background: #020202;
+  margin-top: 4.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .footer .chinese {
+    font-size: 0.24rem;
+    color: #cebfa3;
+    font-weight: 400;
+    font-family: guyue, sans-serif;
+    position: relative; }
+    .footer .chinese .yy-parcel {
+      width: 0.1rem;
+      height: 0.24rem;
+      position: absolute;
+      right: -22%;
+      top: 0; }
+      .footer .chinese .yy-parcel img {
+        height: 0.24rem; }
+  .footer .english {
+    font-size: 0.12rem;
+    color: #fff;
+    font-weight: 300;
+    font-family: adob, sans-serif;
+    padding-top: 0.05rem; }

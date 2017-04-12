@@ -1,0 +1,129 @@
+@import "../mixin";
+@import "../base.css";
+$IMG:'../../images/';
+.header{
+  @include cube(100%,1.2rem);
+  background: #000;
+  display: flex;
+  align-items: center;
+  padding-left: 0.24rem;
+  .point{
+    @include circle(0.62rem);
+    background: #c6b390;
+  }
+  .text{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #fcfcfb;
+    align-items: center;
+    font-size: 0.32rem;
+  }
+  h3{
+    font-size: 0.32rem;
+    color: #fcfcfb;
+    font-weight: normal;
+
+  }
+  h4{
+    text-transform: uppercase;
+    color: #d2d2d1;
+    font-size: 0.26rem;
+    font-weight: normal;
+
+  }
+}
+.content{
+   width:100%;
+   background: url($IMG + "bright-squares_02.png");
+    padding-left:0.24rem;
+    padding-top: 0.4rem;
+  display: flex;
+    justify-content: space-between;
+  .bg{
+    @include cube(1.5rem,0.55rem);
+    background:#c6b390;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  h2{
+    color:#f00203;
+  }
+  .hot_scene{
+    @include cube(1.5rem,auto);
+  }
+
+  .hot_target{
+    @include cube(80%,auto);
+    background: white;
+    padding-top: 0.37rem;
+    padding-left: 0.24rem;
+    padding-right: 0.24rem;
+  }
+  ul{
+    @include cube(100%,7.6rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  li{
+    //@include cube(100%,)
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    a{
+      @include cube(100%,100%);
+      display: block;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      color:#fcfbfb;
+
+
+
+    }
+  }
+  .title{
+    @include cube(55%,0.4rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .left{
+    @include cube(0.06rem,0.4rem);
+    background: #fdbc68;
+  }
+  .right{
+    @include cube(96%,100%);
+
+  }
+  .con{
+    //margin-left:0.24rem;
+    @include cube(80%,5.1rem);
+    .page{
+      padding-right: 0.48rem;
+      margin-top:0.2rem;;
+      @include cube(100%,5.1rem);
+      display: flex;
+      flex-wrap:wrap;
+      //align-items: flex-end;
+      justify-content: space-between;
+      align-content: space-between;
+      div{
+        @include cube(2.4rem,2.4rem);
+        border-radius: 5%;
+        background: red;
+      }
+    }
+  }
+  .list{
+    @include cube(100%,auto);
+    li{
+       //@include cube(100%,)
+    }
+  }
+}

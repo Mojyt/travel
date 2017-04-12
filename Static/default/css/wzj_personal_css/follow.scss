@@ -1,0 +1,314 @@
+@import "../mixin";
+@import "../trip/fonts";
+
+body{
+  background: #EAEAEA;
+}
+
+$img:'../../images/';
+.header{
+  @include cube(100%,4.96rem);
+  background: url($img + 'wzj-beijing.png') center/cover no-repeat;
+  .table{
+    height:1.2rem;
+    display: flex;
+    align-items: center;
+    a{
+      background: #C6B390;
+      display: block;
+      @include circle(0.6rem);
+      margin-left: 4%;
+      text-align: center;
+      line-height: 0.6rem;
+      font-family: 'leftp',sans-serif;
+      color:#fff;
+      &::before{
+        content: "\e60b";
+      }
+    }
+  }
+  .content{
+    padding-top:0.53rem;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+  }
+  .content .headPortrait {
+    flex: 100%;
+    height: 1.89rem;
+    .info {
+      width: 65.3%;
+      margin-left: 2.6rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .info .left {
+      @include cube(1.81rem, 1.87rem);
+      position: relative;
+      .edit {
+        background: url($img + 'wzj-edit_03.png') center/cover no-repeat;
+        position: absolute;
+        bottom: 0;
+        right: 0.06rem;
+        @include circle(0.47rem);
+        z-index: 2;
+        display: block;
+        text-align: center;
+      }
+      .edit ._edit {
+        font-family: 'edit', sans-serif;
+        color: #F2110D;
+        font-size: 0.3rem;
+        line-height: 0.47rem;
+        &::before {
+          content: "\e6b7";
+        }
+      }
+    }
+    .info .left img{
+      @include circle(1.81rem);
+    }
+    .info .set{
+      @include cube(1.92rem,0.8rem);
+      background: url($img + 'wzj-button_03.png') center/cover no-repeat;
+      background-color: #EAEAEA;
+      border-radius: 0.8rem;
+      border:0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .info .set .wrap{
+      color:#fff;
+      display: flex;
+      flex-direction: column;
+      ._set{
+        display: flex;
+        align-items: center;
+      }
+    }
+    .info .set .wrap ._set span:nth-child(1){
+      font-size: 0.3rem;
+      font-family: 'Wyue',sans-serif;
+      padding-right:0.14rem;
+    }
+    .info .set .wrap ._set span:nth-child(2){
+      background: #fff;
+      display: block;
+      @include circle(0.08rem);
+      position: relative;
+      .circle{
+        background: #D11E33;
+        @include circle(0.04rem);
+        @include center;
+      }
+    }
+    .info .set .wrap ._set span:nth-child(3){
+      font-size: 0.3rem;
+      font-family: 'Wyue',sans-serif;
+      padding-left:0.14rem;
+    }
+    .info .set .wrap .en{
+      font-size: 0.15rem;
+      font-family: 'Wyue',sans-serif;
+    }
+  }
+  .content .userName{
+    flex: 100%;
+    height:0.93rem;
+    display: flex;
+    justify-content: center;
+    .information{
+      height:100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .information .name{
+      font-family: 'Wyue',sans-serif;
+      font-size: 0.48rem;
+      color:#646262;
+    }
+    .information .line{
+      background: url($img + 'wzj-line.png') center/cover no-repeat;
+      width:0.36rem;
+      height:0.07rem;
+      margin:0 auto;
+    }
+    .information .star{
+      display: flex;
+      justify-content: space-between;
+      height:0.24rem;
+      span{
+        background: url($img + 'wzj-star.png') center/cover no-repeat;
+        width:0.24rem;
+      }
+    }
+  }
+  .content .autograph{
+    flex: 100%;
+    height:0.43rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span{
+      font-family: 'Wyue',sans-serif;
+      font-size: 0.24rem;
+      color:#646262;
+    }
+  }
+}
+
+.list{
+  margin-top:0.29rem;
+  display: flex;flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  height:7.69rem;
+  li{
+    @include cube(7.02rem,1.75rem);
+    background: url($img + 'bx-payment-background1.png') center/cover no-repeat;
+    display: flex;
+    position: relative;
+  }
+  li .head{
+    width:1.53rem;
+    height:100%;
+    position: relative;
+    .con{
+      @include center;
+      @include cube(0.97rem,1.15rem);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: center;
+    }
+    .con .left{
+      width:100%;
+      height:0.95rem;
+      position: relative;
+      .square{
+        @include square(0.75rem);
+        background:#FBCECD;
+        @include center;
+        transform:rotate(15deg);
+        border-radius: 0.1rem;
+      }
+      a{
+        @include square(0.79rem);
+        @include center;
+        img{
+          @include square(100%);
+
+        }
+      }
+    }
+    .con img{
+      @include cube(0.54rem,0.1rem);
+    }
+  }
+  li .info {
+    //height:1.05rem;
+    @include cube(3.28rem, 1.05rem);
+    padding-left: 0.24rem;
+    margin-top: 0.22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .title {
+      display: flex;
+      width: 2rem;
+      justify-content: space-between;
+      align-items: center;
+      height:0.3rem;
+      //overflow: hidden;
+      span{
+        font-size: 0.3rem;
+      }
+      .star {
+        display: flex;
+        justify-content: space-between;
+        height: 0.24rem;
+        span {
+          background: url($img + 'wzj-star.png') center/cover no-repeat;
+          width: 0.24rem;
+        }
+      }
+    }
+    .engName{
+      display: flex;
+      font-size: 0.24rem;
+      padding-top: 0.1rem;
+      span:nth-child(1){
+        color:#F2110D;
+      }
+    }
+  }
+  li .dividing_line{
+    @include cube(0.03rem,0.94rem);
+    background: #CEBFA3;
+    @include tb;
+    right:2.22rem;
+    z-index: 2;
+  }
+  li .isFollow{
+    @include cube(1.36rem,0.52rem);
+    background: url($img + 'wzj-gz.png') center/cover no-repeat;
+    background-color: #EAEAEA;
+    border-radius: 0.6rem;
+    border:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include tb;
+    right:0.24rem;
+  }
+  li .isFollow .wrap{
+    color:#474F54;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    ._set{
+      display: flex;
+      align-items: center;
+    }
+  }
+  li .isFollow .wrap ._set span:nth-child(1){
+    font-size: 0.2rem;
+    padding-right:0.05rem;
+  }
+  li .isFollow .wrap ._set .dian{
+    background: #fff;
+    display: block;
+    @include circle(0.08rem);
+    position: relative;
+    .circle{
+      background: #474F54;
+      @include circle(0.04rem);
+      @include center;
+    }
+  }
+  li .isFollow .wrap ._set span:nth-child(3){
+    font-size: 0.2rem;
+    font-family: 'Wyue',sans-serif;
+    padding:0 0.05rem;
+  }
+  li .isFollow .wrap .en{
+    font-size: 0.15rem;
+    font-family: 'Wyue',sans-serif;
+  }
+  li .yes{
+    @include cube(1.41rem,0.57rem);
+    background: url($img + 'wzj-button_03.png') center/cover no-repeat;
+    .wrap{
+      color:#fff;
+    }
+    .wrap ._set .dian .circle{
+      background: #DC5565;
+    }
+    .wrap ._set span:nth-child(5){
+      font-size: 0.2rem;
+      padding-left:0.05rem;
+    }
+  }
+}

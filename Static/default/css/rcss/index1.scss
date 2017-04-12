@@ -1,0 +1,86 @@
+@import 'mixin';
+@import "index2.css";
+$device-list:320px,360px,375px,412px,414px,750px;
+html{
+  @each $i in $device-list{
+    @media screen and(min-width: #{$i}){
+      font-size: 100* ($i/750);
+    }
+  }
+}
+@font-face {
+  font-family: 'search';
+  //src: url(font/iconfont.woff);
+}
+body{
+  font-size: 16px;
+  background: #ECE9E8;
+  box-sizing: border-box;
+  //background:url(../../img/r001.jpg)no-repeat;
+  background-size: 100%;
+
+}
+
+$img:'../../images/';
+.head{
+  @include rect(100%,5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .text{
+    @include rect(4.15rem,2.10rem);
+    background: bg();
+    text-align: center;
+    .message{
+      font-size: 0.16rem;
+    }
+  }
+}
+.center{
+  @include rect(6.58rem,7.55rem);
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  background: url($img + 'rui1_03.png')no-repeat;
+  .enroll{
+    @include rect(3.9rem,2.6rem);
+    .seek{
+      height: 0.86rem;
+      line-height:0.86rem;
+      border-bottom: 0.01rem solid #BEB6B0;
+      .i{
+        @include rect(0.3rem,0.23rem);
+        display: inline-block;
+        background: url($img + 'rui002.jpg')no-repeat;
+        background-size: 100%;
+      }
+      .key{
+        display: inline-block;
+        @include rect(0.32rem,0.44rem);
+        background: url($img + 'rui003.jpg')no-repeat;
+      }
+      .login{
+        @include rect(3rem,0.5rem);
+        background: none;
+        font-size: 0.25rem;
+      }
+    }
+  }
+  .bottom{
+    align-self: center;
+    @include rect(3.86rem,0.78rem);
+    background: #111211;
+    text-align: center;
+    .next{
+      color:#D6BF9B;
+      line-height:0.5rem;
+    }
+    .nsis{
+      line-height: 0.0rem;
+      color:#ECEBE9;
+    }
+  }
+}
+

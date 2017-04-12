@@ -1,0 +1,130 @@
+@import "../base.css";
+@import "../bootstrap.min.css";
+@import "../mixin";
+@import "GEfont";
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  padding: 0;
+}
+body{
+  @include cube(100%,100%);
+  background: url("../../img/xiaokaishi.png")center/cover no-repeat;
+}
+.headerTop{
+  @include cube(100%,1.2rem);
+  position: relative;
+  .headerInfo{
+    @include cube(100%,100%);
+    background: #000000;
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .headerCon{
+    @include cube(100%,100%);
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+$imgs:"../img/";
+.headerCon{
+  .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include cube(93%,100%);
+    margin: 0 auto;
+  }
+  .moreBut{
+    @include square(0.62rem);
+    a{
+      display: inline-block;
+      @include cube(100%,100%);
+      background: url("../../img/more_03.png")center/cover no-repeat;
+    }
+  }
+  .titleBox{
+    @include cube(38%,100%);
+    margin-left:-0.4rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    .left-r,.right-r{
+      @include cube(0.51rem,0.13rem);
+      background: url($imgs + 'xiaoleft.png')center/cover no-repeat;
+    }
+    .title{
+      @include cube(2rem,0.8rem);
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content: center;
+      .chinese{
+        @include font(0.3rem,#fff,400);
+        font-family:guyue,sans-serif;
+      }
+      .english{
+        margin-top:2%;
+        text-align: center;
+        @include font(0.18rem,#fff,400);
+        font-family:guyue,sans-serif;
+      }
+    }
+    .right-r{
+      background:url($imgs + 'right.png')center/cover no-repeat;
+    }
+  }
+}
+.search{
+  @include cube(100%,6.2rem);
+  background: red;
+  .inner{
+    @include cube(94%,100%);
+    background: #eeeeee;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.3rem;
+  }
+  .proportion{
+    p{
+      @include cube(0.76rem,0.17rem);
+      font-size: 0.24rem;
+      color: #ff0000;
+      margin-top: 0.15rem;
+      text-align: center;
+      &:nth-child(2){
+        border: 0.04rem solid #ff0000;
+        border-top: none;
+      }
+    }
+  }
+  .sign{
+    p{
+      @include circle(0.58rem);
+      &:nth-child(3){
+        font-size: 0.2rem;
+        color: #ff0000;display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 0.25rem;
+      }
+    }
+    .plus{
+      margin-top: 0.2rem;
+      background: url("../../img/xiaoplus_03.png")center/cover no-repeat;
+    }
+    .reduce{
+      margin-top: 0.2rem;
+      background: url("../../img/xiaoreduce_03.png")center/cover no-repeat;
+    }
+    .compass{
+      //margin-top: 0.2rem;
+      background: url("../../img/compass_03.png")center/cover no-repeat;
+    }
+
+  }
+}

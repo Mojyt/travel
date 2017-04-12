@@ -1,0 +1,92 @@
+@import url(index2.css);
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+@font-face {
+  font-family: 'search'; }
+
+body {
+  font-size: 16px;
+  background: #ECE9E8;
+  box-sizing: border-box;
+  background-size: 100%; }
+
+.head {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .head .text {
+    width: 4.15rem;
+    height: 2.1rem;
+    background: rgba(238, 137, 70, 0.7);
+    text-align: center; }
+    .head .text .message {
+      font-size: 0.16rem; }
+
+.center {
+  width: 6.58rem;
+  height: 7.55rem;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  background: url(../../img/r1_03.png) no-repeat; }
+  .center .enroll {
+    width: 3.9rem;
+    height: 2.6rem; }
+    .center .enroll .seek {
+      height: 0.86rem;
+      line-height: 0.86rem;
+      border-bottom: 0.01rem solid #BEB6B0; }
+      .center .enroll .seek .i {
+        width: 0.3rem;
+        height: 0.23rem;
+        display: inline-block;
+        background: url(../../img/r002.jpg) no-repeat;
+        background-size: 100%; }
+      .center .enroll .seek .key {
+        display: inline-block;
+        width: 0.32rem;
+        height: 0.44rem;
+        background: url(../../img/r003.jpg) no-repeat; }
+      .center .enroll .seek .login {
+        width: 3rem;
+        height: 0.5rem;
+        background: none;
+        font-size: 0.25rem; }
+  .center .bottom {
+    align-self: center;
+    width: 3.86rem;
+    height: 0.78rem;
+    background: #111211;
+    text-align: center; }
+    .center .bottom .next {
+      color: #D6BF9B;
+      line-height: 0.5rem; }
+    .center .bottom .nsis {
+      line-height: 0.0rem;
+      color: #ECEBE9; }

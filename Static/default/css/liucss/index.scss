@@ -1,0 +1,99 @@
+@import "base";
+html{
+  $widths : (
+          320px,360px,375px,412px,414px,750px
+  );
+  @each $name in $widths{
+    @media screen and(min-width: #{$name}){
+      font-size: 100*($name/750);
+    }
+  }
+}
+body{
+  background: url(../img/bg.png);
+  background-size: 100%;
+}
+.welcometo{
+  @include chang(100%,0.92rem);
+  position: absolute;
+  left: 0px;
+  top: 3.14rem;
+  display: flex;
+  justify-content: center;
+  div{
+    @include chang(4.18rem,100%);
+    background: url(../img/gjighi.png) no-repeat;
+  }
+}
+.login_registered{
+  @include chang(100%,3.43rem);
+  position: absolute;
+  left: 0px;
+  bottom:0.85rem;
+  display: flex;
+  justify-content: center;
+  .login_registered1{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    @include chang(5.68rem,100%);
+    .login{
+      @include chang(100%,0.91rem);
+      display: flex;
+      justify-content: space-between;
+      .login_1{
+        @include chang(2.33rem,100%);
+        background: url(../img/kk_04.png) no-repeat;
+        background-size: 100%;
+        border-radius: 1rem;
+        font-family: '文悦古体仿宋', sans-serif;
+        @include zi(#fff,0.44rem,0.91rem,center);
+      }
+      .login_2{
+        @include chang(2.33rem,100%);
+        background: url(../img/kk_04.png) no-repeat;
+        background-size: 100%;
+        border-radius: 1rem;
+        font-family: '文悦古体仿宋', sans-serif;
+        @include zi(#fff,0.44rem,0.91rem,center);
+      }
+    }
+    .login1{
+      @include chang(100%,1.85rem);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: space-between;
+      .login1_1{
+        @include chang(2.85rem,0.44rem);
+        background: url(../img/kljkh.png) no-repeat;
+        background-size: 100%;
+        font-family: '文悦古体仿宋', sans-serif;
+        @include zi(#333,0.22rem,0.44rem,center);
+      }
+      .login1_2{
+        @include chang(2.85rem,0.65rem);
+        display: flex;
+        justify-content: space-between;
+        .qq{
+          @include yuan(0.65rem);
+          background: url(../img/qq.png);
+          background-size: 100%;
+          display: block;
+        }
+        .weixin{
+          @include yuan(0.65rem);
+          background: url(../img/wx.png);
+          background-size: 100%;
+          display: block;
+        }
+        .weibo{
+          @include yuan(0.65rem);
+          background: url(../img/wb.png);
+          background-size: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+}

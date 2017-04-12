@@ -1,0 +1,266 @@
+@charset "UTF-8";
+/*函数*/
+/*@function bg(){
+	$r:floor(random()*56+200);
+	$g:floor(random()*56);
+	$b:floor(random()*56);
+	$color:rgb($r,$g,$b);
+	@debug $color;  
+	@return $color;
+}*/
+@import url(../base.css);
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 365px) {
+  html {
+    font-size: 48.66667px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body {
+  font-size: 16px; }
+
+body {
+  width: 100%;
+  height: 100%;
+  background: url(../../img/voice-bj.png) no-repeat;
+  background-size: 100%; }
+
+.voice .table {
+  height: 1.2rem;
+  display: flex;
+  align-items: center; }
+  .voice .table a {
+    display: block;
+    background: url("../../img/voice-back.png") center no-repeat;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    margin-left: 4%;
+    line-height: 0.6rem;
+    font-family: 'leftp',sans-serif; }
+
+.voice .content {
+  padding-top: 0.53rem;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap; }
+
+.voice .head-img {
+  width: 100%;
+  height: 2.05rem; }
+  .voice .head-img .head-img-inner {
+    width: 2.05rem;
+    height: 2.05rem;
+    margin: 0 auto;
+    background: url(../../img/voice-head1.png) center no-repeat;
+    background-size: 100%;
+    overflow: hidden; }
+    .voice .head-img .head-img-inner img {
+      display: block;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      margin: 0 auto; }
+
+.voice .voice-call {
+  width: 100%;
+  height: 0.75rem; }
+
+.voice .voice-call-span {
+  width: 2.86rem;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  background: url("../../images/yd-voice-call.png") center no-repeat;
+  background-size: 100%; }
+
+.voice .voice-time {
+  width: 100%;
+  height: 1.38rem; }
+
+.voice .voice-time-span {
+  width: 2.86rem;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.38rem;
+  font-size: 0.8rem; }
+
+.voice .voice-last {
+  color: red; }
+
+.voice .voice-transit {
+  width: 100%;
+  height: 0.36rem; }
+  .voice .voice-transit .transit-inner {
+    margin: 0 auto;
+    width: 2.86rem;
+    height: 100%; }
+  .voice .voice-transit .transit-circle {
+    flex: 1;
+    display: inline-block;
+    background: url("../../images/yd-vioce-transit.png") center no-repeat;
+    background-size: 100%; }
+  .voice .voice-transit .transit-dian {
+    flex: 1;
+    display: block;
+    color: red;
+    text-align: center;
+    line-height: 0.18rem;
+    font-size: 0.3rem; }
+  .voice .voice-transit .transit-inner-span {
+    width: 1.21rem;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; }
+
+.voice .voice-line {
+  width: 100%;
+  height: 2.49rem;
+  margin-top: 0.98rem; }
+
+.voice .voice-button {
+  width: 100%;
+  height: 1.05rem; }
+
+.voice .voice-button-inner {
+  width: 3.37rem;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.voice .button-sound {
+  flex: 1;
+  margin: 0.1rem;
+  height: 100%;
+  background: url("../../images/yd-voice-mic.png") center no-repeat;
+  background-size: 100%; }
+
+.voice .button-close {
+  flex: 1;
+  height: 100%;
+  margin: 0.1rem;
+  background: url("../../images/yd-voice-close.png") center no-repeat;
+  background-size: 100%; }
+
+.voice .button-more {
+  height: 100%;
+  flex: 1;
+  margin: 0.1rem;
+  background: url("../../images/yd-voice-more.png") center no-repeat;
+  background-size: 100%; }
+
+.voice-shade {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6); }
+
+.voice-deer {
+  width: 100%;
+  height: 5.3rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; }
+  .voice-deer .deer-inner {
+    width: 6.44rem;
+    height: 100%;
+    margin: 0 auto;
+    background: url("../../images/yd-deer.png") center no-repeat;
+    background-size: 100%; }
+  .voice-deer .button-close {
+    width: 0.62rem;
+    height: 0.62rem;
+    border-radius: 50%;
+    background: url("../../images/yd-voice-close.png") center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 20%;
+    right: 7%; }
+  .voice-deer .deer-span-black {
+    width: 1.8rem;
+    height: 0.7rem;
+    position: absolute;
+    bottom: 6%;
+    left: 24%; }
+  .voice-deer .deer-span-white {
+    width: 1.8rem;
+    height: 0.7rem;
+    position: absolute;
+    bottom: 6%;
+    right: 24%;
+    color: #3F4448; }
+  .voice-deer .wrap {
+    color: #fff;
+    display: flex;
+    flex-direction: column; }
+    .voice-deer .wrap ._set {
+      display: flex;
+      align-items: center; }
+  .voice-deer .wrap ._set span:nth-child(1) {
+    font-size: 0.3rem;
+    font-family: 'Wyue',sans-serif;
+    padding-right: 0.06rem; }
+  .voice-deer .wrap ._set span:nth-child(2), .voice-deer span:nth-child(4), .voice-deer span:nth-child(6) {
+    background: #fff;
+    display: block;
+    width: 0.08rem;
+    height: 0.08rem;
+    border-radius: 50%;
+    position: relative; }
+    .voice-deer .wrap ._set span:nth-child(2) .circle, .voice-deer span:nth-child(4) .circle, .voice-deer span:nth-child(6) .circle {
+      background: #D11E33;
+      width: 0.04rem;
+      height: 0.04rem;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto; }
+  .voice-deer .wrap ._set span:nth-child(3), .voice-deer span:nth-child(5), .voice-deer span:nth-child(7) {
+    font-size: 0.3rem;
+    font-family: 'Wyue',sans-serif;
+    padding-left: 0.06rem;
+    padding-right: 0.06rem; }
+  .voice-deer .wrap .en {
+    font-size: 0.15rem;
+    text-align: center;
+    font-family: 'Wyue',sans-serif; }
+  .voice-deer .wrap ._white {
+    color: #3F4448; }

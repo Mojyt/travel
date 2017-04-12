@@ -1,0 +1,150 @@
+@import "../base.css";
+@import "../bootstrap.min.css";
+@import "../mixin";
+@import "GEfont";
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  padding: 0;
+}
+body{
+  @include cube(100%,100%);
+  background: url("../../img/xiao1.png")center/cover no-repeat;
+}
+.headerTop{
+  @include cube(100%,1.57rem);
+  position: relative;
+  .headerInfo{
+    @include cube(100%,100%);
+    background: #000000;
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .headerCon{
+    @include cube(100%,100%);
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+$imgs:"../img/";
+.headerCon{
+  .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include cube(93%,100%);
+    margin: 0 auto;
+  }
+  .moreBut{
+    @include square(0.62rem);
+    a{
+      display: inline-block;
+      @include cube(100%,100%);
+      background: url("../../img/more_03.png")center/cover no-repeat;
+    }
+  }
+  .titleBox{
+    @include cube(38%,100%);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    .left-r,.right-r{
+      @include cube(0.51rem,0.13rem);
+      background: url($imgs + 'xiaoleft.png')center/cover no-repeat;
+    }
+    .title{
+      @include cube(2rem,0.8rem);
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content: center;
+      .chinese{
+        @include font(0.3rem,#fff,400);
+        font-family:guyue,sans-serif;
+      }
+      .english{
+        margin-top:2%;
+        text-align: center;
+        @include font(0.18rem,#fff,400);
+        font-family:guyue,sans-serif;
+      }
+    }
+    .right-r{
+      background:url($imgs + 'right.png')center/cover no-repeat;
+    }
+  }
+  .mapBut{
+    @include square(0.62rem);
+    a{
+      display: inline-block;
+      @include cube(100%,100%);
+      background: url("../../img/map_03.png")center/cover no-repeat;
+    }
+  }
+}
+.searchWrap{
+  @include cube(100%,1.5rem);
+  position: relative;
+  .boxWrap{
+    @include cube(93%,0.75rem);
+    position: absolute;
+    top: -25%;
+    left: 0.24rem;
+  }
+  .searchBox{
+    @include cube(100%,100%);
+    background: #fff;
+    border: 1px solid #58585a;
+    border-radius: 0.1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #999999;
+    font-family: f, sans-serif;
+    font-size: 0.24rem;
+  }
+  .searchBut{
+    display: inline-block;
+    @include square(0.36rem);
+    background: url("../../img/search_03.png")center/cover no-repeat;
+    @include tb;
+    left: 0.23rem;
+  }
+  .micBut{
+    display: inline-block;
+    @include square(0.36rem);
+    background: url("../../img/mic_03.png")center/cover no-repeat;
+    @include tb;
+    right: 0.23rem;
+  }
+  .position{
+    @include cube(2.4rem,0.62rem);
+    @include lr;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a{
+      display: inline-block;
+      @include square(0.36rem);
+    }
+    .positionIcon{
+      @include square(100%);
+      background: url("../../img/xiaopisition_03.png")center/contain no-repeat;
+    }
+    .place{
+      color: #c3b08e;
+      font-size:0.24rem;
+      font-family: '苹方',sans-serif;
+    }
+    .city{
+      color: #a8a7a7;
+      font-size:0.24rem;
+      font-family: '苹方',sans-serif;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import "base";
+html{
+  $widths : (
+          320px,360px,375px,412px,414px,750px
+  );
+  @each $name in $widths{
+    @media screen and(min-width: #{$name}){
+      font-size: 100*($name/750);
+    }
+  }
+}
+body{
+  background: url(../../img/liuimg/bgq.png);
+  background-size: 100%;
+}
+.parcel{
+  @include center(7.02rem,auto,0);
+  .top{
+  @include chang(100%,1.20rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .return{
+    @include yuan(0.60rem);
+    display: block;
+    background: #C6B390;
+    @include zi(#fff,0.44rem,0.60rem,center);
+  }
+  .registered{
+    @include chang(1.41rem,0.57rem);
+    display: block;
+    background: url(../../img/liuimg/kk_04.png);
+    background-size: 100%;
+    font-family: '文悦古体仿宋', sans-serif;
+    @include zi(#fff,0.26rem,0.57rem,center);
+    border-radius: 1rem;
+  }
+}
+  .welcometo{
+  @include chang(100%,2rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div{
+    @include chang(4.18rem,50%);
+    background: url(../../img/liuimg/gjighi.png) no-repeat;
+    background-size: 100%;
+  }
+}
+  .login{
+  @include chang(100%,6.70rem);
+    .bg{
+      @include center(85%,5.72rem,0);
+      background: url(../../img/liuimg/txxx_03.png);
+      background-size: 110%;
+
+    }
+
+}
+}
+

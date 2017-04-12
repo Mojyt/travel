@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/*函数*/
+/*@function bg(){
+	$r:floor(random()*56+200);
+	$g:floor(random()*56);
+	$b:floor(random()*56);
+	$color:rgb($r,$g,$b);
+	@debug $color;  
+	@return $color;
+}*/
+@import url(../base.css);
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 365px) {
+  html {
+    font-size: 48.66667px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body {
+  font-size: 16px; }
+
+.header {
+  width: 100%;
+  height: 1.2rem;
+  background: #000;
+  display: flex;
+  align-items: center;
+  padding-left: 0.24rem; }
+  .header .point {
+    width: 0.62rem;
+    height: 0.62rem;
+    border-radius: 50%;
+    background: #c6b390; }
+  .header .text {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #fcfcfb;
+    align-items: center;
+    font-size: 0.32rem; }
+  .header h3 {
+    font-size: 0.32rem;
+    color: #fcfcfb;
+    font-weight: normal; }
+  .header h4 {
+    text-transform: uppercase;
+    color: #d2d2d1;
+    font-size: 0.26rem;
+    font-weight: normal; }
+
+.content {
+  width: 100%;
+  background: url("../../images/bright-squares_02.png");
+  padding-left: 0.24rem;
+  padding-top: 0.4rem;
+  display: flex;
+  justify-content: space-between; }
+  .content .bg {
+    width: 1.5rem;
+    height: 0.55rem;
+    background: #c6b390;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .content h2 {
+    color: #f00203; }
+  .content .hot_scene {
+    width: 10%;
+    height: auto; }
+  .content .hot_target {
+    width: 82%;
+    height: 300px;
+    background: white; }
+  .content li a {
+    color: #fcfbfb; }
