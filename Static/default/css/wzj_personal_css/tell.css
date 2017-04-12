@@ -48,7 +48,7 @@ body {
   font-size: 16px; }
 
 @font-face {
-  font-family: 'Wyue';
+  font-family: Wyue;
   src: url(../fonts/文悦古体仿宋.otf); }
 
 @font-face {
@@ -56,8 +56,16 @@ body {
   src: url(../fonts/font_pnt9i8feioyfogvi/iconfont.woff); }
 
 @font-face {
-  font-family: adob;
-  src: url(../fonts/字体); }
+  font-family: edit;
+  src: url(../fonts/font_2ufxsdqp0b4t2o6r/iconfont.woff); }
+
+@font-face {
+  font-family: heart;
+  src: url(../fonts/font_iy9aleziz1if6r/iconfont.woff); }
+
+@font-face {
+  font-family: forward;
+  src: url(../fonts/font_tf3e62n9i1ss8aor/iconfont.woff); }
 
 .inner {
   width: 100%;
@@ -145,4 +153,39 @@ body {
     background: url("../../images/wzj-tell1.png") center/cover no-repeat;
     border-radius: 0.15rem; }
   .tellWindows .tell_window .con {
-    padding: 0.7rem 0.27rem 0; }
+    height: 8.16rem;
+    padding: 0.7rem 0.27rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    .tellWindows .tell_window .con .doing {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .tellWindows .tell_window .con .doing.friends {
+      width: 4.65rem;
+      height: 1.65rem;
+      position: relative; }
+      .tellWindows .tell_window .con .doing.friends .head {
+        width: 1.11rem;
+        height: 1.05rem;
+        background: url("../../images/wzj-tell4.png") center/cover no-repeat;
+        position: relative;
+        z-index: 12; }
+        .tellWindows .tell_window .con .doing.friends .head img {
+          width: 1.06rem;
+          height: 1.06rem;
+          border-radius: 50%; }
+      .tellWindows .tell_window .con .doing.friends .cont {
+        width: 3.85rem;
+        height: 1.65rem;
+        background: url("../../images/wzj-tell2.png") center/cover no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0.8rem; }
+    .tellWindows .tell_window .con .doing.me {
+      width: 3.58rem;
+      height: 1.46rem; }
+    .tellWindows .tell_window .con .time {
+      width: 1.38rem;
+      height: 0.56rem; }
