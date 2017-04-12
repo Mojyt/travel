@@ -1,0 +1,166 @@
+@charset "UTF-8";
+@import url(../base.css);
+/*函数*/
+/*@function bg(){
+	$r:floor(random()*56+200);
+	$g:floor(random()*56);
+	$b:floor(random()*56);
+	$color:rgb($r,$g,$b);
+	@debug $color;  
+	@return $color;
+}*/
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 365px) {
+  html {
+    font-size: 48.66667px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body {
+  font-size: 16px; }
+
+.inner {
+  width: 100%;
+  height: 100%;
+  padding: 0 5%; }
+
+.table {
+  width: 100%;
+  height: 1.42rem;
+  margin: 0;
+  padding: 0.22rem 0; }
+  .table .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .table .content .go-prev {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background: #c6b390;
+    font-size: 0.3rem;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    line-height: 0.6rem;
+    font-size: 0.22rem;
+    position: absolute; }
+    .table .content .go-prev a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      color: #fff; }
+      .table .content .go-prev a span {
+        font-family: 'leftp',sans-serif; }
+        .table .content .go-prev a span::before {
+          content: '\e60b'; }
+  .table .content .titleBox {
+    width: 100%;
+    height: 100%;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .table .content .titleBox .left-r, .table .content .titleBox .right-r {
+      width: 0.51rem;
+      height: 0.13rem;
+      background: url("/Static/default/images/left.png") center/cover no-repeat; }
+    .table .content .titleBox .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap; }
+      .table .content .titleBox .title .chinese {
+        font-size: 0.3rem;
+        color: #fff;
+        font-weight: 400;
+        font-family: Wyue, sans-serif; }
+      .table .content .titleBox .title .english {
+        margin-top: 2%;
+        font-size: 0.18rem;
+        color: #fff;
+        font-weight: 400; }
+    .table .content .titleBox .right-r {
+      background: url("/Static/default/images/right.png") center/cover no-repeat; }
+
+@font-face {
+  font-family: Wyue;
+  src: url(../../fonts/文悦古体仿宋.otf); }
+
+@font-face {
+  font-family: leftp;
+  src: url(../../fonts/font_pnt9i8feioyfogvi/iconfont.woff); }
+
+@font-face {
+  font-family: edit;
+  src: url(../../fonts/font_2ufxsdqp0b4t2o6r/iconfont.woff); }
+
+@font-face {
+  font-family: heart;
+  src: url(../../fonts/font_iy9aleziz1if6r/iconfont.woff); }
+
+@font-face {
+  font-family: forward;
+  src: url(../../fonts/font_tf3e62n9i1ss8aor/iconfont.woff); }
+
+@font-face {
+  font-family: pitch;
+  src: url(../../fonts/font_7rks8t34e7hnnrk9/iconfont.woff); }
+
+.parcel {
+  width: 100%;
+  height: 13.34rem;
+  background: url("/Static/default/images/yy-banner.png");
+  background-size: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .parcel [class~='parcel-tag'] {
+    width: 100%; }
+    .parcel [class~='parcel-tag']:nth-child(1) {
+      padding-top: 14px;
+      background: rgba(2, 2, 2, 0.8); }
+    .parcel [class~='parcel-tag']:nth-child(2) {
+      flex: 1;
+      display: flex;
+      flex-direction: column; }
+    .parcel [class~='parcel-tag']:nth-child(3) {
+      background: #000000;
+      padding: 0 -0.24rem;
+      height: 0.98rem;
+      align-self: center; }

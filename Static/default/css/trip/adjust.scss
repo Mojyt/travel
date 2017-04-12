@@ -1,7 +1,8 @@
 @import "../base.css";
 @import "../mixin";
-@import "table";
+@import "header";
 @import "fonts";
+@import "footer";
 
 .parcel {
   @include cube(100%, 13.34rem);
@@ -65,9 +66,9 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        align-content:space-around;
+        align-content: space-around;
         justify-content: center;
-        .item-title{
+        .item-title {
           display: flex;
           width: 100%;
           .parcel-main-scenic-adjust-item-text-title {
@@ -151,38 +152,38 @@
             border: 0.03rem solid #fbfbfe;
             background: #d0c0a4;
             @include circle(0.66rem);
-            font-family: 'pitch',sans-serif;
+            font-family: 'pitch', sans-serif;
             text-align: center;
             color: #fff;
             font-size: 0.4rem;
             display: flex;
             justify-content: center;
             align-items: center;
-            &::after{
+            &::after {
               content: '\e67e';
             }
-            &.active{
+            &.active {
               background: #ff0000;
-              &::after{
+              &::after {
                 content: '\e707';
               }
             }
           }
-          .button.active .icon{
+          .button.active .icon {
             display: block;
           }
-          .button .icon{
+          .button .icon {
             display: none;
             @include circle(0.05rem);
             background: #f7454c;
             position: absolute;
             @include tb;
             left: -0.1rem;
-            &::after{
+            &::after {
               content: '';
               display: block;
               @include circle(0.05rem);
-              background:#f7454c;
+              background: #f7454c;
               @include tb;
               left: 0.8rem;
             }
@@ -195,38 +196,5 @@
         }
       }
     }
-  }
-
-}
-
-.parcel-footer {
-  article {
-    @include cube(100%,100%);
-    a{
-      display: block;
-      @include cube(100%,100%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.2404rem;
-    }
-  }
-  span {
-    font-family: Wyue, sans-serif;
-    &:nth-child(1) {
-      color: #cebfa3;
-    }
-    &:nth-child(2) {
-      color: #ebebeb;
-    }
-  }
-  s {
-    font-size: 0;
-    width: 0.05rem;
-    height: 0.25rem;
-    background: url($Img + "yy-parcel-footer-bg.png");
-    @include tb;
-    right: 28%;
   }
 }
