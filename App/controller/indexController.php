@@ -102,5 +102,31 @@ class indexController extends Framework
         $this->display('');
 
     }
+
+
+    //支付
+    public function payment(){
+        $this->display('default/bx/payment.html');
+    }
+
+    public function confirm_add(){
+        $this->display('default/bx/confirm-add.html');
+    }
+
+    public function choose_card(){
+        $this->display('default/bx/choose-card.html');
+    }
+
+    public function add_card(){
+        $this->display('default/bx/add-card.html');
+    }
+
+    public function password(){
+        $this->display('default/bx/password.html');
+    }
+
+    public function success(){
+        $this->display('default/bx/success.html');
+    }
 }
 

@@ -72,8 +72,10 @@ body {
       position: relative;
       .photo {
         @include center;
-        @include circle(1.42rem);
-        background: url($imgs +'head.jpg') center/cover no-repeat;
+        top:-0.03rem;
+        right:0.01rem;
+        @include circle(1.45rem);
+        background: url($imgs +'header.jpg') center/cover no-repeat;
       }
     }
     .user-name {

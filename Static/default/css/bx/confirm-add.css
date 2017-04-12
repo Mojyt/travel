@@ -130,10 +130,12 @@ body {
         right: 0;
         bottom: 0;
         margin: auto;
-        width: 1.42rem;
-        height: 1.42rem;
+        top: -0.03rem;
+        right: 0.01rem;
+        width: 1.45rem;
+        height: 1.45rem;
         border-radius: 50%;
-        background: url("../../images/bx-head.jpg") center/cover no-repeat; }
+        background: url("../../images/bx-header.jpg") center/cover no-repeat; }
     .choose-card-top .header .user-name {
       font-size: 0.44rem;
       color: #646262;
