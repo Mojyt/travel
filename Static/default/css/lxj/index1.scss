@@ -1,14 +1,187 @@
-.comment{
+@import "mixin";
+@import "animation";
+
+html {
+  $map: 320px, 360px, 375px, 412px, 414px, 750px;
+  @each $list in $map {
+    @media screen and (min-width: #{$list}) {
+      font-size: 100 * ($list/750);
+    }
+  }
+}
+
+body {
+  font-size: 16px;
+}
+
+.common{
   width: 100%;
-  height: auto;
-  .com1{
-    width: 100%;
-    height: 100%;
-    background: url("../img/lxj-1-3.png") center no-repeat;
+  height: 7.5rem * 1334/750;
+  background-color: #201b17;
+  position: relative;
+  .con{
+    width: 7.5rem * 727/750;
+    height: 7.5rem * 1334/750;
+    //background-color: blue;
+    position: absolute;
+    left:0;
+    right: 0;
+    margin: auto;
   }
-  .com2{
-    width: 100%;
-    height: 100%;
-    background: url("../img/lxj-1-1.png") center no-repeat;
+  .content2{
+     position: absolute;
+     width: 7.5rem * 727/750;
+     height: 7.5rem * 1334/750;
+     background: url("/Static/default/images/lxj-1-3.png") center/cover no-repeat;
+   }
+  .content6 {
+    @include wh(7.5rem * 364/750, 7.5rem * 64/750);
+    //background: red;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 7.5rem * 200/750;
+    margin: auto;
+    .con_bot {
+      display: block;
+      @include wh(7.5rem * 364/750, 7.5rem * 130/750);
+      background: url("/Static/default/images/lxj-1-a.png") center/cover no-repeat;
+    }
   }
+  .con1{
+    display: none;
+
+    .content1{
+      position: absolute;
+      width: 7.5rem * 727/750;
+      height: 7.5rem * 1334/750;
+      background: url("/Static/default/images/lxj-1-1.png") center/cover no-repeat;
+    }
+    .content3{
+      //position: absolute;
+      top: 210px;
+      //@include wh(100%,7.5rem * 385/750);
+      //background: red;
+      .con_top1{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        @include wh(7.5rem * 435/750, 7.5rem * 250/750);
+        background: url("/Static/default/images/lxj-1-01.png") center/cover no-repeat;
+      }
+      .con_top2{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        @include wh(7.5rem * 30/750, 7.5rem * 30/750);
+        background: url("/Static/default/images/lxj-1-4.gif") center/cover no-repeat;
+      }
+    }
+  }
+  .con2{
+    display: none;
+
+    .content1{
+      position: absolute;
+      width: 7.5rem * 727/750;
+      height: 7.5rem * 1334/750;
+      background: url("/Static/default/images/lxj-2-1.png") center/cover no-repeat;
+    }
+    .content3{
+      //position: absolute;
+      top: 210px;
+      //@include wh(100%,auto);
+      //background: red;
+      .con_top1{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        @include wh(7.5rem * 435/750, 7.5rem * 250/750);
+        background: url("/Static/default/images/lxj-2-01.png") center/cover no-repeat;
+      }
+      .con_top2{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        @include wh(7.5rem * 30/750, 7.5rem * 30/750);
+        //background: url("/Static/default/images/lxj-1-4.gif") center/cover no-repeat;
+      }
+    }
+  }
+  .con3{
+    display: none;
+
+    .content1{
+      position: absolute;
+      width: 7.5rem * 727/750;
+      height: 7.5rem * 1334/750;
+      background: url("/Static/default/images/lxj-3-1.png") center/cover no-repeat;
+    }
+    .content3{
+      //position: absolute;
+      top: 210px;
+      //@include wh(100%,auto);
+      //background: red;
+      .con_top1{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        @include wh(7.5rem * 435/750, 7.5rem * 250/750);
+        background: url("/Static/default/images/lxj-3-01.png") center/cover no-repeat;
+      }
+    }
+  }
+  .con4{
+    display: none;
+
+    .content1{
+      position: absolute;
+      width: 7.5rem * 727/750;
+      height: 7.5rem * 1334/750;
+      background: url("/Static/default/images/lxj-4-1.png") center/cover no-repeat;
+    }
+    .content3{
+      //position: absolute;
+      top: 210px;
+      //@include wh(100%,auto);
+      //background: red;
+      .con_top1{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        @include wh(7.5rem * 435/750, 7.5rem * 250/750);
+        background: url("/Static/default/images/lxj-4-01.png") center/cover no-repeat;
+      }
+    }
+    .content6{
+      @include wh(7.5rem * 364/750,7.5rem * 64/750);
+      //background: red;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 7.5rem * 200/750;
+      margin: auto;
+      .con4_bot{
+        display: block;
+        @include wh(7.5rem * 364/750,7.5rem * 64/750);
+        background: url("/Static/default/images/lxj-4-a.png") center/cover no-repeat;
+      }
+    }
+  }
+
+}
+.dis{
+  display: block !important;
+}
+.zuotui{
+  animation: zt 1s both;
+}
+.youjin{
+  animation: yj 1s both;
 }

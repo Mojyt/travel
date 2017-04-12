@@ -9,7 +9,7 @@ class indexController extends Framework
     //闪屏
     public function splash()
     {
-        $this->display('');
+        $this->display('default/lxj/index1.html');
     }
 
     //首页
