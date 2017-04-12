@@ -1,6 +1,6 @@
 @import "../mixin";
 @import "../trip/fonts";
-@import "../trip/fonts";
+@import "fonts";
 
 body{
   background: #EAEAEA;
@@ -312,8 +312,69 @@ $img:'../../images/';
   }
 }
 
-.footer{
+.footer_table{
+  position:fixed;
+  bottom:0;right:0;
   @include cube(100%,0.98rem);
   background: #000;
   margin-top:0.15rem;
+  .inner{
+    @include cube(100%,100%);
+    padding:0 5%;
+  }
+  .inner .content{
+    @include cube(100%,100%);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    .foot{
+      display: block;
+      @include cube(1.685rem,100%);
+      position:relative;
+      .con{
+        @include cube(0.72rem,0.77rem);
+        @include center;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+        align-content: space-around;
+
+      }
+      .img{
+        @include cube(0.04rem,0.34rem);
+        @include tb;
+        right:0;
+        background:url($img + 'wzj-footer.png') center/cover no-repeat;
+      }
+    }
+    .foot .con .title{
+      @include cube(0.63rem,0.5rem);
+      color:#fff;
+      font-size: 0.24rem;
+      font-family: '方正仿宋繁体',sans-serif;
+    }
+    .foot .con .current{
+      color:#F2110D;
+    }
+    .foot .con .first{
+      position: absolute;
+      top:0;
+      left:0.26rem;
+    }
+    .foot .con img{
+      @include cube(0.05rem,0.25rem);
+      position: absolute;
+      top:0;left:0.52rem;
+    }
+    .foot .con .en{
+      @include cube(0.72rem,0.27rem);
+      color:#fff;
+      font-size: 0.12rem;
+    }
+    .foot .con .shouye{
+      position: absolute;
+      bottom:0;
+      left:0;
+    }
+  }
 }

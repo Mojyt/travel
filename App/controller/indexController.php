@@ -30,7 +30,7 @@ class indexController extends Framework
         $this->display('');
     }
 
-    //搜索首页
+    //搜索
     public function search(){
         $this->display('default/GE/search.html');
     }
@@ -93,6 +93,10 @@ class indexController extends Framework
     function follow_detail()
     {
         $this->display('default/wzj_personal/follow_detail.html');
+    }
+
+    public function tell(){
+        $this->display('default/wzj_personal/tell.html');
     }
 
 //旅游圈
