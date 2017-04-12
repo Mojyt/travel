@@ -152,7 +152,6 @@ $imgs:"../../images/";
 .historyBox{
   margin-top: 0.3rem;
   @include cube(100%,1rem);
-  //background: #f0ad4e;
   .inner{
     @include cube(93%,100%);
     margin: 0 auto;

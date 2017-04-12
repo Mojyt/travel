@@ -1,14 +1,13 @@
 @import "../base.css";
 @import "../bootstrap.min.css";
 @import "../mixin";
-@import "GEfont";
 h1,h2,h3,h4,h5,h6,p{
   margin: 0;
   padding: 0;
 }
 body{
   @include cube(100%,100%);
-  background: url("../../img/xiao1.png")center/cover no-repeat;
+  background: url("../../images/xiao1.png")center/cover no-repeat;
 }
 .headerTop{
   @include cube(100%,1.57rem);
@@ -29,7 +28,7 @@ body{
     top: 0;
   }
 }
-$imgs:"../img/";
+$imgs:"../../images/";
 .headerCon{
   .inner{
     display: flex;
@@ -43,7 +42,7 @@ $imgs:"../img/";
     a{
       display: inline-block;
       @include cube(100%,100%);
-      background: url("../../img/more_03.png")center/cover no-repeat;
+      background: url("../../images/xiaomore_03.png")center/cover no-repeat;
     }
   }
   .titleBox{
@@ -81,7 +80,7 @@ $imgs:"../img/";
     a{
       display: inline-block;
       @include cube(100%,100%);
-      background: url("../../img/map_03.png")center/cover no-repeat;
+      background: url("../../images/xiaomap_03.png")center/cover no-repeat;
     }
   }
 }
@@ -110,14 +109,14 @@ $imgs:"../img/";
   .searchBut{
     display: inline-block;
     @include square(0.36rem);
-    background: url("../../img/search_03.png")center/cover no-repeat;
+    background: url("../../images/xiaosearch_03.png")center/cover no-repeat;
     @include tb;
     left: 0.23rem;
   }
   .micBut{
     display: inline-block;
     @include square(0.36rem);
-    background: url("../../img/mic_03.png")center/cover no-repeat;
+    background: url("../../images/xiaomic_03.png")center/cover no-repeat;
     @include tb;
     right: 0.23rem;
   }
@@ -134,7 +133,7 @@ $imgs:"../img/";
     }
     .positionIcon{
       @include square(100%);
-      background: url("../../img/xiaopisition_03.png")center/contain no-repeat;
+      background: url("../../images/xiaopisition_03.png")center/contain no-repeat;
     }
     .place{
       color: #c3b08e;
@@ -207,7 +206,7 @@ $imgs:"../img/";
   }
   .historyChange{
     @include cube(1.2rem,0.45rem);
-    background: url("../../img/change_03.png")center/cover no-repeat;
+    background: url("../../images/xiaochange_03.png")center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -256,7 +255,7 @@ $imgs:"../img/";
     }
     .rankSon{
       @include cube(2.28rem,0.83rem);
-      background: #000 url("../../img/xiao12_03.png")center/cover no-repeat;
+      background: #000 url("../../images/xiao12_03.png")center/cover no-repeat;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -269,7 +268,7 @@ $imgs:"../img/";
           content: '';
           display: inline-block;
           @include square(0.17rem);
-          background: url("../../img/xiao14_03.png")center/cover no-repeat;
+          background: url("../../images/xiao14_03.png")center/cover no-repeat;
         }
       }
       p{
@@ -323,7 +322,7 @@ $imgs:"../img/";
   }
   .historyChange{
     @include cube(1.2rem,0.45rem);
-    background: url("../../img/change_03.png")center/cover no-repeat;
+    background: url("../../images/xiaochange_03.png")center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -363,7 +362,7 @@ $imgs:"../img/";
   }
   .place{
     @include cube(5.87rem,5.9rem);
-    background: url("../../img/xiaodizhi_03.png")center/cover no-repeat;
+    background: url("../../images/xiaodizhi_03.png")center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -400,13 +399,13 @@ $imgs:"../img/";
         content: '';
         @include cube(0.19rem,0.11rem) ;
         display: inline-block;
-        background: url("../../img/xiaobj_03.png")center/cover no-repeat;
+        background: url("../../images/xiaobj_03.png")center/cover no-repeat;
       }
       &::after{
         content: '';
         @include cube(0.19rem,0.11rem) ;
         display: inline-block;
-        background: url("../../img/xiaobj_03.png")center/cover no-repeat;
+        background: url("../../images/xiaobj_03.png")center/cover no-repeat;
       }
     }
   }

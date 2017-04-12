@@ -31,9 +31,32 @@ class indexController extends Framework
     }
 
     //搜索首页
-    public function search()
-    {
+    public function search(){
         $this->display('default/GE/search.html');
+    }
+    public function select(){
+        $this->display('default/GE/select.html');
+    }
+    public function stsearch(){
+        $this->display('default/GE/stsearch.html');
+    }
+    public function searching(){
+        $this->display('default/GE/searching.html');
+    }
+    public function searchout(){
+        $this->display('default/GE/searchout.html');
+    }
+    public function searchguide(){
+        $this->display('default/GE/searchguide.html');
+    }
+    public function voice_begin(){
+        $this->display('default/yd/voice-begin.html');
+    }
+    public function voice_fail(){
+        $this->display('default/yd/voice-fail.html');
+    }
+    public function voice_last(){
+        $this->display('default/yd/voice-last.html');
     }
 
     //私人订制
