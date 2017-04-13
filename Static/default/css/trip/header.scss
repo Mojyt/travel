@@ -36,10 +36,9 @@
   }
   .content .titleBox {
     @include cube(100%, 100%);
-    padding: 0 1.5rem;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     .left-r, .right-r {
       @include cube(0.51rem, 0.13rem);
@@ -51,6 +50,7 @@
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
+      margin: 0 0.2rem;
       .chinese {
         @include font(0.3rem, #fff, 400);
         font-family: Wyue, sans-serif;

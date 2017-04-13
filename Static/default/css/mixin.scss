@@ -55,7 +55,7 @@
 	font-weight: $weight;
 }
 
-$device-list:320px,360px,365px,375px,384px,412px,414px,600px,750px;
+$device-list:320px,360px,365px,375px,384px,412px,414px,600px,750px,933px;
 
 html{
 	@each $device in $device-list{
