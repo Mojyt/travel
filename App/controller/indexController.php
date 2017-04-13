@@ -33,7 +33,7 @@ class indexController extends Framework
     public function enroll(){
         $this->display('default/zr/login2.html');
     }
-    public function passwords(){
+    public function userpass(){
         $this->display('default/zr/login3.html');
     }
 
@@ -168,10 +168,10 @@ class indexController extends Framework
         $this->display('default/bx/add-card.html');
     }
 
-    public function userpass()
+    /*public function userpass()
     {
         $this->display('default/bx/password.html');
-    }
+    }*/
 
     public function success()
     {
