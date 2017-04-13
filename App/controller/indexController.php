@@ -36,6 +36,7 @@ class indexController extends Framework
     public function userpass(){
         $this->display('default/zr/login3.html');
     }
+
     //搜索
     public function search()
     {
@@ -167,10 +168,10 @@ class indexController extends Framework
         $this->display('default/bx/add-card.html');
     }
 
-    public function passwords()
+    /*public function userpass()
     {
         $this->display('default/bx/password.html');
-    }
+    }*/
 
     public function success()
     {
