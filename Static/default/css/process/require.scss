@@ -1,0 +1,105 @@
+@import "../mixin";
+@import "../base.css";
+$IMG :'../../images/';
+.content{
+  flex-wrap: wrap;
+}
+.historyBox{
+  @include cube(100%,1rem);
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  .inner{
+    @include cube(99%,100%);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .historySearch{
+    @include cube(1.7rem,100%);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    h3{
+      margin: 0;
+      width: 100%;
+    }
+    .the{
+      color: #ffffff;
+      font-size: 0.22rem;
+    }
+    .xuan{
+      color: #e3b08b;
+      font-size: 0.22rem;
+    }
+    .HistoryText{
+      color: #ffffff;
+      font-size: 0.28rem;
+      span:nth-child(3),span:nth-child(4){
+        display: inline-block;
+        @include circle(0.07rem);
+        background: #e62923;
+        margin-left: 0.04rem;
+      }
+    }
+    .circle{
+      display: flex;
+      span{
+        display: inline-block;
+        margin-right: 0.05rem;
+        @include circle(0.04rem);
+        background: #fff;
+        &:nth-child(1),&:nth-child(10){
+          background: #e62923;
+        }
+      }
+    }
+  }
+  .historyChange{
+    @include cube(1.2rem,0.45rem);
+    background: url($IMG + "xiaochange_03.png")center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.24rem;
+    a{
+      color: #ffffff;
+      text-decoration: none;
+
+
+
+    }
+  }
+  .level{
+    margin-top: 0.35rem;
+    @include cube(5rem,0.04rem);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    span{
+      display: inline-block;
+      &:nth-child(2){
+        @include cube(4.9rem,0.015rem);
+        background: #c6b390;
+      }
+      &:nth-child(1),&:nth-child(3){
+        @include circle(0.06rem);
+        background: #e62923;
+      }
+    }
+  }
+}
+.make{
+   @include cube(100%,1.5rem);
+   background:url($IMG + 'zl-bjt_03.png')center/cover no-repeat;
+   margin: 0.3rem 0;
+
+}
+.footer{
+  background: #000;
+  @include cube(100%,0.98rem);
+  position: fixed;
+  bottom:0;
+  left:0;
+}
