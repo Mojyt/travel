@@ -37,12 +37,86 @@
   html {
     font-size: 55.2px; } }
 
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px; } }
+
 @media screen and (min-width: 750px) {
   html {
     font-size: 100px; } }
 
 body {
   font-size: 16px; }
+
+.headerTop {
+  width: 100%;
+  height: 1.2rem;
+  position: relative;
+  background: #000; }
+  .headerTop .headerInfo {
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .headerTop .headerCon {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    top: 0; }
+
+.headerCon .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 93%;
+  height: 100%;
+  margin: 0 auto; }
+
+.headerCon .moreBut {
+  width: 0.62rem;
+  height: 0.62rem; }
+  .headerCon .moreBut a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url("../../images/xiaomore_03.png") center/cover no-repeat; }
+
+.headerCon .titleBox {
+  width: 38%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .headerCon .titleBox .left-r, .headerCon .titleBox .right-r {
+    width: 0.51rem;
+    height: 0.13rem;
+    background: url("../../images/xiaoleft.png") center/cover no-repeat; }
+  .headerCon .titleBox .title {
+    width: 2rem;
+    height: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .headerCon .titleBox .title .chinese {
+      font-size: 0.3rem;
+      color: #fff;
+      font-weight: 400;
+      font-family: guyue,sans-serif; }
+    .headerCon .titleBox .title .english {
+      margin-top: 2%;
+      text-align: center;
+      font-size: 0.18rem;
+      color: #fff;
+      font-weight: 400;
+      font-family: guyue,sans-serif; }
+  .headerCon .titleBox .right-r {
+    background: url("../../images/right.png") center/cover no-repeat; }
 
 .header {
   width: 100%;
@@ -76,23 +150,25 @@ body {
 
 .content {
   width: 100%;
-  background: url("../../images/bright-squares_02.png");
+  height: auto;
+  background: url("../../images/zl-bright-squares_02.png");
   padding-left: 0.24rem;
   padding-top: 0.4rem;
   display: flex;
   justify-content: space-between; }
   .content .bg {
-    width: 1.5rem;
     height: 0.55rem;
     background: #c6b390;
     display: flex;
     align-items: center;
     justify-content: center; }
   .content h2 {
-    color: #f00203; }
-  .content .hot_scene {
-    width: 1.5rem;
-    height: auto; }
+    color: #f00203;
+    font-size: 0.28rem; }
+  .content .hot_scene .xiaobj {
+    width: 0.45rem;
+    height: 0.25rem;
+    background: url("../../images/xiaobj_03.png"); }
   .content .hot_target {
     width: 80%;
     height: auto;
@@ -101,25 +177,27 @@ body {
     padding-left: 0.24rem;
     padding-right: 0.24rem; }
   .content ul {
-    width: 100%;
-    height: 7.6rem;
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: space-around;
     align-items: center; }
   .content li {
+    width: 100%;
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    line-height: 0.76rem; }
     .content li a {
-      width: 100%;
+      width: 65%;
       height: 100%;
-      display: block;
       display: flex;
       justify-content: center;
       align-items: center;
-      color: #fcfbfb; }
+      color: #fcfbfb;
+      font-size: 0.12rem;
+      line-height: 0.76rem; }
   .content .title {
     width: 55%;
     height: 0.4rem;
@@ -133,11 +211,12 @@ body {
   .content .right {
     width: 96%;
     height: 100%; }
+    .content .right h1 {
+      font-size: 0.36rem; }
   .content .con {
-    width: 80%;
-    height: 5.1rem; }
+    width: 100%;
+    height: auto; }
     .content .con .page {
-      padding-right: 0.48rem;
       margin-top: 0.2rem;
       width: 100%;
       height: 5.1rem;
@@ -150,6 +229,39 @@ body {
         height: 2.4rem;
         border-radius: 5%;
         background: red; }
+      .content .con .page div.cubeyi {
+        background: url("../../images/zl-18324_03.png") center/cover no-repeat; }
+      .content .con .page div.cubeer {
+        background: url("../../images/zl-aaa_03.png") center/cover no-repeat; }
+      .content .con .page div.cubesan {
+        background: url("../../images/zl-bbb_03.png") center/cover no-repeat; }
+      .content .con .page div.cubesi {
+        background: url("../../images/zl-ccc_03.png") center/cover no-repeat; }
   .content .list {
     width: 100%;
-    height: auto; }
+    height: auto;
+    margin-top: 0.3rem; }
+    .content .list ul {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: flex-start; }
+    .content .list li {
+      width: 100%;
+      text-align: left;
+      border-bottom: 0.01rem solid #b6c1dc;
+      line-height: 0.60rem; }
+    .content .list li a {
+      width: 100%;
+      color: #666666;
+      font-size: 0.26rem;
+      display: block;
+      padding-left: 0.24rem;
+      line-height: 0.60rem; }
+    .content .list li a.active {
+      color: #000;
+      font-weight: 100;
+      font-size: 0.32rem; }
+    .content .list li.active {
+      border-bottom: 0;
+      border-left: 0.08rem solid #fdbc68; }

@@ -45,6 +45,10 @@
   html {
     font-size: 100px; } }
 
+@media screen and (min-width: 933px) {
+  html {
+    font-size: 124.4px; } }
+
 body {
   font-size: 16px; }
 
@@ -217,8 +221,10 @@ body {
     bottom: 0;
     margin: auto;
     bottom: -45%;
-    background: url("../../images/yd-pic.png") center no-repeat;
     overflow: hidden; }
+    .card .card-img img {
+      width: 1.3rem;
+      height: 1.3rem; }
   .card .lunbo-2 {
     background: url("../../images/lunbo-2.png") center no-repeat;
     background-size: 100%; }
@@ -458,6 +464,7 @@ body {
       background-size: 100%;
       position: relative; }
     .point-pre .point-pre1 .img-heart, .point-pre .point-pre2 .img-heart, .point-pre .point-pre3 .img-heart {
+      z-index: 1;
       display: block;
       width: 0.4rem;
       height: 0.4rem;
@@ -493,12 +500,78 @@ body {
       width: 100%;
       height: 2.22rem;
       display: flex; }
+    .hot-play .hot-play1 .find-left1, .hot-play .hot-play2 .find-left1, .hot-play .hot-play3 .find-left1 {
+      flex: 0.5;
+      position: relative; }
+      .hot-play .hot-play1 .find-left1 img, .hot-play .hot-play2 .find-left1 img, .hot-play .hot-play3 .find-left1 img {
+        width: 88.2%;
+        height: 1.77rem; }
+      .hot-play .hot-play1 .find-left1 .find-img4, .hot-play .hot-play2 .find-left1 .find-img4, .hot-play .hot-play3 .find-left1 .find-img4 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        top: -8px;
+        left: -8px;
+        background: url("../../images/yd-find-img1.png") center no-repeat; }
+      .hot-play .hot-play1 .find-left1 .find-img5, .hot-play .hot-play2 .find-left1 .find-img5, .hot-play .hot-play3 .find-left1 .find-img5 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        background: #DBDBDB; }
+      .hot-play .hot-play1 .find-left1 .find-img6, .hot-play .hot-play2 .find-left1 .find-img6, .hot-play .hot-play3 .find-left1 .find-img6 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        top: 8px;
+        left: 8px;
+        background: #E6E6E6; }
+    .hot-play .hot-play1 .find-last, .hot-play .hot-play2 .find-last, .hot-play .hot-play3 .find-last {
+      flex: 0.5;
+      position: relative;
+      margin: 0.24rem;
+      display: flex;
+      flex-direction: column; }
+      .hot-play .hot-play1 .find-last p, .hot-play .hot-play2 .find-last p, .hot-play .hot-play3 .find-last p {
+        text-align: center; }
+      .hot-play .hot-play1 .find-last .en-span, .hot-play .hot-play2 .find-last .en-span, .hot-play .hot-play3 .find-last .en-span {
+        flex: 1;
+        display: block;
+        width: 0.69rem;
+        height: 0.07rem;
+        margin: 0 auto;
+        background: url("../../images/yd-en.png") center no-repeat;
+        background-size: 100%; }
+      .hot-play .hot-play1 .find-last .transit, .hot-play .hot-play2 .find-last .transit, .hot-play .hot-play3 .find-last .transit {
+        flex: 0.3;
+        width: 1.13rem;
+        height: 0.04rem;
+        margin: 0 auto;
+        background: url("../../images/yd-tr.png") center no-repeat;
+        background-size: 100%; }
+      .hot-play .hot-play1 .find-last .chat, .hot-play .hot-play2 .find-last .chat, .hot-play .hot-play3 .find-last .chat {
+        flex: 1;
+        float: left; }
+      .hot-play .hot-play1 .find-last .p, .hot-play .hot-play2 .find-last .p, .hot-play .hot-play3 .find-last .p {
+        color: #333333;
+        font-size: 0.2rem;
+        align-self: flex-start; }
+        .hot-play .hot-play1 .find-last .p p, .hot-play .hot-play2 .find-last .p p, .hot-play .hot-play3 .find-last .p p {
+          text-align: center; }
+    .hot-play .hot-play1 img, .hot-play .hot-play2 img, .hot-play .hot-play3 img {
+      width: 90.2%;
+      height: 1.8rem; }
     .hot-play .hot-play1 .find-left, .hot-play .hot-play2 .find-left, .hot-play .hot-play3 .find-left {
       flex: 1;
       position: relative; }
-      .hot-play .hot-play1 .find-left img, .hot-play .hot-play2 .find-left img, .hot-play .hot-play3 .find-left img {
-        width: 90.2%;
-        height: 1.8rem; }
       .hot-play .hot-play1 .find-left .find-img1, .hot-play .hot-play2 .find-left .find-img1, .hot-play .hot-play3 .find-left .find-img1 {
         position: absolute;
         left: 0;
@@ -530,6 +603,7 @@ body {
     .hot-play .hot-play1 .find-right, .hot-play .hot-play2 .find-right, .hot-play .hot-play3 .find-right {
       flex: 1;
       display: flex;
+      margin-left: 0.1rem;
       flex-direction: column;
       position: relative; }
     .hot-play .hot-play1 .find-right1, .hot-play .hot-play2 .find-right1, .hot-play .hot-play3 .find-right1 {
@@ -577,10 +651,13 @@ body {
       background: url("../../images/yd-hot.png") center no-repeat;
       background-size: 88%; }
     .hot-play .hot-play1 .find-right2, .hot-play .hot-play2 .find-right2, .hot-play .hot-play3 .find-right2 {
-      flex: 1;
+      flex: 0.5;
       display: flex;
       align-items: flex-end;
       color: #A5A5A5; }
+      .hot-play .hot-play1 .find-right2 p, .hot-play .hot-play2 .find-right2 p, .hot-play .hot-play3 .find-right2 p {
+        font-size: 0.24rem;
+        color: #939393; }
     .hot-play .hot-play1 .dian, .hot-play .hot-play2 .dian, .hot-play .hot-play3 .dian {
       display: inline-block;
       width: 0.08rem;
@@ -589,16 +666,22 @@ body {
       background-size: 100%; }
     .hot-play .hot-play1 .find-right3, .hot-play .hot-play2 .find-right3, .hot-play .hot-play3 .find-right3 {
       flex: 1;
-      font-size: 0.12rem;
-      color: #A5A5A5; }
+      font-size: 0.12rem; }
+      .hot-play .hot-play1 .find-right3 span, .hot-play .hot-play2 .find-right3 span, .hot-play .hot-play3 .find-right3 span {
+        font-size: 0.2rem;
+        color: #8A8A8A; }
     .hot-play .hot-play1 .transit, .hot-play .hot-play2 .transit, .hot-play .hot-play3 .transit {
-      width: 100%;
+      width: 98%;
       height: 0.2rem;
+      margin: 0 auto;
       background: url("../../images/yd-transit.png") center no-repeat;
-      background-size: 90%; }
+      background-size: 100%; }
     .hot-play .hot-play1 .chat, .hot-play .hot-play2 .chat, .hot-play .hot-play3 .chat {
       width: 100%;
       height: 0.55rem; }
+  .hot-play .hot-play2 {
+    background: url("../../images/yd-bj.png") center no-repeat;
+    background-size: 100%; }
 
 .more {
   width: 100%;
@@ -640,8 +723,9 @@ body {
 .footer_table {
   position: fixed;
   bottom: 0;
+  z-index: 1;
   width: 100%;
-  height: 0.99rem;
+  height: 0.98rem;
   background: #000;
   margin-top: 0.15rem; }
   .footer_table .inner {
@@ -655,6 +739,7 @@ body {
     justify-content: space-between;
     align-items: center; }
     .footer_table .inner .content .foot {
+      display: block;
       width: 1.685rem;
       height: 100%;
       position: relative; }
@@ -679,13 +764,16 @@ body {
         bottom: 0;
         margin: auto;
         right: 0;
-        background: url("../../images/wzj-footer.png") center/cover no-repeat; }
+        background: url("../../images/yd-footer.png") center/cover no-repeat;
+        background-size: 100%; }
     .footer_table .inner .content .foot .con .title {
       width: 0.63rem;
       height: 0.5rem;
       color: #fff;
       font-size: 0.24rem;
       font-family: '方正仿宋繁体',sans-serif; }
+    .footer_table .inner .content .foot .con .current {
+      color: #F2110D; }
     .footer_table .inner .content .foot .con .first {
       position: absolute;
       top: 0;
@@ -699,9 +787,11 @@ body {
     .footer_table .inner .content .foot .con .en {
       width: 0.72rem;
       height: 0.27rem;
+      display: block;
+      margin-top: 0.1rem;
       color: #fff;
       font-size: 0.12rem; }
     .footer_table .inner .content .foot .con .shouye {
       position: absolute;
-      bottom: 0;
+      bottom: -0.05rem;
       left: 0; }

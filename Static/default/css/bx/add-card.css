@@ -126,14 +126,15 @@ body {
       .choose-card-top .header .photo-box .photo {
         position: absolute;
         left: 0;
-        top: 0;
-        right: 0;
+
         bottom: 0;
         margin: auto;
-        width: 1.42rem;
-        height: 1.42rem;
+        top: -0.03rem;
+        right: 0.01rem;
+        width: 1.45rem;
+        height: 1.45rem;
         border-radius: 50%;
-        background: url("../../images/bx-head.jpg") center/cover no-repeat; }
+        background: url("../../images/bx-header.jpg") center/cover no-repeat; }
     .choose-card-top .header .user-name {
       font-size: 0.44rem;
       color: #646262;
@@ -163,7 +164,9 @@ body {
       background-color: #ebebeb;
       margin: 0 auto;
       background: url("../../images/bx-add-bank.png") center/cover no-repeat;
-      box-shadow: 0 -5px 10px #CECECE, 5px 0 10px #CECECE, -5px 0 10px #CECECE; }
+      box-shadow: 0 -5px 10px #CECECE,
+ 5px 0 10px #CECECE,
+ -5px 0 10px #CECECE; }
       .add-card-info .inner .add-card .card .bank-logo {
         width: 20%;
         height: 100%;

@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/*函数*/
+/*@function bg(){
+	$r:floor(random()*56+200);
+	$g:floor(random()*56);
+	$b:floor(random()*56);
+	$color:rgb($r,$g,$b);
+	@debug $color;  
+	@return $color;
+}*/
+@import url(../base.css);
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 365px) {
+  html {
+    font-size: 48.66667px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body {
+  font-size: 16px; }
+
+.content {
+  flex-wrap: wrap; }
+
+.historyBox {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-right: 0.24rem; }
+  .historyBox .inner {
+    width: 99%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .historyBox .historySearch {
+    width: 1.7rem;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+    .historyBox .historySearch h3 {
+      margin: 0;
+      width: 100%; }
+    .historyBox .historySearch .the {
+      color: #ffffff;
+      font-size: 0.22rem; }
+    .historyBox .historySearch .xuan {
+      color: #e3b08b;
+      font-size: 0.22rem; }
+    .historyBox .historySearch .HistoryText {
+      color: #ffffff;
+      font-size: 0.28rem; }
+      .historyBox .historySearch .HistoryText span:nth-child(3), .historyBox .historySearch .HistoryText span:nth-child(4) {
+        display: inline-block;
+        width: 0.07rem;
+        height: 0.07rem;
+        border-radius: 50%;
+        background: #e62923;
+        margin-left: 0.04rem; }
+    .historyBox .historySearch .circle {
+      display: flex; }
+      .historyBox .historySearch .circle span {
+        display: inline-block;
+        margin-right: 0.05rem;
+        width: 0.04rem;
+        height: 0.04rem;
+        border-radius: 50%;
+        background: #fff; }
+        .historyBox .historySearch .circle span:nth-child(1), .historyBox .historySearch .circle span:nth-child(10) {
+          background: #e62923; }
+  .historyBox .historyChange {
+    width: 1.2rem;
+    height: 0.45rem;
+    background: url("../../images/xiaochange_03.png") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.24rem; }
+    .historyBox .historyChange a {
+      color: #ffffff;
+      text-decoration: none; }
+  .historyBox .level {
+    margin-top: 0.2rem;
+    width: 5rem;
+    height: 0.04rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .historyBox .level span {
+      display: inline-block; }
+      .historyBox .level span:nth-child(2) {
+        width: 4.9rem;
+        height: 0.015rem;
+        background: #c6b390; }
+      .historyBox .level span:nth-child(1), .historyBox .level span:nth-child(3) {
+        width: 0.06rem;
+        height: 0.06rem;
+        border-radius: 50%;
+        background: #e62923; }
+
+.make.beijing {
+  width: 100%;
+  height: 1.5rem;
+  background: url("../../images/zl-bjt_03.png") center/cover no-repeat;
+  margin: 0.3rem 0; }
+
+.make {
+  margin: 0.3rem 0;
+  width: 100%;
+  height: 1.5rem;
+  background: url("../../images/zl-bjt2_03.png") center/cover no-repeat; }
+
+.footer {
+  background: #000;
+  width: 100%;
+  height: 0.98rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center; }
+  .footer h2 {
+    color: #eee;
+    font-size: 0.32rem;
+    line-height: 0.4rem; }
+  .footer span {
+    color: #eee;
+    font-size: 0.18rem;
+    line-height: 0.2rem; }
+
+.message {
+  width: 6.92rem;
+  background: #fbfbf8;
+  border-radius: 0.05rem;
+  margin: 0.3rem 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 0 0.24rem; }
+  .message div.con {
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .message input {
+    width: 70%;
+    height: 60%;
+    border-radius: 0.5rem;
+    font-size: 0.26rem;
+    padding-left: 0.3rem;
+    line-height: 0.44rem;
+    background: #c6b390;
+    border: 0;
+    outline: none;
+    color: #fff; }
+
+.count {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-direction: column; }
+
+.solid {
+  width: 100%;
+  height: 0.02rem;
+  background: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.red {
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background: red;
+  background: url("../../images/zl-red_03.png") center/cover no-repeat; }
+
+.redpoint {
+  width: 0.07rem;
+  height: 0.07rem;
+  border-radius: 50%;
+  background: #e9222d; }
+
+.orange .circle {
+  width: 0.14rem;
+  height: 0.14rem;
+  border-radius: 50%;
+  border: 1px solid #c6b390; }
+
+.orange .point {
+  width: 0.07rem;
+  height: 0.07rem;
+  border-radius: 50%;
+  background: #c6b390; }
+
+.num {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .num span {
+    width: 25%;
+    text-align: center; }
+
+.make.chose {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .make.chose div {
+    width: 30%;
+    height: 100%; }
+  .make.chose ul {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    .make.chose ul li {
+      width: 25%;
+      line-height: 0.5rem;
+      font-size: 0.18rem; }
+
+.make.beijing {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-direction: column; }
+  .make.beijing .name {
+    width: 20%;
+    height: 60%;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.5rem; }
+  .make.beijing .pin {
+    height: 30%;
+    width: 20%;
+    margin-top: -0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c6b390;
+    font-size: 0.26rem; }
