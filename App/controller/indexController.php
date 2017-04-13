@@ -132,5 +132,15 @@ class indexController extends Framework
     public function success(){
         $this->display('default/bx/success.html');
     }
+
+
+    public function check(){
+//       c($_POST);
+        if($_POST['password']==='123456'){
+//            echo 1;
+            echo "true";
+        }
+        $this->redirect('success');
+    }
 }
 
