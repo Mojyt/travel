@@ -1,0 +1,545 @@
+@charset "UTF-8";
+@import url(../base.css);
+/*函数*/
+/*@function bg(){
+	$r:floor(random()*56+200);
+	$g:floor(random()*56);
+	$b:floor(random()*56);
+	$color:rgb($r,$g,$b);
+	@debug $color;  
+	@return $color;
+}*/
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 365px) {
+  html {
+    font-size: 48.66667px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body {
+  font-size: 16px; }
+
+.inner {
+  width: 100%;
+  height: 100%;
+  padding: 0 5%; }
+
+.table {
+  width: 100%;
+  height: 1.42rem;
+  margin: 0;
+  padding: 0.22rem 0; }
+  .table .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .table .content .go-prev {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background: #c6b390;
+    font-size: 0.3rem;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    line-height: 0.6rem;
+    font-size: 0.22rem;
+    position: absolute; }
+    .table .content .go-prev a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      color: #fff; }
+      .table .content .go-prev a span {
+        font-family: 'leftp',sans-serif; }
+        .table .content .go-prev a span::before {
+          content: '\e60b'; }
+  .table .content .titleBox {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .table .content .titleBox .left-r, .table .content .titleBox .right-r {
+      width: 0.51rem;
+      height: 0.13rem;
+      background: url("/Static/default/images/left.png") center/cover no-repeat; }
+    .table .content .titleBox .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0 0.2rem; }
+      .table .content .titleBox .title .chinese {
+        font-size: 0.3rem;
+        color: #fff;
+        font-weight: 400;
+        font-family: Wyue, sans-serif; }
+      .table .content .titleBox .title .english {
+        margin-top: 2%;
+        font-size: 0.18rem;
+        color: #fff;
+        font-weight: 400; }
+    .table .content .titleBox .right-r {
+      background: url("/Static/default/images/right.png") center/cover no-repeat; }
+
+@font-face {
+  font-family: Wyue;
+  src: url(../../fonts/文悦古体仿宋.otf); }
+
+@font-face {
+  font-family: leftp;
+  src: url(../../fonts/font_pnt9i8feioyfogvi/iconfont.woff); }
+
+@font-face {
+  font-family: edit;
+  src: url(../../fonts/font_2ufxsdqp0b4t2o6r/iconfont.woff); }
+
+@font-face {
+  font-family: heart;
+  src: url(../../fonts/font_iy9aleziz1if6r/iconfont.woff); }
+
+@font-face {
+  font-family: forward;
+  src: url(../../fonts/font_tf3e62n9i1ss8aor/iconfont.woff); }
+
+@font-face {
+  font-family: pitch;
+  src: url(../../fonts/font_7rks8t34e7hnnrk9/iconfont.woff); }
+
+.parcel-footer article {
+  width: 100%;
+  height: 100%; }
+  .parcel-footer article a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.2404rem; }
+
+.parcel-footer span {
+  font-family: Wyue, sans-serif; }
+  .parcel-footer span:nth-child(1) {
+    color: #cebfa3; }
+  .parcel-footer span:nth-child(2) {
+    color: #ebebeb; }
+
+.parcel-footer s {
+  font-size: 0;
+  width: 0.05rem;
+  height: 0.25rem;
+  background: url("/Static/default/images/yy-parcel-footer-bg.png");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 28%; }
+
+.parcel {
+  width: 100%;
+  height: 13.34rem;
+  overflow: hidden;
+  background: url("/Static/default/images/Appbackground.jpg");
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .parcel [class~='parcel-tag'] {
+    width: 100%; }
+    .parcel [class~='parcel-tag']:nth-child(1) {
+      padding-top: 14px;
+      background: rgba(2, 2, 2, 0.8); }
+    .parcel [class~='parcel-tag']:nth-child(2) {
+      flex: 1;
+      display: flex;
+      flex-direction: column; }
+    .parcel [class~='parcel-tag']:nth-child(3) {
+      background: #000000;
+      padding: 0 -0.24rem;
+      height: 0.98rem;
+      align-self: center; }
+
+.parcel-main article {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.parcel-main .parcel-main-map-parcel {
+  width: 100%;
+  height: 3.04rem;
+  display: flex;
+  justify-content: center; }
+  .parcel-main .parcel-main-map-parcel .parcel-main-map {
+    width: 7.5rem;
+    overflow: hidden; }
+  .parcel-main .parcel-main-map-parcel .parcel-main-map .parcel-main-map-btn-parcel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2.53rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 0.24rem;
+    z-index: 999; }
+    .parcel-main .parcel-main-map-parcel .parcel-main-map .parcel-main-map-btn-parcel button {
+      width: 0.57rem;
+      height: 0.57rem;
+      border-radius: 50%;
+      background: #fff;
+      text-align: center; }
+      .parcel-main .parcel-main-map-parcel .parcel-main-map .parcel-main-map-btn-parcel button [class~="map-btn"] {
+        width: 0.21rem;
+        height: 0.02rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        background: #ff0000; }
+        .parcel-main .parcel-main-map-parcel .parcel-main-map .parcel-main-map-btn-parcel button [class~="map-btn"].btn-mag::after {
+          content: '';
+          display: block;
+          width: 0.21rem;
+          height: 0.02rem;
+          background: #ff0000;
+          transform: rotateZ(90deg); }
+        .parcel-main .parcel-main-map-parcel .parcel-main-map .parcel-main-map-btn-parcel button [class~="map-btn"].btn-pos {
+          width: 0.23rem;
+          height: 0.23rem;
+          background: url("/Static/default/images/yy-btn-mag-bg.png") no-repeat center center;
+          background-size: 100%; }
+      .parcel-main .parcel-main-map-parcel .parcel-main-map .parcel-main-map-btn-parcel button span {
+        color: #c6b390;
+        font-size: 0.1582rem;
+        top: -0.42rem; }
+  .parcel-main .parcel-main-map-parcel .parcel-main-map .parcel-main-map-scale-parcel {
+    position: absolute;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .parcel-main .parcel-main-map-parcel .parcel-main-map .parcel-main-map-scale-parcel .parcel-main-map-prop {
+      color: #c6b390;
+      font-size: 0.2385rem;
+      font-family: Wyue, sans-serif; }
+    .parcel-main .parcel-main-map-parcel .parcel-main-map .parcel-main-map-scale-parcel .parcel-main-map-scale {
+      width: 0.75rem;
+      height: 0.16rem;
+      margin: 0 0.24rem;
+      border-bottom: 0.03rem solid #ff0000;
+      box-sizing: border-box; }
+      .parcel-main .parcel-main-map-parcel .parcel-main-map .parcel-main-map-scale-parcel .parcel-main-map-scale .parcel-main-map-scale-line {
+        width: 0.04rem;
+        height: 0.16rem;
+        background: #ff0000;
+        position: absolute; }
+        .parcel-main .parcel-main-map-parcel .parcel-main-map .parcel-main-map-scale-parcel .parcel-main-map-scale .parcel-main-map-scale-line::after {
+          content: '';
+          display: block;
+          width: 0.04rem;
+          height: 0.16rem;
+          background: #ff0000;
+          position: absolute;
+          right: -0.74rem; }
+  .parcel-main .parcel-main-map-parcel .parcel-main-map .parcel-main-map-bourn-parcel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; }
+    .parcel-main .parcel-main-map-parcel .parcel-main-map .parcel-main-map-bourn-parcel .parcel-main-map-bourn {
+      width: 0.96rem;
+      height: 0.88rem;
+      background: url("/Static/default/images/yy-bourn-bg.png") no-repeat center center;
+      background-size: 100%;
+      position: absolute; }
+      .parcel-main .parcel-main-map-parcel .parcel-main-map .parcel-main-map-bourn-parcel .parcel-main-map-bourn:nth-child(1) {
+        left: 2.39rem;
+        bottom: 0.7rem; }
+      .parcel-main .parcel-main-map-parcel .parcel-main-map .parcel-main-map-bourn-parcel .parcel-main-map-bourn:nth-child(2) {
+        right: 2.22rem;
+        top: 0.19rem; }
+      .parcel-main .parcel-main-map-parcel .parcel-main-map .parcel-main-map-bourn-parcel .parcel-main-map-bourn:nth-child(3) {
+        right: 1.4rem;
+        bottom: 0.50rem; }
+  .parcel-main .parcel-main-map-parcel .parcel-main-map-ad {
+    width: 7.23rem;
+    height: 0.92rem;
+    background: url("/Static/default/images/yy-my-trip-ad-bg.png") no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -0.46rem;
+    z-index: 99;
+    display: flex;
+    align-items: center; }
+    .parcel-main .parcel-main-map-parcel .parcel-main-map-ad .parcel-main-map-ad-box {
+      display: flex;
+      align-items: center;
+      width: 2.3rem;
+      position: absolute;
+      right: 1.5rem; }
+    .parcel-main .parcel-main-map-parcel .parcel-main-map-ad span {
+      font-size: 0.32rem; }
+      .parcel-main .parcel-main-map-parcel .parcel-main-map-ad span.sight-spot {
+        color: #1c1a2a; }
+      .parcel-main .parcel-main-map-parcel .parcel-main-map-ad span.active-time {
+        color: #f2110d; }
+    .parcel-main .parcel-main-map-parcel .parcel-main-map-ad .dot {
+      width: 0.04rem;
+      height: 0.04rem;
+      border-radius: 50%;
+      background: #fff;
+      margin: 0 0.05rem; }
+    .parcel-main .parcel-main-map-parcel .parcel-main-map-ad .parcel-main-map-parcel-title {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: -0.24rem;
+      width: 7.23rem;
+      font-size: 0.24rem;
+      color: #999999;
+      display: flex;
+      justify-content: space-around;
+      margin: -0.15rem 0; }
+      .parcel-main .parcel-main-map-parcel .parcel-main-map-ad .parcel-main-map-parcel-title .label::after {
+        content: '';
+        display: block;
+        width: 0.06rem;
+        height: 0.06rem;
+        border-radius: 50%;
+        background: #ff0000;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        left: -0.06rem; }
+
+.parcel-main .parcel-main-scenic-parcel {
+  flex: 1;
+  margin: 1.63rem 0.24rem 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem; }
+  .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic {
+    width: 6.37rem;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; }
+  .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-parcel {
+    height: 1.44rem;
+    padding: 0.66rem 0 0 0.49rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0.09rem; }
+    .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-parcel .parcel-main-scenic-logo-text {
+      height: 0.98rem;
+      position: absolute;
+      bottom: 0;
+      box-sizing: border-box;
+      left: 0.61rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-parcel .parcel-main-scenic-logo-text h3 {
+        font-size: 0.32rem;
+        color: #fff; }
+      .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-parcel .parcel-main-scenic-logo-text span {
+        font-size: 0.28rem;
+        color: #999999; }
+      .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-parcel .parcel-main-scenic-logo-text .line {
+        width: 0.29rem;
+        height: 1px;
+        background: #fbfafa; }
+        .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-parcel .parcel-main-scenic-logo-text .line s {
+          display: block;
+          width: 0.04rem;
+          height: 0.04rem;
+          border-radius: 50%;
+          background: #ff0000;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto; }
+        .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-parcel .parcel-main-scenic-logo-text .line::after {
+          content: '';
+          width: 0.04rem;
+          height: 0.04rem;
+          border-radius: 50%;
+          background: #ff0000;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          left: 0.29rem; }
+    .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-parcel .parcel-main-scenic-logo {
+      width: 0.98rem;
+      height: 0.98rem;
+      border-radius: 50%;
+      background: url("/Static/default/images/yy-header-por-bg.png") no-repeat center center;
+      position: absolute;
+      bottom: 0;
+      box-sizing: border-box;
+      overflow: hidden;
+      left: -0.49rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-parcel .parcel-main-scenic-logo .parcel-main-scenic-logo-img {
+        width: 0.93rem;
+        height: 0.93rem;
+        border-radius: 50%;
+        overflow: hidden; }
+        .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-parcel .parcel-main-scenic-logo .parcel-main-scenic-logo-img img {
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          width: 1.28rem; }
+      .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-parcel .parcel-main-scenic-logo .parcel-main-scenic-logo-top {
+        width: 0.93rem;
+        height: 0.93rem;
+        border-radius: 50%;
+        background: url("/Static/default/images/yy-header-por-top-bg.png");
+        background-size: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-parcel .parcel-main-scenic-logo .parcel-main-scenic-logo-top span {
+          z-index: 222;
+          font-size: 0.3719rem;
+          color: #fcfcfb;
+          position: absolute;
+          transform: rotateZ(90deg); }
+  .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-list {
+    flex: 1;
+    margin: 0 0.04rem 0 0.11rem;
+    box-sizing: border-box; }
+    .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-list .parcel-main-scenic-adjust-item {
+      margin: 0.39rem 0;
+      display: flex; }
+      .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-list .parcel-main-scenic-adjust-item .parcel-main-scenic-adjust-item-parcel-img {
+        width: 2rem;
+        background: url("/Static/default/images/yy-trip-header-bg.png");
+        background-size: 100%;
+        padding: 0 0.12rem 0 0.01rem; }
+        .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-list .parcel-main-scenic-adjust-item .parcel-main-scenic-adjust-item-parcel-img .parcel-main-scenic-adjust-item-img {
+          overflow: hidden;
+          height: 1.89rem;
+          width: 1.89rem;
+          border-radius: 0.1rem; }
+          .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-list .parcel-main-scenic-adjust-item .parcel-main-scenic-adjust-item-parcel-img .parcel-main-scenic-adjust-item-img img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto; }
+      .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-list .parcel-main-scenic-adjust-item .parcel-main-scenic-adjust-item-text {
+        flex: 1;
+        margin-left: 0.16rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        align-items: center; }
+        .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-list .parcel-main-scenic-adjust-item .parcel-main-scenic-adjust-item-text .item-title {
+          display: flex;
+          width: 100%; }
+          .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-list .parcel-main-scenic-adjust-item .parcel-main-scenic-adjust-item-text .item-title .parcel-main-scenic-adjust-item-text-title {
+            font-size: 0.3rem;
+            color: #fdfcfc;
+            font-family: Wyue, sans-serif; }
+          .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-list .parcel-main-scenic-adjust-item .parcel-main-scenic-adjust-item-text .item-title .parcel-main-scenic-adjust-item-text-time {
+            font-size: 0.18rem;
+            color: #999999;
+            font-family: Wyue, sans-serif; }
+        .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-list .parcel-main-scenic-adjust-item .parcel-main-scenic-adjust-item-text .parcel-main-scenic-adjust-item-text-subtitle {
+          font-size: 0.24rem;
+          color: #666666;
+          font-family: Wyue, sans-serif; }
+          .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-list .parcel-main-scenic-adjust-item .parcel-main-scenic-adjust-item-text .parcel-main-scenic-adjust-item-text-subtitle span {
+            color: #ff0000;
+            font-family: Wyue, sans-serif; }
+        .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-list .parcel-main-scenic-adjust-item .parcel-main-scenic-adjust-item-text .parcel-main-scenic-adjust-item-text-line {
+          width: 3.61rem;
+          height: 0.02rem;
+          background: #bfbfbf; }
+          .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-list .parcel-main-scenic-adjust-item .parcel-main-scenic-adjust-item-text .parcel-main-scenic-adjust-item-text-line .parcel-main-scenic-adjust-item-text-point {
+            display: block;
+            width: 0.1rem;
+            height: 0.1rem;
+            border-radius: 50%;
+            background: #ff0000;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            font-size: 0;
+            left: -0.05rem; }
+            .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-list .parcel-main-scenic-adjust-item .parcel-main-scenic-adjust-item-text .parcel-main-scenic-adjust-item-text-line .parcel-main-scenic-adjust-item-text-point::after {
+              content: '';
+              display: block;
+              width: 0.1rem;
+              height: 0.1rem;
+              border-radius: 50%;
+              background: #ff0000;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              left: 3.69rem; }
+        .parcel-main .parcel-main-scenic-parcel .parcel-main-scenic .parcel-main-scenic-adjust-list .parcel-main-scenic-adjust-item .parcel-main-scenic-adjust-item-text p {
+          font-size: 0.24rem;
+          color: #bcb9b9;
+          font-family: Wyue, sans-serif; }

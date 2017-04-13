@@ -5,6 +5,7 @@
 
 .parcel {
   @include cube(100%, 13.34rem);
+  overflow: hidden;
   background: url($Img + "yy-banner.png");
   background-size: 100%;
   box-sizing: border-box;
@@ -27,6 +28,254 @@
       padding: 0 -0.24rem;
       height: 0.98rem;
       align-self: center;
+    }
+  }
+}
+
+.parcel .parcel-main {
+  flex: 1;
+  .parcel-main-map {
+    height: 5.85rem;
+    margin-bottom: 0.36rem;
+    img{
+      width: 5.65rem;
+      @include lr;
+      bottom: 0.36rem;
+    }
+  }
+  .parcel-main-map .parcel-main-map-btn-parcel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2.53rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 0.24rem;
+    z-index: 999;
+    button {
+      @include circle(0.57rem);
+      background: #fff;
+      text-align: center;
+      [class~="map-btn"] {
+        @include cube(0.21rem, 0.02rem);
+        @include center;
+        background: #ff0000;
+        &.btn-mag {
+          &::after {
+            content: '';
+            display: block;
+            @include cube(0.21rem, 0.02rem);
+            background: #ff0000;
+            transform: rotateZ(90deg);
+          }
+        }
+        &.btn-pos {
+          @include square(0.23rem);
+          background: url($Img + "yy-btn-mag-bg.png") no-repeat center center;
+          background-size: 100%;
+        }
+      }
+      span {
+        color: #c6b390;
+        font-size: 0.1582rem;
+        top: -0.42rem;
+      }
+    }
+  }
+
+  .parcel-main-map .parcel-main-map-scale-parcel {
+    position: absolute;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .parcel-main-map-prop {
+      color: #ff0000;
+      font-size: 0.2385rem;
+      font-family: Wyue,sans-serif;
+    }
+
+    .parcel-main-map-scale {
+      @include cube(0.75rem, 0.16rem);
+      margin: 0 0.24rem;
+      border-bottom: 0.03rem solid #ff0000;
+      box-sizing: border-box;
+
+      .parcel-main-map-scale-line {
+        @include cube(0.04rem, 0.16rem);
+        background: #ff0000;
+        position: absolute;
+
+        &::after {
+          content: '';
+          display: block;
+          @include cube(0.04rem, 0.16rem);
+          background: #ff0000;
+          position: absolute;
+          right: -0.74rem;
+        }
+      }
+    }
+  }
+
+  .parcel-main-map .parcel-main-map-bourn-parcel {
+    @include cube(100%, 100%);
+    position: absolute;
+    top: 0;
+    .parcel-main-map-bourn {
+      @include cube(0.96rem, 0.88rem);
+      background: url($Img + "yy-bourn-bg.png") no-repeat center center;
+      background-size: 100%;
+      position: absolute;
+      &:nth-child(1) {
+        left: 2.39rem;
+        bottom: 0.7rem;
+      }
+      &:nth-child(2) {
+        right: 2.22rem;
+        top: 0.19rem;
+      }
+      &:nth-child(3) {
+        right: 1.4rem;
+        bottom: 0.14rem;
+      }
+    }
+  }
+  .parcel-main-route {
+    flex: 1;
+    padding-bottom: 0.22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .parcel-main-route-item-box{
+      height: 100%;
+      width: auto;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .parcel-main-route-item-box .parcel-main-route-item{
+    @include cube(3.11rem,3.86rem);
+    margin: 0 0.33rem;
+    display: flex;
+    flex-direction: column;
+    .parcel-main-route-item-img{
+      height: 2.2rem;
+      @include bg;
+      img{
+        width: 100%;
+      }
+    }
+    .parcel-main-route-item-text{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 22;
+      background: url($Img + "yy-amp-route-bg.png");
+      background-size: cover;
+      .parcel-main-route-item-text-content{
+        height: 1.7rem;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0  0.17rem 0.6rem;
+        box-sizing: border-box;
+      }
+      .parcel-main-route-item-text-title{
+        margin-bottom: 0.3rem;
+        h2{
+          color: #1b1928;
+          font-size: 0.48rem;
+          margin: 0.2rem 0;
+          letter-spacing:0.02rem;
+        }
+        p,span{
+          display: none;
+          font-size: 0.2134rem;
+        }
+        p{
+          color: #999999;
+        }
+        span{
+          color: #ffa200;
+        }
+      }
+
+      .parcel-main-route-item-text-main{
+        font-size: 0.24rem;
+        p{
+          display: flex;
+          justify-content: space-around;
+          display: none;
+        }
+        span{
+          color: #999999;
+          &.line{
+            color: #ff0000;
+          }
+        }
+        h2{
+          font-size: 0.3066rem;
+          color: #666666;
+        }
+      }
+    }
+    .parcel-main-route-item-btn{
+      display: none;
+      @include circle(1.23rem);
+     background: url($Img + "yy-map-btn-bg.png");
+      background-size: cover;
+      @include lr;
+      bottom: -0.7rem;
+      z-index: 9999;
+    }
+
+  }
+
+  .parcel-main-route-item-box .parcel-main-route-item.active{
+    @include cube(4.34rem,100%);
+    display: flex;
+    flex-direction: column;
+    .parcel-main-route-item-img{
+      height: 3rem;
+      @include bg;
+    }
+
+    .parcel-main-route-item-text{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 22;
+      background: url($Img + "yy-amp-route-bg.png");
+      background-size: cover;
+      .parcel-main-route-item-text-content{
+        height: 2.4rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0  0.17rem 0.6rem;
+        box-sizing: border-box;
+      }
+      .parcel-main-route-item-text-title{
+        p,span{
+         display: inline-block;
+        }
+      }
+
+      .parcel-main-route-item-text-main{
+        h2{
+          display: none;
+        }
+        p{
+          display: block;
+        }
+
+      }
+    }
+    .parcel-main-route-item-btn{
+      display: block;
     }
   }
 }

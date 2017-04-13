@@ -46,6 +46,10 @@
   html {
     font-size: 100px; } }
 
+@media screen and (min-width: 933px) {
+  html {
+    font-size: 124.4px; } }
+
 body {
   font-size: 16px; }
 
@@ -85,7 +89,8 @@ body {
     .headerTop .searchWrap .boxWrap {
       width: 94%;
       height: 100%;
-      position: absolute; }
+      position: absolute;
+      left: 0.24rem; }
     .headerTop .searchWrap .searchBox {
       width: 100%;
       height: 100%;
@@ -182,7 +187,7 @@ body {
 .card {
   width: 100%;
   height: auto;
-  margin: 0.5rem 0 0; }
+  margin: 0.8rem 0 0; }
   .card .card-inner {
     width: 97%;
     height: 100%;
@@ -258,3 +263,130 @@ body {
   .card .lunbo-3 {
     background: url("../../images/lunbo-3.png") center no-repeat;
     background-size: 100%; }
+
+.historyBox {
+  width: 100%;
+  height: 1rem;
+  margin: 0.2rem 0; }
+  .historyBox .inner {
+    width: 93%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+  .historyBox .historySearch {
+    width: 1.7rem;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+    .historyBox .historySearch h3 {
+      margin: 0;
+      width: 100%; }
+    .historyBox .historySearch .the {
+      color: #ffffff;
+      font-size: 0.22rem; }
+    .historyBox .historySearch .xuan {
+      color: #e3b08b;
+      font-size: 0.22rem; }
+    .historyBox .historySearch .HistoryText {
+      color: #ffffff;
+      font-size: 0.28rem; }
+      .historyBox .historySearch .HistoryText span:nth-child(3), .historyBox .historySearch .HistoryText span:nth-child(4) {
+        display: inline-block;
+        width: 0.07rem;
+        height: 0.07rem;
+        border-radius: 50%;
+        background: #e62923;
+        margin-left: 0.04rem; }
+    .historyBox .historySearch .circle {
+      display: flex; }
+      .historyBox .historySearch .circle span {
+        display: inline-block;
+        margin-right: 0.05rem;
+        width: 0.04rem;
+        height: 0.04rem;
+        border-radius: 50%;
+        background: #fff; }
+        .historyBox .historySearch .circle span:nth-child(1), .historyBox .historySearch .circle span:nth-child(10) {
+          background: #e62923; }
+  .historyBox .historyChange {
+    width: 1.2rem;
+    height: 0.45rem;
+    background: url("../../images/xiaochange_03.png") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.24rem; }
+    .historyBox .historyChange a {
+      color: #ffffff;
+      text-decoration: none; }
+  .historyBox .level {
+    width: 3.7rem;
+    height: 0.04rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .historyBox .level span {
+      display: inline-block; }
+      .historyBox .level span:nth-child(2) {
+        width: 3.63rem;
+        height: 0.015rem;
+        background: #c6b390; }
+      .historyBox .level span:nth-child(1), .historyBox .level span:nth-child(3) {
+        width: 0.06rem;
+        height: 0.06rem;
+        border-radius: 50%;
+        background: #e62923; }
+
+.hotSearch {
+  width: 100%;
+  height: 6.08rem; }
+  .hotSearch .inner {
+    width: 93%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 0.25rem; }
+    .hotSearch .inner .zhujia, .hotSearch .inner .shaoxing {
+      width: 100%;
+      height: 1.7rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap; }
+    .hotSearch .inner .zhujiaImg {
+      width: 1.88rem;
+      height: 100%;
+      background: url("../../images/xiaozhuj_03.png") center/contain no-repeat; }
+    .hotSearch .inner .shaoxingImg {
+      width: 1.88rem;
+      height: 100%;
+      background: url("../../images/xiaoshao_03.png") center/contain no-repeat; }
+    .hotSearch .inner .introduce {
+      width: 5.09rem;
+      height: 100%;
+      background: url("../../images/xiaointroduce_03.png") center/contain no-repeat;
+      padding: 0.1rem 0.2rem; }
+      .hotSearch .inner .introduce p {
+        width: 100%;
+        height: 0.32rem; }
+      .hotSearch .inner .introduce .title {
+        font-size: 0.28rem; }
+      .hotSearch .inner .introduce .dian {
+        display: flex;
+        align-items: center;
+        height: 0.2rem; }
+        .hotSearch .inner .introduce .dian span {
+          display: inline-block;
+          width: 0.05rem;
+          height: 0.05rem;
+          border-radius: 50%;
+          background: #cfcfcf;
+          margin-right: 0.06rem; }
+      .hotSearch .inner .introduce .english, .hotSearch .inner .introduce .intro {
+        font-size: 0.2rem; }
