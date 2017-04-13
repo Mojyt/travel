@@ -62,7 +62,7 @@ class indexController extends Framework
     //私人订制
     public function tailor()
     {
-        $this->display('');
+        $this->display('default/process/overview.html');
     }
 
     public function order_route(){
@@ -75,6 +75,12 @@ class indexController extends Framework
 
     public function exclusive(){
         $this->display('default/trip/exclusive.html');
+    }
+    public function show(){
+        $this->display('default/process/require.html');
+    }
+    public function method(){
+        $this->display('default/process/method.html');
     }
     //个人中心
     public
@@ -128,5 +134,6 @@ class indexController extends Framework
     public function success(){
         $this->display('default/bx/success.html');
     }
+
 }
 
