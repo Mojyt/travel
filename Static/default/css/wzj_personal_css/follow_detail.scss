@@ -82,7 +82,7 @@ $img:'../../images/';
       @include circle(1.81rem);
     }
     .info .set{
-      @include cube(1.97rem,0.8rem);
+      @include cube(1.92rem,0.8rem);
       background: url($img + 'wzj-button_03.png') center/cover no-repeat;
       background-color: #EAEAEA;
       border-radius: 0.8rem;
@@ -92,18 +92,21 @@ $img:'../../images/';
       align-items: center;
     }
     .info .set .wrap{
+      height:0.44rem;
       color:#fff;
       display: flex;
       flex-direction: column;
-      text-align: center;
+      justify-content: center;
+      align-content: center;
       ._set{
+        height:50%;
         display: flex;
         align-items: center;
       }
     }
     .info .set .wrap ._set span:nth-child(1){
-      font-size: 0.3rem;
-      font-family: 'Wyue',sans-serif;
+      font-size: 0.26rem;
+      //font-family: 'Wyue',sans-serif;
       padding-right:0.1rem;
     }
     .info .set .wrap ._set span:nth-child(2){
@@ -118,10 +121,9 @@ $img:'../../images/';
       }
     }
     .info .set .wrap ._set span:nth-child(3){
-      font-size: 0.3rem;
-      font-family: 'Wyue',sans-serif;
+      font-size: 0.26rem;
+      //font-family: 'Wyue',sans-serif;
       padding:0 0.1rem;
-
     }
     .info .set .wrap ._set span:nth-child(4){
       background: #fff;
@@ -135,13 +137,15 @@ $img:'../../images/';
       }
     }
     .info .set .wrap ._set span:nth-child(5){
-      font-size: 0.3rem;
-      font-family: 'Wyue',sans-serif;
+      font-size: 0.26rem;
+      //font-family: 'Wyue',sans-serif;
       padding-left:0.1rem;
     }
     .info .set .wrap .en{
-      font-size: 0.15rem;
-      font-family: 'Wyue',sans-serif;
+      text-align: center;
+      height:50%;
+      font-size: 0.3rem;
+      //font-family: 'Wyue',sans-serif;
     }
   }
   .content .userName{
@@ -155,7 +159,7 @@ $img:'../../images/';
       flex-direction: column;
     }
     .information .name{
-      font-family: 'Wyue',sans-serif;
+      //font-family: 'Wyue',sans-serif;
       font-size: 0.48rem;
       color:#646262;
     }
@@ -182,7 +186,7 @@ $img:'../../images/';
     justify-content: center;
     align-items: center;
     span{
-      font-family: 'Wyue',sans-serif;
+      //font-family: 'Wyue',sans-serif;
       font-size: 0.24rem;
       color:#646262;
     }
@@ -195,6 +199,7 @@ $img:'../../images/';
   display:flex;
   justify-content: center;
   align-items: center;
+  margin-bottom:1.14rem;
   .mys{
     @include cube(6.34rem,3.08rem);
     display: flex;
@@ -254,12 +259,12 @@ $img:'../../images/';
       span:nth-child(2){
         color:#F2110D;
         font-size: 0.22rem;
-        font-family: 'Wyue',sans-serif;
+        //font-family: 'Wyue',sans-serif;
       }
       span:nth-child(3){
         color:#999999;
         font-size: 0.22rem;
-        font-family: 'Wyue',sans-serif;
+        //font-family: 'Wyue',sans-serif;
       }
       span:nth-child(4){
         background: url($img + 'wzj-sqr.png') center/cover no-repeat;
@@ -280,15 +285,15 @@ $img:'../../images/';
     @include lr;
     color:#fff;
     text-align: center;
-    font-size: 0.18rem;
-    line-height: 0.17rem;
+    font-size: 0.28rem;
+    line-height: 0.28rem;
   }
 }
 
 .footer_table{
   position:fixed;
   bottom:0;right:0;
-  @include cube(100%,0.98rem);
+  @include cube(100%,1.14rem);
   background: #000;
   margin-top:0.15rem;
   .inner{
@@ -323,7 +328,7 @@ $img:'../../images/';
     }
     .foot .con .title{
       @include cube(0.63rem,0.5rem);
-      color:#fff;
+      color:#CEBFA3;
       font-size: 0.24rem;
       font-family: '方正仿宋繁体',sans-serif;
     }
@@ -340,7 +345,7 @@ $img:'../../images/';
     .foot .con .en{
       @include cube(0.72rem,0.27rem);
       color:#fff;
-      font-size: 0.12rem;
+      font-size: 0.1rem;
     }
   }
 }

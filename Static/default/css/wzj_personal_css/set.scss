@@ -1,0 +1,133 @@
+@import "../mixin";
+@import "../fonts";
+
+$img:"../../images/";
+
+body{
+  @include cube(100%,100%);
+  background: url($img + 'bx-background.jpg') center/cover no-repeat;
+}
+
+.inner{
+  @include cube(100%,100%);
+  padding:0 5%;
+}
+
+.table{
+  @include cube(100%,1.2rem);
+  padding-top:0.22rem;
+  background:#020202;
+  .content{
+    @include cube(100%,100%);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .content .go-prev{
+    display: block;
+    @include circle(0.60rem);
+    background:#c6b390;
+    @include font(0.3rem,#fff,700);
+    text-align: center;
+    line-height: 0.6rem;
+    font-family: leftp,sans-serif;
+    &::before{
+      content:'\e60b';
+    }
+  }
+  .content .titleBox{
+    @include cube(38%,100%);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    .left-r,.right-r{
+      @include cube(20%,0.13rem);
+      background: url($img + 'bx-left.png')center/cover no-repeat;
+    }
+    .title{
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content: center;
+      flex-wrap: wrap;
+      .chinese{
+        @include font(0.3rem,#fff,400);
+        font-family:guyue,sans-serif;
+      }
+      .english{
+        margin-top:2%;
+        @include font(0.18rem,#fff,400);
+        font-family:guyue,sans-serif;
+      }
+    }
+    .right-r{
+      background:url($img + 'bx-right.png')center/cover no-repeat;
+    }
+  }
+}
+
+.set-kind{
+  @include cube(100%,9.86rem);
+  .kind-warp{
+    @include cube(100%,100%);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .kind-warp .kind{
+    @include cube(100%,1.75rem);
+    background: url($img + 'wzj-set.png') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+  }
+  .kind-warp .kind .con{
+    @include cube(56%,60%);
+    position: relative;
+  }
+  .kind-warp .kind .con .chinese{
+    font-size: 0.36rem;
+    top:0.2rem;
+    @include lr;
+    @include cube(1.5rem,0.34rem);
+    display: block;
+  }
+  .kind-warp .kind .con .english{
+    font-size: 0.34rem;
+    @include lr;
+    bottom:0.15rem;
+    @include cube(3rem,0.24rem);
+    display: block;
+    text-align: center;
+  }
+}
+
+.foot{
+  @include cube(100%,0.95rem);
+  background: #FF0000;
+  margin-top: 0.27rem;
+  .help{
+    @include cube(33%,100%);
+    margin:0 auto;
+    text-align: center;
+    color:#fff;
+    padding-top: 0.1rem;
+    position: relative;
+  }
+  .help .ch{
+    font-size: 0.3rem;
+  }
+  .help .pic{
+    @include cube(1.46rem,0.1rem);
+    background: url($img + 'wzj-set1.png') center/cover no-repeat;
+    margin:0 auto;
+  }
+  .help .en{
+    font-size: 0.3rem;
+  }
+  .help .mask{
+    @include cube(2.52rem,0.37rem);
+    background: url($img + 'wzj-set2.png') center/cover no-repeat;
+    position: absolute;
+    top:0.36rem;left:0;
+  }
+}

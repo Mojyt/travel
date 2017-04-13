@@ -67,6 +67,14 @@ body {
   font-family: forward;
   src: url(../../fonts/font_tf3e62n9i1ss8aor/iconfont.woff); }
 
+@font-face {
+  font-family: peo;
+  src: url(../../fonts/font_k9v1axw7rmgqfr/iconfont.woff); }
+
+@font-face {
+  font-family: date;
+  src: url(../../fonts/font_sxv0j2qt4typhkt9/iconfont.woff); }
+
 body {
   background: #EAEAEA; }
 
@@ -142,15 +150,18 @@ body {
       justify-content: center;
       align-items: center; }
     .header .content .headPortrait .info .set .wrap {
+      height: 0.44rem;
       color: #fff;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; }
       .header .content .headPortrait .info .set .wrap ._set {
+        height: 50%;
         display: flex;
         align-items: center; }
     .header .content .headPortrait .info .set .wrap ._set span:nth-child(1) {
-      font-size: 0.3rem;
-      font-family: 'Wyue',sans-serif;
+      font-size: 0.26rem;
       padding-right: 0.14rem; }
     .header .content .headPortrait .info .set .wrap ._set span:nth-child(2) {
       background: #fff;
@@ -171,12 +182,11 @@ body {
         bottom: 0;
         margin: auto; }
     .header .content .headPortrait .info .set .wrap ._set span:nth-child(3) {
-      font-size: 0.3rem;
-      font-family: 'Wyue',sans-serif;
+      font-size: 0.26rem;
       padding-left: 0.14rem; }
     .header .content .headPortrait .info .set .wrap .en {
-      font-size: 0.15rem;
-      font-family: 'Wyue',sans-serif; }
+      height: 50%;
+      font-size: 0.3rem; }
   .header .content .userName {
     flex: 100%;
     height: 0.93rem;
@@ -187,7 +197,6 @@ body {
       display: flex;
       flex-direction: column; }
     .header .content .userName .information .name {
-      font-family: 'Wyue',sans-serif;
       font-size: 0.48rem;
       color: #646262; }
     .header .content .userName .information .line {
@@ -209,7 +218,6 @@ body {
     justify-content: center;
     align-items: center; }
     .header .content .autograph span {
-      font-family: 'Wyue',sans-serif;
       font-size: 0.24rem;
       color: #646262; }
 
@@ -359,11 +367,9 @@ body {
       margin: auto; }
   .list li .isFollow .wrap ._set span:nth-child(3) {
     font-size: 0.2rem;
-    font-family: 'Wyue',sans-serif;
     padding: 0 0.05rem; }
   .list li .isFollow .wrap .en {
-    font-size: 0.15rem;
-    font-family: 'Wyue',sans-serif; }
+    font-size: 0.15rem; }
   .list li .yes {
     width: 1.41rem;
     height: 0.57rem;

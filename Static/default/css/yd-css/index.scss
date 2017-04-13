@@ -1,15 +1,15 @@
 @import "../mixin";
 @import "../base.css";
 @import "fonts";
-*{
-  margin:0;
-  padding: 0;
-  cursor: pointer;
-  list-style: none;
-  font-size: 0.12rem;
-  font-family: song,sans-serif;
-  -webkit-tap-highlight-color: transparent;
-}
+//*{
+//  margin:0;
+//  padding: 0;
+//  cursor: pointer;
+//  list-style: none;
+//  font-size: 0.12rem;
+//  font-family: song,sans-serif;
+//  -webkit-tap-highlight-color: transparent;
+//}
 body{
   width: 100%;
   height: 100%;
@@ -137,7 +137,7 @@ $img:'../../images/';
     span{
       display: block;
       width:0.03rem;
-      font-family: 'Wyue',sans-serif;
+      //font-family: 'Wyue',sans-serif;
     }
     .card-logo{
       @include cube(0.14rem,0.14rem);
@@ -280,7 +280,7 @@ $img:'../../images/';
   }
 }
 
-//point-time
+//point-timeF
 .point-time,.point-city{
   @include cube(100%,3.23rem);
   background:url($img + 'point-time.png')center no-repeat;
@@ -291,7 +291,7 @@ $img:'../../images/';
     text-align: center;
   }
   p{
-    font-family: 'song',sans-serif;
+    //font-family: 'song',sans-serif;
     text-align: center;
     color:#fff;
     font-size: 0.24rem;
@@ -383,7 +383,7 @@ $img:'../../images/';
       justify-content: center;
     }
     .buy-position{
-      font-family: 'song',sans-serif;
+      //font-family: 'song',sans-serif;
       flex: 1;
       width:1px;
     }
@@ -411,7 +411,7 @@ $img:'../../images/';
       background-size:12%;
     }
     .buy-money{
-      font-family: 'song',sans-serif;
+      //font-family: 'song',sans-serif;
       font-size:0.08rem;
       width:1px;
       flex: 1;
@@ -670,16 +670,9 @@ $img:'../../images/';
 }
 //foot
 .footer_table{
-<<<<<<< HEAD
-  position: fixed;
-  bottom: 0;
-  z-index: 1;
-  @include cube(100%,0.99rem);
-=======
   position:fixed;
   bottom:0;right:0;
-  @include cube(100%,0.98rem);
->>>>>>> 8e0b3db0baab597e9e4c701071dc25ecfd3aa02f
+  @include cube(100%,1.14rem);
   background: #000;
   margin-top:0.15rem;
   .inner{
@@ -708,13 +701,12 @@ $img:'../../images/';
         @include cube(0.04rem,0.34rem);
         @include tb;
         right:0;
-        background:url($img + 'yd-footer.png') center/cover no-repeat;
-        background-size:100%;
+        background:url($img + 'wzj-footer.png') center/cover no-repeat;
       }
     }
     .foot .con .title{
       @include cube(0.63rem,0.5rem);
-      color:#fff;
+      color:#CEBFA3;
       font-size: 0.24rem;
       font-family: '方正仿宋繁体',sans-serif;
     }
@@ -734,7 +726,8 @@ $img:'../../images/';
     .foot .con .en{
       @include cube(0.72rem,0.27rem);
       color:#fff;
-      font-size: 0.12rem;
+      font-size: 0.1rem;
+      padding-top:0.05rem;
     }
     .foot .con .shouye{
       position: absolute;

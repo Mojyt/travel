@@ -117,7 +117,7 @@ body {
         font-size: 0.46rem;
         color: #fff;
         font-weight: 400;
-        font-family: 'Wyue',sans-serif; }
+        line-height: 0.3rem; }
       .table .content .titleBox .title .line {
         width: 0.84rem;
         height: 0.1rem;
@@ -126,8 +126,7 @@ body {
         margin-top: 2%;
         font-size: 0.23rem;
         color: #fff;
-        font-weight: 400;
-        font-family: 'Wyue',sans-serif; }
+        font-weight: 400; }
   .table .content .people {
     display: block;
     width: 0.6rem;
@@ -144,53 +143,225 @@ body {
       content: '\e61d'; }
 
 .tellWindows {
-  height: 10.52rem;
-  margin-top: 0.27rem; }
-  .tellWindows .tell_window {
-    width: 100%;
-    height: 10.52rem;
+  height: 11.55rem;
+  margin-top: 0.27rem;
+  overflow: hidden; }
+  .tellWindows .tell-window {
+    width: 7.03rem;
+    height: 10.54rem;
+    margin: 0 auto;
     height: 100%;
     background: url("../../images/wzj-tell1.png") center/cover no-repeat;
     border-radius: 0.15rem; }
-  .tellWindows .tell_window .con {
-    height: 8.16rem;
+  .tellWindows .tell-window .con {
+    height: 8.75rem;
     padding: 0.7rem 0.27rem 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around; }
-    .tellWindows .tell_window .con .doing {
+    .tellWindows .tell-window .con .doing {
       display: flex;
       justify-content: space-between;
       align-items: center; }
-    .tellWindows .tell_window .con .doing.friends {
+      .tellWindows .tell-window .con .doing .cont {
+        padding: 0.16rem 0.15rem 0 0.64rem; }
+      .tellWindows .tell-window .con .doing .cont .talk {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: space-around; }
+      .tellWindows .tell-window .con .doing .cont .talk .date {
+        height: 0.18rem;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        font-size: 0.24rem; }
+        .tellWindows .tell-window .con .doing .cont .talk .date span:nth-child(1) {
+          color: #A9A8A6;
+          padding-right: 0.1rem;
+          font-weight: 700; }
+        .tellWindows .tell-window .con .doing .cont .talk .date span:nth-child(2) {
+          color: #A4A4A4;
+          padding-right: 0.1rem; }
+      .tellWindows .tell-window .con .doing .cont .talk .line {
+        width: 3.03rem;
+        height: 0.15rem;
+        background: url("../../images/wzj-tell5.png"); }
+      .tellWindows .tell-window .con .doing .cont .talk .wenzi {
+        font-size: 0.2rem;
+        color: #676767;
+        padding-right: 0.13rem;
+        padding-top: 0.1rem; }
+      .tellWindows .tell-window .con .doing .cont .talk .len {
+        display: flex; }
+        .tellWindows .tell-window .con .doing .cont .talk .len .voice {
+          width: 2.35rem;
+          height: 0.29rem;
+          background: url("../../images/wzj-tell7.png") center/cover no-repeat;
+          padding-top: 0.23rem;
+          margin-right: 0.1rem; }
+        .tellWindows .tell-window .con .doing .cont .talk .len span {
+          font-size: 0.3rem;
+          color: #9F9F9F; }
+    .tellWindows .tell-window .con .doing.friends {
       width: 4.65rem;
       height: 1.65rem;
       position: relative; }
-      .tellWindows .tell_window .con .doing.friends .head {
+      .tellWindows .tell-window .con .doing.friends .head {
         width: 1.11rem;
         height: 1.05rem;
         background: url("../../images/wzj-tell4.png") center/cover no-repeat;
         position: relative;
         z-index: 12; }
-        .tellWindows .tell_window .con .doing.friends .head img {
+        .tellWindows .tell-window .con .doing.friends .head img {
           width: 1.06rem;
           height: 1.06rem;
           border-radius: 50%;
           position: absolute;
           top: -0.05rem; }
-      .tellWindows .tell_window .con .doing.friends .cont {
-        width: 3.85rem;
+      .tellWindows .tell-window .con .doing.friends .cont {
+        width: auto;
         height: 1.65rem;
         background: url("../../images/wzj-tell2.png") center/cover no-repeat;
         position: absolute;
         top: 0;
-        left: 0.8rem;
-        padding: 0.16rem 0 0 0.64rem;
-        display: flex;
-        flex-wrap: wrap; }
-    .tellWindows .tell_window .con .doing.me {
+        left: 0.8rem; }
+      .tellWindows .tell-window .con .doing.friends .cont .talk .name {
+        font-size: 0.3rem;
+        color: #333333; }
+        .tellWindows .tell-window .con .doing.friends .cont .talk .name span:nth-child(1) {
+          color: #DE1D19; }
+    .tellWindows .tell-window .con .doing.friends.fails {
+      width: 5.37rem; }
+      .tellWindows .tell-window .con .doing.friends.fails .fail {
+        width: 0.55rem;
+        height: 0.55rem;
+        border-radius: 50%;
+        background: #F31D19;
+        text-align: center;
+        color: #fff;
+        line-height: 0.7rem;
+        font-size: 0.6rem; }
+      .tellWindows .tell-window .con .doing.friends.fails .cont {
+        width: 3.85rem; }
+    .tellWindows .tell-window .con .doing.me {
       width: 3.58rem;
-      height: 1.46rem; }
-    .tellWindows .tell_window .con .time {
-      width: 1.38rem;
-      height: 0.56rem; }
+      height: 1.46rem;
+      background: url("../../images/wzj-tell3.png") center/cover no-repeat;
+      align-self: flex-end; }
+      .tellWindows .tell-window .con .doing.me .cont {
+        padding: 0.16rem 0.15rem 0 0.3rem; }
+      .tellWindows .tell-window .con .doing.me .cont .talk {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: space-around; }
+      .tellWindows .tell-window .con .doing.me .cont .talk .date {
+        height: 0.18rem;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        font-size: 0.24rem;
+        justify-content: flex-end; }
+        .tellWindows .tell-window .con .doing.me .cont .talk .date span:nth-child(1) {
+          color: #A9A8A6;
+          padding-right: 0.1rem;
+          font-weight: 700; }
+        .tellWindows .tell-window .con .doing.me .cont .talk .date span:nth-child(2) {
+          color: #A4A4A4;
+          padding-right: 0.1rem; }
+    .tellWindows .tell-window .con .time {
+      width: 1.42rem;
+      height: 0.56rem;
+      background: url("../../images/wzj-tell6.png") center/cover no-repeat;
+      align-self: center;
+      text-align: center;
+      line-height: 0.60rem; }
+      .tellWindows .tell-window .con .time span:nth-child(1) {
+        color: #555D62;
+        font-size: 0.2rem;
+        margin: 0 0.1rem; }
+      .tellWindows .tell-window .con .time span:nth-child(2) {
+        color: #CC3431;
+        font-size: 0.3rem; }
+  .tellWindows .foot {
+    width: 100%;
+    height: 1.03rem;
+    background: #000; }
+    .tellWindows .foot .input_box {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .tellWindows .foot .input_box .microphone {
+      width: 0.7rem;
+      height: 0.7rem;
+      border-radius: 50%;
+      background: #F31D19;
+      border: 0.03rem solid #2A2C35; }
+    .tellWindows .foot .input_box input {
+      width: 4.89rem;
+      height: 0.6rem;
+      border-radius: 0.8rem;
+      outline: none; }
+    .tellWindows .foot .input_box .more {
+      width: 0.4rem;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .tellWindows .foot .input_box .more .circle {
+        width: 0.1rem;
+        height: 0.1rem;
+        border-radius: 50%;
+        background: #F31D19; }
+  .tellWindows .kind {
+    opacity: 0;
+    background: url("../../images/wzj-tell8.png") center/cover no-repeat;
+    width: 100%;
+    height: 4.3rem;
+    display: flex;
+    justify-content: center; }
+    .tellWindows .kind .kind-wrap {
+      width: 6.56rem;
+      height: 3.96rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-around; }
+      .tellWindows .kind .kind-wrap .warp {
+        width: 100%;
+        height: 1.52rem;
+        display: flex;
+        justify-content: space-between; }
+    .tellWindows .kind .kind-wrap .warp .box {
+      width: 2.08rem;
+      height: 1.52rem;
+      background: url("../../images/wzj-tell9.png") center/cover no-repeat;
+      position: relative; }
+      .tellWindows .kind .kind-wrap .warp .box img {
+        width: 0.9rem;
+        height: 0.9rem;
+        position: absolute;
+        top: 0.19rem;
+        left: 0.28rem; }
+      .tellWindows .kind .kind-wrap .warp .box .names {
+        width: 0.66rem;
+        height: 1.52rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+        color: #DD1F1B;
+        font-size: 0.24rem; }
+        .tellWindows .kind .kind-wrap .warp .box .names .first {
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto;
+          top: 0.4rem; }
+        .tellWindows .kind .kind-wrap .warp .box .names .second {
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto;
+          bottom: 0.28rem; }

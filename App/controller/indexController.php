@@ -126,6 +126,16 @@ class indexController extends Framework
         $this->display('default/wzj_personal/tell.html');
     }
 
+    public function tellTwo()
+    {
+        $this->display('default/wzj_personal/tellTwo.html');
+    }
+
+    public function set()
+    {
+        $this->display('default/wzj_personal/set.html');
+    }
+
 //旅游圈
     public
     function travel()

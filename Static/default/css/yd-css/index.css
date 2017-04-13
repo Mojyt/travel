@@ -60,15 +60,6 @@ body {
   font-family: edit;
   src: url(../../fonts/font_2ufxsdqp0b4t2o6r/iconfont.woff); }
 
-* {
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  list-style: none;
-  font-size: 0.12rem;
-  font-family: song,sans-serif;
-  -webkit-tap-highlight-color: transparent; }
-
 body {
   width: 100%;
   height: 100%;
@@ -192,8 +183,7 @@ body {
     width: 1px; }
     .card .card-left span, .card .card-right span {
       display: block;
-      width: 0.03rem;
-      font-family: 'Wyue',sans-serif; }
+      width: 0.03rem; }
     .card .card-left .card-logo, .card .card-right .card-logo {
       width: 0.14rem;
       height: 0.14rem;
@@ -337,7 +327,6 @@ body {
     flex: 1;
     text-align: center; }
   .point-time p, .point-city p {
-    font-family: 'song',sans-serif;
     text-align: center;
     color: #fff;
     font-size: 0.24rem; }
@@ -424,7 +413,6 @@ body {
       align-items: center;
       justify-content: center; }
     .point-pre .point-pre1 .buy-position, .point-pre .point-pre2 .buy-position, .point-pre .point-pre3 .buy-position {
-      font-family: 'song',sans-serif;
       flex: 1;
       width: 1px; }
     .point-pre .point-pre1 .buy-img, .point-pre .point-pre2 .buy-img, .point-pre .point-pre3 .buy-img {
@@ -449,7 +437,6 @@ body {
       background: url("../../images/yd-buy-xie.png") center no-repeat;
       background-size: 12%; }
     .point-pre .point-pre1 .buy-money, .point-pre .point-pre2 .buy-money, .point-pre .point-pre3 .buy-money {
-      font-family: 'song',sans-serif;
       font-size: 0.08rem;
       width: 1px;
       flex: 1; }
@@ -719,13 +706,9 @@ body {
 .footer_table {
   position: fixed;
   bottom: 0;
-<<<<<<< HEAD
-  z-index: 1;
-=======
   right: 0;
->>>>>>> 8e0b3db0baab597e9e4c701071dc25ecfd3aa02f
   width: 100%;
-  height: 0.98rem;
+  height: 1.14rem;
   background: #000;
   margin-top: 0.15rem; }
   .footer_table .inner {
@@ -764,12 +747,11 @@ body {
         bottom: 0;
         margin: auto;
         right: 0;
-        background: url("../../images/yd-footer.png") center/cover no-repeat;
-        background-size: 100%; }
+        background: url("../../images/wzj-footer.png") center/cover no-repeat; }
     .footer_table .inner .content .foot .con .title {
       width: 0.63rem;
       height: 0.5rem;
-      color: #fff;
+      color: #CEBFA3;
       font-size: 0.24rem;
       font-family: '方正仿宋繁体',sans-serif; }
     .footer_table .inner .content .foot .con .current {
@@ -788,7 +770,8 @@ body {
       width: 0.72rem;
       height: 0.27rem;
       color: #fff;
-      font-size: 0.12rem; }
+      font-size: 0.1rem;
+      padding-top: 0.05rem; }
     .footer_table .inner .content .foot .con .shouye {
       position: absolute;
       bottom: 0;
