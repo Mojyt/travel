@@ -54,15 +54,23 @@ body {
 
 @font-face {
   font-family: Wyue;
-  src: url(../../fonts/文悦古体仿宋.otf); }
+  src: url(../fonts/文悦古体仿宋.otf); }
 
 @font-face {
   font-family: leftp;
-  src: url(../../fonts/font_pnt9i8feioyfogvi/iconfont.woff); }
+  src: url(../fonts/font_pnt9i8feioyfogvi/iconfont.woff); }
 
 @font-face {
   font-family: edit;
-  src: url(../../fonts/font_2ufxsdqp0b4t2o6r/iconfont.woff); }
+  src: url(../fonts/font_2ufxsdqp0b4t2o6r/iconfont.woff); }
+
+@font-face {
+  font-family: heart;
+  src: url(../fonts/font_iy9aleziz1if6r/iconfont.woff); }
+
+@font-face {
+  font-family: forward;
+  src: url(../fonts/font_tf3e62n9i1ss8aor/iconfont.woff); }
 
 * {
   margin: 0;
