@@ -103,6 +103,8 @@ body{
         z-index: 12;
         img{
           @include circle(1.06rem);
+          position:absolute;
+          top:-0.05rem;
         }
       }
       .cont{
@@ -111,6 +113,12 @@ body{
         position: absolute;
         top:0;
         left:0.8rem;
+        padding:0.16rem 0 0 0.64rem;
+        display:flex;
+        flex-wrap: wrap;
+      }
+      .cont .name{
+
       }
     }
     .doing.me{
