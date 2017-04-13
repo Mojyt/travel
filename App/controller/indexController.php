@@ -107,6 +107,7 @@ class indexController extends Framework
     {
         $this->display('default/trip/my_trip.html');
     }
+
     //个人中心
     public
     function personal()
