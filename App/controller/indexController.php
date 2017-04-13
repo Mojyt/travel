@@ -27,8 +27,18 @@ class indexController extends Framework
     //注册
     public function register()
     {
-        $this->display('');
+        $this->display('default/zr/login1.html');
     }
+    //注册页面...
+    public function enroll(){
+        $this->display('default/zr/login2.html');
+    }
+    public function password(){
+        $this->display('default/zr/login3.html');
+    }
+
+    //搜索首页
+
 
     //搜索
     public function search()
@@ -75,7 +85,6 @@ class indexController extends Framework
     {
         $this->display('default/yd/voice-last.html');
     }
-
     //私人订制
     public function tailor()
     {
@@ -162,7 +171,7 @@ class indexController extends Framework
         $this->display('default/bx/add-card.html');
     }
 
-    public function password()
+    public function passwords()
     {
         $this->display('default/bx/password.html');
     }

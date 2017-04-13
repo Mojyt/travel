@@ -82,24 +82,10 @@ body {
   background-size: 100%; }
   .center .boxes {
     width: 4.1rem;
-    height: 4.67rem;
+    height: 4.5rem;
     flex-wrap: wrap;
     display: flex;
     justify-content: center; }
-  .center .oval {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end; }
-    .center .oval .post {
-      width: 1.63rem;
-      height: 0.31rem;
-      border-radius: 0.5rem;
-      color: #FFF;
-      text-align: center;
-      line-height: 0.31rem;
-      font-size: 0.2rem;
-      background: #FF0000;
-      border-bottom: #F9CBC6; }
   .center .enroll {
     width: 3.9rem;
     height: 2.6rem; }
@@ -107,7 +93,6 @@ body {
       height: 0.86rem;
       display: flex;
       align-items: center;
-      flex-wrap: wrap;
       justify-content: space-around;
       border-bottom: 0.01rem solid #BEB6B0; }
       .center .enroll .seek .i {
@@ -145,14 +130,14 @@ body {
           width: 0.08rem;
           height: 0.08rem;
           align-self: center;
-          background: url(../../images/r008.png);
+          background: url(../../images/r006.png);
           background-size: 100%; }
         .center .enroll .seek .circle .smalls {
           display: flex;
           width: 0.16rem;
           height: 0.16rem;
           align-self: center;
-          background: url(../../images/r009.png);
+          background: url(../../images/r007.png);
           background-size: 100%; }
       .center .enroll .seek .login {
         width: 3rem;
@@ -164,10 +149,9 @@ body {
     align-self: center;
     width: 3.86rem;
     height: 0.78rem;
-    background: #A29D97;
+    background: #FF0000;
     text-align: center;
-    justify-content: center;
-    box-sizing: border-box; }
+    justify-content: center; }
     .center .bottom .span {
       display: flex;
       flex-direction: column;

@@ -724,11 +724,14 @@ body {
   position: fixed;
   bottom: 0;
   z-index: 1;
+<<<<<<< HEAD
   width: 100%;
   height: 0.99rem;
   position: fixed;
   bottom: 0;
   right: 0;
+=======
+>>>>>>> 5e2e2c38d10510b373751e3ad3051db30a42e0a4
   width: 100%;
   height: 0.98rem;
   background: #000;
@@ -792,9 +795,11 @@ body {
     .footer_table .inner .content .foot .con .en {
       width: 0.72rem;
       height: 0.27rem;
+      display: block;
+      margin-top: 0.1rem;
       color: #fff;
       font-size: 0.12rem; }
     .footer_table .inner .content .foot .con .shouye {
       position: absolute;
-      bottom: 0;
+      bottom: -0.05rem;
       left: 0; }
