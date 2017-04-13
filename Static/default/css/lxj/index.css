@@ -1,0 +1,230 @@
+@keyframes zt {
+  0% {
+    transform: translate3d(0, 0, 0); }
+  100% {
+    transform: translate3d(-200%, 0, 0); } }
+
+@keyframes yj {
+  0% {
+    transform: translate3d(100%, 0, 0); }
+  100% {
+    transform: translate3d(0, 0, 0); } }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body {
+  font-size: 16px; }
+
+.common {
+  width: 100%;
+  height: 100vh;
+  background: #201b17;
+  position: relative; }
+  .common .con {
+    width: 7.27rem;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto; }
+  .common .content2 {
+    position: absolute;
+    width: 7.27rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .common .content2 .content2_row {
+      width: 7.27rem;
+      height: 97vh;
+      background: url("/Static/default/images/lxj-00000.png") center/contain no-repeat; }
+  .common .content4 {
+    width: 7.27rem;
+    height: 1.8rem;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0 0.4rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between; }
+    .common .content4 .go {
+      width: 0.35rem;
+      height: 1.85rem;
+      background: red;
+      background: url("/Static/default/images/lxj-go.png") center/cover no-repeat; }
+  .common .content6 {
+    width: 3.64rem;
+    height: 0.64rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2rem;
+    margin: auto; }
+    .common .content6 .con_bot {
+      display: block;
+      width: 3.64rem;
+      height: 1.3rem;
+      background: url("/Static/default/images/lxj-1-a.png") center/cover no-repeat; }
+  .common .con_top2 {
+    position: absolute;
+    top: 2.6rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0.3rem;
+    height: 0.3rem;
+    background: url("/Static/default/images/lxj-1-4.gif") center/cover no-repeat; }
+  .common .con1 {
+    display: none; }
+    .common .con1 .content1 {
+      position: absolute;
+      width: 7.27rem;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .common .con1 .content1 .content1_row {
+        width: 7.27rem;
+        height: 95vh;
+        background: url("/Static/default/images/lxj-1-111111.png") center/cover no-repeat; }
+    .common .con1 .content3 {
+      top: 1.65rem; }
+      .common .con1 .content3 .con_top1 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 4.55rem;
+        height: 2.5rem;
+        background: url("/Static/default/images/lxj-1-01.png") center/cover no-repeat; }
+    .common .con1 .page {
+      width: 0.5rem;
+      height: 1.5rem;
+      background: red;
+      background: url("/Static/default/images/lxj-page-1.png") center/cover no-repeat; }
+  .common .con2 {
+    display: none; }
+    .common .con2 .content1 {
+      position: absolute;
+      width: 7.27rem;
+      height: 12.89rem;
+      background: url("/Static/default/images/lxj-2-1111.png") center/cover no-repeat; }
+    .common .con2 .content3 {
+      top: 1.65rem; }
+      .common .con2 .content3 .con_top1 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 4.55rem;
+        height: 2.5rem;
+        background: url("/Static/default/images/lxj-2-01.png") center/cover no-repeat; }
+      .common .con2 .content3 .con_top2 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0.3rem;
+        height: 0.3rem; }
+    .common .con2 .page {
+      width: 0.5rem;
+      height: 1.5rem;
+      background: red;
+      background: url("/Static/default/images/lxj-page-2.png") center/cover no-repeat; }
+  .common .con3 {
+    display: none; }
+    .common .con3 .content1 {
+      position: absolute;
+      width: 7.27rem;
+      height: 13.34rem;
+      background: url("/Static/default/images/lxj-3-1111.png") center/cover no-repeat; }
+    .common .con3 .content3 {
+      top: 1.65rem; }
+      .common .con3 .content3 .con_top1 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 4.55rem;
+        height: 2.5rem;
+        background: url("/Static/default/images/lxj-3-01.png") center/cover no-repeat; }
+    .common .con3 .page {
+      width: 0.5rem;
+      height: 1.5rem;
+      background: red;
+      background: url("/Static/default/images/lxj-page-3.png") center/cover no-repeat; }
+  .common .con4 {
+    display: none; }
+    .common .con4 .content1 {
+      width: 7.27rem;
+      height: 100vh;
+      display: flex;
+      justify-content: center; }
+      .common .con4 .content1 .content1_row {
+        width: 7.27rem;
+        height: 12.89rem;
+        background: url("/Static/default/images/lxj-4-1111.png") center/cover no-repeat; }
+    .common .con4 .content3 {
+      top: 1.65rem; }
+      .common .con4 .content3 .con_top1 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 4.55rem;
+        height: 2.5rem;
+        background: url("/Static/default/images/lxj-4-01.png") center/cover no-repeat; }
+    .common .con4 .page {
+      width: 0.5rem;
+      height: 1.5rem;
+      background: red;
+      background: url("/Static/default/images/lxj-page-4.png") center/cover no-repeat; }
+    .common .con4 .content6 {
+      width: 3.64rem;
+      height: 0.64rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 2rem;
+      margin: auto; }
+      .common .con4 .content6 .con4_bot {
+        display: block;
+        width: 3.64rem;
+        height: 0.64rem;
+        background: url("/Static/default/images/lxj-4-a.png") center/cover no-repeat; }
+
+.dis {
+  display: block !important; }
+
+.zuotui {
+  animation: zt 1s both; }
+
+.youjin {
+  animation: yj 1s both; }
