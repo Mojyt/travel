@@ -8,7 +8,6 @@
 	@debug $color;  
 	@return $color;
 }*/
-@import url(../base.css);
 @media screen and (min-width: 320px) {
   html {
     font-size: 42.66667px; } }
@@ -54,23 +53,15 @@ body {
 
 @font-face {
   font-family: Wyue;
-  src: url(../fonts/文悦古体仿宋.otf); }
+  src: url(../../fonts/文悦古体仿宋.otf); }
 
 @font-face {
   font-family: leftp;
-  src: url(../fonts/font_pnt9i8feioyfogvi/iconfont.woff); }
+  src: url(../../fonts/font_pnt9i8feioyfogvi/iconfont.woff); }
 
 @font-face {
   font-family: edit;
-  src: url(../fonts/font_2ufxsdqp0b4t2o6r/iconfont.woff); }
-
-@font-face {
-  font-family: heart;
-  src: url(../fonts/font_iy9aleziz1if6r/iconfont.woff); }
-
-@font-face {
-  font-family: forward;
-  src: url(../fonts/font_tf3e62n9i1ss8aor/iconfont.woff); }
+  src: url(../../fonts/font_2ufxsdqp0b4t2o6r/iconfont.woff); }
 
 * {
   margin: 0;
@@ -732,14 +723,6 @@ body {
   position: fixed;
   bottom: 0;
   z-index: 1;
-<<<<<<< HEAD
-  width: 100%;
-  height: 0.99rem;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-=======
->>>>>>> 5e2e2c38d10510b373751e3ad3051db30a42e0a4
   width: 100%;
   height: 0.98rem;
   background: #000;
@@ -809,5 +792,5 @@ body {
       font-size: 0.12rem; }
     .footer_table .inner .content .foot .con .shouye {
       position: absolute;
-      bottom: -0.05rem;
+      bottom: -0.06rem;
       left: 0; }
