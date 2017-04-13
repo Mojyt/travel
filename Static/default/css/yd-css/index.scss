@@ -1,5 +1,5 @@
 @import "../mixin";
-@import "../fonts";
+@import "fonts";
 *{
   margin:0;
   padding: 0;
@@ -672,16 +672,7 @@ $img:'../../images/';
   position: fixed;
   bottom: 0;
   z-index: 1;
-<<<<<<< HEAD
-  @include cube(100%,0.99rem);
-
-  position:fixed;
-  bottom:0;right:0;
   @include cube(100%,0.98rem);
-
-=======
-  @include cube(100%,0.98rem);
->>>>>>> 5e2e2c38d10510b373751e3ad3051db30a42e0a4
   background: #000;
   margin-top:0.15rem;
   .inner{
@@ -742,7 +733,7 @@ $img:'../../images/';
     }
     .foot .con .shouye{
       position: absolute;
-      bottom: -0.05rem;
+      bottom: -0.06rem;
       left:0;
     }
   }
