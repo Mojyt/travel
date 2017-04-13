@@ -96,6 +96,12 @@ class indexController extends Framework
     {
         $this->display('default/trip/exclusive.html');
     }
+    public function show(){
+        $this->display('default/process/require.html');
+    }
+    public function method(){
+        $this->display('default/process/method.html');
+    }
 
     public function my_trip()
     {
@@ -165,5 +171,6 @@ class indexController extends Framework
     {
         $this->display('default/bx/success.html');
     }
+
 }
 
