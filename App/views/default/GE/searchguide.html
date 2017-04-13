@@ -1,42 +1,239 @@
 <?php include VIEW.'default/header.html'?>
 <link rel="stylesheet" href="<?php echo CSS_PATH?>GE/GEsearchguide.css">
 <link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
+<script src="<?php echo JS_PATH?>GE/index.js"></script>
 <body>
 <div class="headerTop">
     <div class="headerInfo"></div>
     <div class="headerCon">
         <div class="inner">
             <div class="moreBut">
-                <a href=""></a>
+                <a href="#" onclick="javascript:history.back(-1)"></a>
             </div>
             <ul class="titleBox">
                 <li class="left-r"></li>
                 <li class="title">
-                    <span class="chinese">搜索</span>
+                    <span class="chinese">导游搜索</span>
                     <span class="english"><span style="color:#F80807;">SET</span>TING UP</span>
                 </li>
                 <li class="right-r"></li>
             </ul>
             <div class="mapBut">
-                <a href=""></a>
             </div>
         </div>
     </div>
+    <div class="searchWrap">
+        <div class="boxWrap">
+            <input type="text" name="text" placeholder="目的地/景点/导游" class="searchBox">
+            <a href="searchout" class="searchBut"></a>
+            <a href="voice_begin" class="micBut"></a>
+        </div>
+    </div>
 </div>
-<div class="searchWrap">
-    <div class="boxWrap">
-        <input type="text" name="text" placeholder="目的地/景点/攻略/导游" class="searchBox">
-        <a href="" class="searchBut"></a>
-        <a href="" class="micBut"></a>
+<div class="historyBox">
+    <div class="inner">
+        <div class="historySearch">
+            <h3 class="the">the</h3>
+            <h3 class="xuan">FEILEIXUAN</h3>
+            <h3 class="circle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </h3>
+            <h3 class="HistoryText">
+                <span style="color: #e62923">热门</span>
+                <span>搜索</span>
+                <span></span>
+                <span></span>
+            </h3>
+        </div>
+        <div class="level">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="historyChange">
+            <a href=""><span>换一换</span></a>
+        </div>
     </div>
-    <div class="position">
-        <a href="">
-            <div class="positionIcon">
+</div>
+<div class="arrange">
+    <div class="inner">
+        <div class="date">
+            <span></span>
+            <span>选择出行日期</span>
+        </div>
+        <div class="time">
+            <span></span>
+            <span>选择出行时间</span>
+        </div>
+        <div class="number">
+            <span></span>
+            <span>选择出行人数</span>
+        </div>
+    </div>
+</div>
+<div class="price">
+    <p>
+        <span></span>
+        <span style="background: #e7201a"></span>
+        <span></span>
+        <span></span>
+    </p>
+    <p><span>100元</span><span>200元</span><span>300元</span><span>400元</span><span>500元</span></p>
+</div>
+<div class="guides">
+        <div class="guide">
+            <div class="portrait">
+                <div class="bottom-frame"></div>
+                <div class="frame">
+                    <img class="lazy" data-original="<?php echo IMG_PATH?>xiaore5_03.png" alt="">
+                </div>
             </div>
-        </a>
-        <span class="place">浙江</span>
-        <span class="city">定位当前城市</span>
-    </div>
+            <div class="information">
+                <p>米米米
+                    <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                    <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                    <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                    <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                    <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                </p>
+                <p><span>M</span>ireha <span>30歲</span></p>
+                <p>.........................................</p>
+                <p>世界很美，剛好你有空</p>
+            </div>
+            <div class="price">
+                <p class="details">200元</p>
+                <p class="details"></p>
+                <p class="details">
+                    <img class="lazy" data-original="<?php echo IMG_PATH?>xiaoren2_07.png" alt=""
+                </p>
+            </div>
+        </div>
+        <div id="guidetel">
+            <div class="guide">
+                <div class="portrait">
+                    <div class="bottom-frame"></div>
+                    <div class="frame">
+                        <img class="lazy" data-original="<?php echo IMG_PATH?>xiaore5_03.png" alt="">
+                    </div>
+                </div>
+                <div class="information">
+                    <p>君君
+                        <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                        <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                        <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                        <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                        <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                    </p>
+                    <p><span>M</span>ireha <span>30歲</span></p>
+                    <p>.........................................</p>
+                    <p>世界很美，剛好你有空</p>
+                </div>
+                <div class="price">
+                    <p class="details">200元</p>
+                    <p class="details"></p>
+                    <p class="details">
+                        <img class="lazy" data-original="<?php echo IMG_PATH?>xiaoren2_07.png" alt="">
+                    </p>
+                </div>
+            </div>
+            <div class="collection">
+                <p>收藏</p>
+                <p><span style="color: #f2100c">TR</span>AVEL</p>
+            </div>
+            <div class="telicon">
+                <img class="lazy" data-original="<?php echo IMG_PATH?>xiaotel_03.png" alt="" style="height: 1.45rem">
+            </div>
+        </div>
+        <div class="guide">
+            <div class="portrait">
+                <div class="bottom-frame"></div>
+                <div class="frame">
+                    <img class="lazy" data-original="<?php echo IMG_PATH?>xiaoren3_06.png" alt="">
+                </div>
+            </div>
+            <div class="information">
+                <p>孙玉伟
+                    <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                    <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                    <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                    <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                    <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                </p>
+                <p><span>M</span>ireha <span>30歲</span></p>
+                <p>.........................................</p>
+                <p>世界很美，剛好你有空</p>
+            </div>
+            <div class="price">
+                <p class="details">200元</p>
+                <p class="details"></p>
+                <p class="details">
+                    <img class="lazy" data-original="<?php echo IMG_PATH?>xiaoren2_07.png" alt=""
+                </p>
+            </div>
+        </div>
+        <div class="guide">
+            <div class="portrait">
+                <div class="bottom-frame"></div>
+                <div class="frame">
+                    <img class="lazy" data-original="<?php echo IMG_PATH?>xiaoren4_11.png" alt="">
+                </div>
+            </div>
+            <div class="information">
+                <p>赵磊
+                    <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                    <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                    <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                    <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                    <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                </p>
+                <p><span>M</span>ireha <span>30歲</span></p>
+                <p>.........................................</p>
+                <p>世界很美，剛好你有空</p>
+            </div>
+            <div class="price">
+                <p class="details">200元</p>
+                <p class="details"></p>
+                <p class="details">
+                    <img class="lazy" data-original="<?php echo IMG_PATH?>xiaoren2_07.png" alt=""
+                </p>
+            </div>
+        </div>
+        <div class="guide">
+            <div class="portrait">
+                <div class="bottom-frame"></div>
+                <div class="frame">
+                    <img class="lazy" data-original="<?php echo IMG_PATH?>xiaoren6_11.png" alt="">
+                </div>
+            </div>
+            <div class="information">
+                <p>李俊赫
+                    <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                    <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                    <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                    <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                    <span><img class="lazy" data-original="<?php echo IMG_PATH?>xiaoxing_03.png" alt=""></span>
+                </p>
+                <p><span>M</span>ireha <span>30歲</span></p>
+                <p>.........................................</p>
+                <p>世界很美，剛好你有空</p>
+            </div>
+            <div class="price">
+                <p class="details">200元</p>
+                <p class="details"></p>
+                <p class="details">
+                    <img class="lazy" data-original="<?php echo IMG_PATH?>xiaoren2_07.png" alt=""
+                </p>
+            </div>
+        </div>
 </div>
 </body>
 </html>

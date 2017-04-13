@@ -46,21 +46,17 @@
   html {
     font-size: 100px; } }
 
+@media screen and (min-width: 933px) {
+  html {
+    font-size: 124.4px; } }
+
 body {
   font-size: 16px; }
-
-@font-face {
-  font-family: guyue;
-  src: url(../../fonts/文悦古体仿宋.otf); }
-
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-  padding: 0; }
 
 body {
   width: 100%;
   height: 100%;
-  background: url("../../img/xiao1.png") center/cover no-repeat; }
+  background: url("../../images/xiao1.png") center/cover no-repeat; }
 
 .headerTop {
   width: 100%;
@@ -81,12 +77,55 @@ body {
     position: absolute;
     left: 0;
     top: 0; }
+  .headerTop .searchWrap {
+    width: 100%;
+    height: 0.62rem;
+    position: absolute;
+    bottom: -25%; }
+    .headerTop .searchWrap .boxWrap {
+      width: 94%;
+      height: 100%;
+      position: absolute;
+      left: 0.24rem; }
+    .headerTop .searchWrap .searchBox {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      border: 1px solid #58585a;
+      border-radius: 0.1rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: left;
+      padding-left: 1rem;
+      color: #999999;
+      font-size: 0.24rem; }
+    .headerTop .searchWrap .searchBut {
+      display: inline-block;
+      width: 0.36rem;
+      height: 0.36rem;
+      background: url("../../images/xiaosearch_03.png") center/cover no-repeat;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: 0.23rem; }
+    .headerTop .searchWrap .micBut {
+      display: inline-block;
+      width: 0.36rem;
+      height: 0.36rem;
+      background: url("../../images/xiaomic_03.png") center/cover no-repeat;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      right: 0.23rem; }
 
 .headerCon .inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 93%;
+  width: 94%;
   height: 100%;
   margin: 0 auto; }
 
@@ -97,7 +136,7 @@ body {
     display: inline-block;
     width: 100%;
     height: 100%;
-    background: url("../../img/more_03.png") center/cover no-repeat; }
+    background: url("../../images/xiaomore_03.png") center/cover no-repeat; }
 
 .headerCon .titleBox {
   width: 38%;
@@ -108,7 +147,7 @@ body {
   .headerCon .titleBox .left-r, .headerCon .titleBox .right-r {
     width: 0.51rem;
     height: 0.13rem;
-    background: url("../../img/xiaoleft.png") center/cover no-repeat; }
+    background: url("../../images/xiaoleft.png") center/cover no-repeat; }
   .headerCon .titleBox .title {
     width: 2rem;
     height: 0.8rem;
@@ -119,94 +158,299 @@ body {
     .headerCon .titleBox .title .chinese {
       font-size: 0.3rem;
       color: #fff;
-      font-weight: 400;
-      font-family: guyue,sans-serif; }
+      font-weight: 400; }
     .headerCon .titleBox .title .english {
       margin-top: 2%;
       text-align: center;
       font-size: 0.18rem;
       color: #fff;
-      font-weight: 400;
-      font-family: guyue,sans-serif; }
+      font-weight: 400; }
   .headerCon .titleBox .right-r {
-    background: url("../../img/right.png") center/cover no-repeat; }
+    background: url("../../images/xiaoright.png") center/cover no-repeat; }
 
 .headerCon .mapBut {
   width: 0.62rem;
   height: 0.62rem; }
-  .headerCon .mapBut a {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background: url("../../img/map_03.png") center/cover no-repeat; }
 
-.searchWrap {
+.historyBox {
   width: 100%;
-  height: 1.5rem;
-  position: relative; }
-  .searchWrap .boxWrap {
+  height: 1rem;
+  margin: 0.8rem 0 0.2rem; }
+  .historyBox .inner {
     width: 93%;
-    height: 0.75rem;
-    position: absolute;
-    top: -25%;
-    left: 0.24rem; }
-  .searchWrap .searchBox {
-    width: 100%;
     height: 100%;
-    background: #fff;
-    border: 1px solid #58585a;
-    border-radius: 0.1rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-    color: #999999;
-    font-family: f, sans-serif;
-    font-size: 0.24rem; }
-  .searchWrap .searchBut {
-    display: inline-block;
-    width: 0.36rem;
-    height: 0.36rem;
-    background: url("../../img/search_03.png") center/cover no-repeat;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    left: 0.23rem; }
-  .searchWrap .micBut {
-    display: inline-block;
-    width: 0.36rem;
-    height: 0.36rem;
-    background: url("../../img/mic_03.png") center/cover no-repeat;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    right: 0.23rem; }
-  .searchWrap .position {
-    width: 2.4rem;
-    height: 0.62rem;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    bottom: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .historyBox .historySearch {
+    width: 1.7rem;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+    .historyBox .historySearch h3 {
+      margin: 0;
+      width: 100%; }
+    .historyBox .historySearch .the {
+      color: #ffffff;
+      font-size: 0.22rem; }
+    .historyBox .historySearch .xuan {
+      color: #e3b08b;
+      font-size: 0.22rem; }
+    .historyBox .historySearch .HistoryText {
+      color: #ffffff;
+      font-size: 0.28rem; }
+      .historyBox .historySearch .HistoryText span:nth-child(3), .historyBox .historySearch .HistoryText span:nth-child(4) {
+        display: inline-block;
+        width: 0.07rem;
+        height: 0.07rem;
+        border-radius: 50%;
+        background: #e62923;
+        margin-left: 0.04rem; }
+    .historyBox .historySearch .circle {
+      display: flex; }
+      .historyBox .historySearch .circle span {
+        display: inline-block;
+        margin-right: 0.05rem;
+        width: 0.04rem;
+        height: 0.04rem;
+        border-radius: 50%;
+        background: #fff; }
+        .historyBox .historySearch .circle span:nth-child(1), .historyBox .historySearch .circle span:nth-child(10) {
+          background: #e62923; }
+  .historyBox .historyChange {
+    width: 1.2rem;
+    height: 0.45rem;
+    background: url("../../images/xiaochange_03.png") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.24rem;
+    align-self: flex-end; }
+    .historyBox .historyChange a {
+      color: #ffffff;
+      text-decoration: none; }
+  .historyBox .level {
+    width: 3.7rem;
+    height: 0.04rem;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    margin-top: 0.75rem; }
+    .historyBox .level span {
+      display: inline-block; }
+      .historyBox .level span:nth-child(2) {
+        width: 3.63rem;
+        height: 0.015rem;
+        background: #c6b390; }
+      .historyBox .level span:nth-child(1), .historyBox .level span:nth-child(3) {
+        width: 0.06rem;
+        height: 0.06rem;
+        border-radius: 50%;
+        background: #e62923; }
+
+.arrange {
+  width: 100%;
+  height: 0.76rem; }
+  .arrange .inner {
+    width: 94%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
     align-items: center; }
-    .searchWrap .position a {
-      display: inline-block;
-      width: 0.36rem;
-      height: 0.36rem; }
-    .searchWrap .position .positionIcon {
-      width: 100%;
+    .arrange .inner .date, .arrange .inner .time, .arrange .inner .number {
+      width: 2.2rem;
       height: 100%;
-      background: url("../../img/xiaopisition_03.png") center/contain no-repeat; }
-    .searchWrap .position .place {
-      color: #c3b08e;
+      background: url("../../images/xiaoriqi_03.png") center/cover no-repeat;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      .arrange .inner .date span, .arrange .inner .time span, .arrange .inner .number span {
+        color: #fff;
+        font-size: 0.2rem; }
+    .arrange .inner .date span:nth-child(1) {
+      display: inline-block;
+      width: 0.46rem;
+      height: 0.42rem;
+      background: url("../../images/xiaoiconri_03.png") center/cover no-repeat; }
+    .arrange .inner .time span:nth-child(1) {
+      display: inline-block;
+      width: 0.43rem;
+      height: 0.43rem;
+      background: url("../../images/xiaozhong_03.png") center/cover no-repeat; }
+    .arrange .inner .number span:nth-child(1) {
+      display: inline-block;
+      width: 0.46rem;
+      height: 0.42rem;
+      background: url("../../images/xiaoren_03.png") center/cover no-repeat; }
+
+.price {
+  width: 94%;
+  height: 0.6rem;
+  margin: 0.3rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+  .price p:nth-child(1) {
+    width: 100%;
+    height: 0.12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .price p:nth-child(1) span {
+      display: inline-block; }
+      .price p:nth-child(1) span:nth-child(1), .price p:nth-child(1) span:nth-child(3) {
+        width: 0.12rem;
+        height: 0.12rem;
+        border-radius: 50%;
+        background: #e7201a; }
+      .price p:nth-child(1) span:nth-child(2), .price p:nth-child(1) span:nth-child(4) {
+        width: 3.4rem;
+        height: 0.04rem;
+        background: #cbbca2; }
+  .price p:nth-child(2) {
+    width: 100%;
+    height: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .price p:nth-child(2) span {
+      color: #cbbca2;
+      font-size: 0.24rem; }
+
+.guides {
+  width: 100%;
+  height: 7.81rem;
+  padding: 0 0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+  .guides .guide {
+    width: 100%;
+    height: 1.45rem;
+    background: url("../../images/xiaodao1_03.png") center/cover no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .guides .portrait {
+    width: 1.52rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    .guides .portrait .bottom-frame {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 0.75rem;
+      height: 0.75rem;
+      transform: rotate(25deg);
+      border-radius: 0.1rem; }
+    .guides .portrait .frame {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 0.7rem;
+      height: 0.7rem; }
+      .guides .portrait .frame img {
+        width: 0.7rem;
+        height: 0.7rem;
+        border-radius: 0.1rem;
+        border: 0.03rem solid #fff; }
+  .guides .information {
+    width: 3.35rem;
+    height: 100%;
+    padding: 0.2rem;
+    line-height: 1.1; }
+    .guides .information p:nth-child(1) {
+      font-size: 0.3rem;
+      color: #333; }
+      .guides .information p:nth-child(1) span {
+        display: inline-block;
+        width: 0.21rem;
+        height: 0.21rem; }
+      .guides .information p:nth-child(1) img {
+        width: 0.21rem;
+        height: 0.21rem; }
+    .guides .information p:nth-child(2) {
+      font-size: 0.24rem; }
+      .guides .information p:nth-child(2) span:nth-child(1) {
+        color: #f2100c; }
+      .guides .information p:nth-child(2) span:nth-child(2) {
+        color: #c6b390;
+        font-size: 0.18rem;
+        margin-left: 0.3rem; }
+    .guides .information p:nth-child(3) {
+      height: 0.05rem;
       font-size: 0.24rem;
-      font-family: '苹方',sans-serif; }
-    .searchWrap .position .city {
-      color: #a8a7a7;
-      font-size: 0.24rem;
-      font-family: '苹方',sans-serif; }
+      letter-spacing: -0.01rem;
+      display: flex;
+      align-items: center;
+      color: #CECCCC; }
+    .guides .information p:nth-child(4) {
+      font-size: 0.2rem;
+      color: #666;
+      margin-top: 0.15rem; }
+  .guides .price {
+    width: 2.18rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .guides .price .details:nth-child(1) {
+      width: 1.3rem;
+      height: 0.3rem;
+      color: #ff0000;
+      font-size: 0.44rem;
+      margin-top: -0.08rem; }
+    .guides .price .details:nth-child(2) {
+      width: 0.02rem;
+      height: 0.7rem;
+      background: #333;
+      transform: rotate(25deg);
+      margin: 0 0.1rem; }
+    .guides .price .details:nth-child(3) {
+      width: 0.22rem;
+      height: 0.34rem;
+      margin-top: 0.2rem; }
+      .guides .price .details:nth-child(3) img {
+        width: 0.22rem;
+        height: 0.34rem; }
+  .guides #guidetel {
+    margin-left: -2.37rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 12rem;
+    height: 1.45rem; }
+    .guides #guidetel .guide {
+      width: 7.05rem;
+      height: 1.45rem; }
+    .guides #guidetel .collection {
+      width: 1.67rem;
+      height: 100%;
+      margin: 0 0.05rem;
+      background: url("../../images/xiaoshou_03.png") center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 0.15rem;
+      line-height: 1.1; }
+      .guides #guidetel .collection p:nth-child(1) {
+        font-size: 0.26rem;
+        color: #333; }
+      .guides #guidetel .collection p:nth-child(2) {
+        font-size: 0.2rem;
+        color: #999;
+        letter-spacing: 0.02rem; }
