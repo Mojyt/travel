@@ -96,21 +96,17 @@ class indexController extends Framework
     {
         $this->display('default/trip/exclusive.html');
     }
-<<<<<<< HEAD
     public function show(){
         $this->display('default/process/require.html');
     }
     public function method(){
         $this->display('default/process/method.html');
     }
-=======
 
     public function my_trip()
     {
         $this->display('default/trip/my_trip.html');
     }
-
->>>>>>> 385310ea01298fa8b785531bfab296b134d6d8ab
     //个人中心
     public
     function personal()
