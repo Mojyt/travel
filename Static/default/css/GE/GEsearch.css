@@ -45,6 +45,10 @@
   html {
     font-size: 100px; } }
 
+@media screen and (min-width: 933px) {
+  html {
+    font-size: 124.4px; } }
+
 body {
   font-size: 16px; }
 
@@ -210,8 +214,59 @@ body {
       font-size: 0.24rem;
       font-family: '苹方',sans-serif; }
 
+.historyPlace {
+  width: 100%;
+  height: 3.95rem; }
+  .historyPlace .inner {
+    width: 93%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0.3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    .historyPlace .inner .rank {
+      width: 100%;
+      height: 1rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      .historyPlace .inner .rank:nth-child(1), .historyPlace .inner .rank:nth-child(3) {
+        width: 66.5%; }
+    .historyPlace .inner .rankSon {
+      width: 2.28rem;
+      height: 0.83rem;
+      background: #000 url("../../images/xiao12_03.png") center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      padding-top: 0.1rem; }
+      .historyPlace .inner .rankSon h1 {
+        color: #030308;
+        font-size: 0.26rem; }
+        .historyPlace .inner .rankSon h1::after {
+          content: '';
+          display: inline-block;
+          width: 0.17rem;
+          height: 0.17rem;
+          background: url("../../images/xiao14_03.png") center/cover no-repeat; }
+      .historyPlace .inner .rankSon p {
+        color: #171717;
+        font-size: 0.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around; }
+        .historyPlace .inner .rankSon p span {
+          font-size: 0.15rem; }
+          .historyPlace .inner .rankSon p span:nth-child(1), .historyPlace .inner .rankSon p span:nth-child(4) {
+            display: inline-block;
+            width: 0.2rem;
+            height: 0.01rem;
+            background: #171717; }
+
 .historyBox {
-  margin-top: 0.3rem;
   width: 100%;
   height: 1rem; }
   .historyBox .inner {
@@ -286,58 +341,6 @@ body {
         border-radius: 50%;
         background: #e62923; }
 
-.historyPlace {
-  width: 100%;
-  height: 3.95rem; }
-  .historyPlace .inner {
-    width: 93%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 0.3rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; }
-    .historyPlace .inner .rank {
-      width: 100%;
-      height: 1rem;
-      display: flex;
-      justify-content: space-around;
-      align-items: center; }
-      .historyPlace .inner .rank:nth-child(1), .historyPlace .inner .rank:nth-child(3) {
-        width: 66.5%; }
-    .historyPlace .inner .rankSon {
-      width: 2.28rem;
-      height: 0.83rem;
-      background: #000 url("../../images/xiao12_03.png") center/cover no-repeat;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-      padding-top: 0.1rem; }
-      .historyPlace .inner .rankSon h1 {
-        color: #030308;
-        font-size: 0.26rem; }
-        .historyPlace .inner .rankSon h1::after {
-          content: '';
-          display: inline-block;
-          width: 0.17rem;
-          height: 0.17rem;
-          background: url("../../images/xiao14_03.png") center/cover no-repeat; }
-      .historyPlace .inner .rankSon p {
-        color: #171717;
-        font-size: 0.1rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-around; }
-        .historyPlace .inner .rankSon p span {
-          font-size: 0.15rem; }
-          .historyPlace .inner .rankSon p span:nth-child(1), .historyPlace .inner .rankSon p span:nth-child(4) {
-            display: inline-block;
-            width: 0.2rem;
-            height: 0.01rem;
-            background: #171717; }
-
 .hotSearch {
   width: 100%;
   height: 4.08rem; }
@@ -369,20 +372,22 @@ body {
       width: 5.09rem;
       height: 100%;
       background: url("../../images/xiaointroduce_03.png") center/contain no-repeat;
-      padding: 0.1rem 0.2rem;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-wrap: wrap; }
+      padding: 0.1rem 0.2rem; }
       .hotSearch .inner .introduce p {
-        width: 100%; }
-    .hotSearch .inner .title {
-      font-size: 0.28rem; }
-    .hotSearch .inner .dian span {
-      display: inline-block;
-      width: 0.05rem;
-      height: 0.05rem;
-      border-radius: 50%;
-      background: #cfcfcf; }
-    .hotSearch .inner .english, .hotSearch .inner .intro {
-      font-size: 0.2rem; }
+        width: 100%;
+        height: 0.32rem; }
+      .hotSearch .inner .introduce .title {
+        font-size: 0.28rem; }
+      .hotSearch .inner .introduce .dian {
+        display: flex;
+        align-items: center;
+        height: 0.2rem; }
+        .hotSearch .inner .introduce .dian span {
+          display: inline-block;
+          width: 0.05rem;
+          height: 0.05rem;
+          border-radius: 50%;
+          background: #cfcfcf;
+          margin-right: 0.06rem; }
+      .hotSearch .inner .introduce .english, .hotSearch .inner .introduce .intro {
+        font-size: 0.2rem; }
