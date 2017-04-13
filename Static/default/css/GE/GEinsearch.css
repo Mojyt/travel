@@ -53,6 +53,10 @@
 body {
   font-size: 16px; }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0; }
+
 body {
   width: 100%;
   height: 100%;
@@ -99,6 +103,7 @@ body {
       text-align: left;
       padding-left: 1rem;
       color: #999999;
+      font-family: f, sans-serif;
       font-size: 0.24rem; }
     .headerTop .searchWrap .searchBut {
       display: inline-block;
@@ -158,13 +163,15 @@ body {
     .headerCon .titleBox .title .chinese {
       font-size: 0.3rem;
       color: #fff;
-      font-weight: 400; }
+      font-weight: 400;
+      font-family: '宋体',sans-serif; }
     .headerCon .titleBox .title .english {
       margin-top: 2%;
       text-align: center;
       font-size: 0.18rem;
       color: #fff;
-      font-weight: 400; }
+      font-weight: 400;
+      font-family: '苹方',sans-serif; }
   .headerCon .titleBox .right-r {
     background: url("../../images/xiaoright.png") center/cover no-repeat; }
 
@@ -193,9 +200,9 @@ body {
     align-items: center;
     justify-content: space-between; }
   .card .card-common {
-    width: 1.85rem !important;
+    width: 1.85rem;
     height: 3.06rem;
-    margin-right: 0.1rem !important;
+    margin-right: 0.1rem;
     position: relative;
     display: flex;
     justify-content: center; }
@@ -260,14 +267,14 @@ body {
 .historyBox {
   width: 100%;
   height: 1rem;
-  margin: 0.8rem 0 0.2rem; }
+  margin: 0.2rem 0; }
   .historyBox .inner {
     width: 93%;
     height: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: flex-end; }
   .historyBox .historySearch {
     width: 1.7rem;
     height: 100%;
@@ -311,8 +318,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.24rem;
-    align-self: flex-end; }
+    font-size: 0.24rem; }
     .historyBox .historyChange a {
       color: #ffffff;
       text-decoration: none; }
@@ -321,8 +327,7 @@ body {
     height: 0.04rem;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin-top: 0.75rem; }
+    align-items: center; }
     .historyBox .level span {
       display: inline-block; }
       .historyBox .level span:nth-child(2) {

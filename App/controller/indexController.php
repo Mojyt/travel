@@ -21,9 +21,16 @@ class indexController extends Framework
     //登录
     public function login()
     {
-        $this->display('');
+        $this->display('default/liu/index.html');
     }
-
+    public function login_1()
+    {
+        $this->display('default/liu/login.html');
+    }
+    public function login_2()
+    {
+        $this->display('default/liu/qqlogin.html');
+    }
     //注册
     public function register()
     {
@@ -168,28 +175,15 @@ class indexController extends Framework
         $this->display('default/bx/add-card.html');
     }
 
-    public function password()
+    /*public function userpass()
     {
         $this->display('default/bx/password.html');
-    }
+    }*/
 
     public function success()
     {
         $this->display('default/bx/success.html');
     }
-
-
-
-
-//    public function check(){
-////       c($_POST);
-//        if($_POST['password']==='123456'){
-////            echo 1;
-//            echo "true";
-//        }
-//        $this->redirect('success');
-//    }
-
 
 }
 

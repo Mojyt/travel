@@ -1,6 +1,10 @@
 @import "../base.css";
 @import "../bootstrap.min.css";
 @import "../mixin";
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  padding: 0;
+}
 $imgs:"../../images/";
 body{
   @include cube(100%,100%);
@@ -44,6 +48,7 @@ body{
       text-align: left;
       padding-left: 1rem;
       color: #999999;
+      font-family: f, sans-serif;
       font-size: 0.24rem;
     }
     .searchBut{
@@ -95,11 +100,13 @@ body{
       justify-content: center;
       .chinese{
         @include font(0.3rem,#fff,400);
+        font-family:'宋体',sans-serif;
       }
       .english{
         margin-top:2%;
         text-align: center;
         @include font(0.18rem,#fff,400);
+        font-family:'苹方',sans-serif;
       }
     }
     .right-r{
@@ -130,8 +137,8 @@ body{
     justify-content: space-between;
   }
   .card-common{
-    @include cube(1.85rem!important,3.06rem);
-    margin-right:0.1rem!important;
+    @include cube(1.85rem,3.06rem);
+    margin-right:0.1rem;
     position: relative;
     display: flex;
     justify-content: center;
@@ -202,13 +209,13 @@ body{
 }
 .historyBox{
   @include cube(100%,1rem);
-  margin: 0.8rem 0 0.2rem;
+  margin: 0.2rem 0;
   .inner{
     @include cube(93%,100%);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
   }
   .historySearch{
     @include cube(1.7rem,100%);
@@ -257,7 +264,6 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 0.24rem;
-    align-self: flex-end;
     a{
       color: #ffffff;
       text-decoration: none;
@@ -268,7 +274,6 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 0.75rem;
     span{
       display: inline-block;
       &:nth-child(2){

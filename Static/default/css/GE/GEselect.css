@@ -46,10 +46,6 @@
   html {
     font-size: 100px; } }
 
-@media screen and (min-width: 933px) {
-  html {
-    font-size: 124.4px; } }
-
 body {
   font-size: 16px; }
 
@@ -422,10 +418,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 0.25rem 0; }
+    flex-wrap: wrap; }
     .selectPlace .place p {
-      width: 90%;
+      width: 85%;
       display: flex;
       justify-content: space-between;
       align-items: center;

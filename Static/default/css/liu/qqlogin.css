@@ -1,0 +1,205 @@
+body, p, pre, ul, ol, li, dl, dt, dd, form, input, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+ul, li, ol, dl, dt, dd {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  border: 0; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body {
+  background: url(../../images/liu/bgq.png);
+  background-size: 100%; }
+
+.bg {
+  width: 7.02rem;
+  height: 12.96rem;
+  margin: 0 auto;
+  background: 0; }
+  .bg .qq {
+    width: 100%;
+    height: 6.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .bg .qq div {
+      width: 1.63rem;
+      height: 1.63rem;
+      border-radius: 50%;
+      background: url(../../images/liu/qqqqqq.png) no-repeat;
+      background-size: 100%; }
+  .bg .login {
+    width: 100%;
+    height: 3.12rem;
+    margin: 0 auto; }
+    .bg .login .login_1 {
+      width: 100%;
+      height: 55%;
+      background: url(../../images/liu/lllll_03.png) no-repeat;
+      background-size: 100%;
+      display: flex;
+      flex-wrap: wrap; }
+      .bg .login .login_1 .touxiang {
+        width: 22%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .bg .login .login_1 .touxiang .touxiang_1 {
+          width: 0.8rem;
+          height: 0.8rem;
+          border-radius: 0.05rem;
+          background: url(../../images/liu/touxianga_03.png) no-repeat;
+          background-size: 100%; }
+      .bg .login .login_1 .neirong {
+        width: 78%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .bg .login .login_1 .neirong .neirong_1 {
+          width: 85%;
+          height: 70%;
+          display: flex;
+          flex-wrap: wrap;
+          align-content: space-between; }
+          .bg .login .login_1 .neirong .neirong_1 h3 {
+            color: #C6B390;
+            font-size: 0.40rem; }
+          .bg .login .login_1 .neirong .neirong_1 .xian {
+            width: 1.80rem;
+            border-bottom: 0.01rem dotted #CECCCC; }
+          .bg .login .login_1 .neirong .neirong_1 span {
+            display: block;
+            width: 100%;
+            color: #A3A2A2;
+            font-size: 0.30rem; }
+    .bg .login .login_2 {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end; }
+      .bg .login .login_2 .login_3 {
+        display: block;
+        width: 2.33rem;
+        height: 0.96rem;
+        background: url(../../images/liu/kk_04.png) no-repeat;
+        background-size: 100%;
+        border-radius: 1rem;
+        color: #fff;
+        font-size: 0.44rem;
+        text-align: center;
+        line-height: 0.91rem; }
+      .bg .login .login_2 .login_3.acctive {
+        display: none; }
+  .bg .zhezhao {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    display: none; }
+    .bg .zhezhao .zhezhao_1 {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0rem;
+      left: 0rem;
+      background: #000000;
+      opacity: 0.5; }
+    .bg .zhezhao .zhezhao_2 {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0rem;
+      left: 0rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .bg .zhezhao .zhezhao_2 .look {
+        width: 5.55rem;
+        height: 4.55rem;
+        background: url(../../images/liu/look_03.png) no-repeat;
+        background-size: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative; }
+        .bg .zhezhao .zhezhao_2 .look .guanbi {
+          width: 0.6rem;
+          height: 0.6rem;
+          border-radius: 50%;
+          background: url(../../images/liu/guanbi.png) no-repeat;
+          background-size: 100%;
+          position: absolute;
+          top: 0.80rem;
+          right: -0.30rem; }
+        .bg .zhezhao .zhezhao_2 .look .zi {
+          width: 80%;
+          display: flex;
+          justify-content: space-between; }
+          .bg .zhezhao .zhezhao_2 .look .zi span {
+            display: block;
+            color: #333333;
+            font-size: 0.22rem; }
+        .bg .zhezhao .zhezhao_2 .look .liuliang-jixu {
+          width: 3.85rem;
+          height: 0.85rem;
+          border-radius: 1rem;
+          position: absolute;
+          bottom: 0rem;
+          background: url(../../images/liu/play_03.png) no-repeat;
+          background-size: 100%;
+          display: flex;
+          align-items: center; }
+          .bg .zhezhao .zhezhao_2 .look .liuliang-jixu .liuliang {
+            display: block;
+            width: 50%;
+            height: 100%;
+            border-radius: 1rem;
+            background: url(../../images/liu/kk_04.png) no-repeat center;
+            background-size: 100%;
+            color: #fff;
+            font-size: 0.35rem;
+            text-align: center;
+            line-height: 0.85rem; }
+          .bg .zhezhao .zhezhao_2 .look .liuliang-jixu .jixu {
+            display: block;
+            border-radius: 1rem;
+            width: 50%;
+            height: 100%;
+            color: #464F54;
+            font-size: 0.35rem;
+            text-align: center;
+            line-height: 0.85rem; }
+  .bg .zhezhao.acctive {
+    display: block; }
