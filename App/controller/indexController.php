@@ -168,27 +168,28 @@ class indexController extends Framework
         $this->display('default/bx/add-card.html');
     }
 
-    /*public function userpass()
+    public function password()
     {
         $this->display('default/bx/password.html');
-    }*/
+    }
 
     public function success()
     {
         $this->display('default/bx/success.html');
     }
 
-<<<<<<< HEAD
 
-    public function check(){
-//       c($_POST);
-        if($_POST['password']==='123456'){
-//            echo 1;
-            echo "true";
-        }
-        $this->redirect('success');
-    }
-=======
->>>>>>> 82bf2bece931f333be5e1a349519840ca07084fe
+
+
+//    public function check(){
+////       c($_POST);
+//        if($_POST['password']==='123456'){
+////            echo 1;
+//            echo "true";
+//        }
+//        $this->redirect('success');
+//    }
+
+
 }
 
