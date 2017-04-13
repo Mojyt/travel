@@ -670,16 +670,15 @@ $img:'../../images/';
 }
 //foot
 .footer_table{
-<<<<<<< HEAD
   position: fixed;
   bottom: 0;
   z-index: 1;
   @include cube(100%,0.99rem);
-=======
+
   position:fixed;
   bottom:0;right:0;
   @include cube(100%,0.98rem);
->>>>>>> 8e0b3db0baab597e9e4c701071dc25ecfd3aa02f
+
   background: #000;
   margin-top:0.15rem;
   .inner{
