@@ -515,6 +515,7 @@ $img:'../../images/';
       .chat{
         flex:1;
         float: left;
+
       }
       .p{
         color:#333333;
@@ -629,8 +630,36 @@ $img:'../../images/';
       background:url($img + 'yd-transit.png')center no-repeat;
       background-size:100%;
     }
-    .chat{
-      @include cube(100%,0.55rem);
+    .chater{
+      @include cube(60%,0.34rem);
+      display:flex;
+      justify-content: center;
+      .chat-1{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+          display: block;
+        }
+      }
+      .chat-pic{
+        margin-right: 0.1rem;
+        @include cube(0.28rem,0.28rem);
+        background:url($img + 'yd-point.png')center no-repeat;
+        background-size:100%;
+      }
+      .pic-1{
+        background:url($img + 'yd-point-heart.png')center no-repeat;
+        background-size:100%;
+
+      }
+      .pic-2{
+        background:url($img + 'yd-chat.png')center no-repeat;
+        background-size:100%;
+
+      }
+
     }
   }
   .hot-play2{
@@ -660,8 +689,20 @@ $img:'../../images/';
     color:#fff;
     font-size: 12px;
     top:36%;
-    //background: url(../img/yd-more.png)center no-repeat;
-    //background-size:4%;
+  }
+  .flash{
+    animation: fill 4s linear infinite;
+  }
+  @keyframes fill {
+    0% {
+      transform:rotate(0deg);
+    }
+    50% {
+      transform:rotate(180deg);
+    }
+    100% {
+      transform:rotate(360deg);
+    }
   }
 }
 .foot-db{
