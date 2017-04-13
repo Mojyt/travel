@@ -12,14 +12,16 @@
 </head>
 <body>
 
-<link rel="stylesheet" href="../../../../Static/default/css/process/overview.css">
-<link rel="stylesheet" href="../../../../Static/default/css/process/require.css">
+<!--<link rel="stylesheet" href="../../../../Static/default/css/process/overview.css">-->
+<!--<link rel="stylesheet" href="../../../../Static/default/css/process/require.css">-->
+<link rel="stylesheet" href="<?php echo CSS_PATH?>process/require.css">
+<link rel="stylesheet" href="<?php echo CSS_PATH?>process/overview.css">
 <div class="headerTop">
     <div class="headerInfo"></div>
     <div class="headerCon">
         <div class="inner">
             <div class="moreBut">
-                <a href="index"></a>
+                <a href="#" onclick="javascript:history.back(-1)"></a>
             </div>
             <ul class="titleBox">
                 <li class="left-r"></li>
@@ -71,7 +73,15 @@
             <!--</div>-->
         </div>
     </div>
-    <div class="make">
+    <div class="make beijing">
+        <div class="name">
+            <span>北</span>
+            <span>京</span>
+        </div>
+        <div class="pin">
+            BEIJING
+        </div>
+        <ul></ul>
     </div>
 
 
@@ -107,7 +117,22 @@
             </div>
         </div>
     </div>
-    <div class="make">
+    <div class="make chose">
+        <div class="name"></div>
+        <ul>
+            <li>玩水</li>
+            <li>泛舟</li>
+            <li>休闲</li>
+            <li>古迹</li>
+            <li>观光</li>
+            <li>玩水</li>
+            <li>祈福</li>
+            <li>建筑</li>
+            <li>登山</li>
+            <li>璧画</li>
+            <li>徒步</li>
+            <li>园林</li>
+        </ul>
     </div>
 
 
@@ -146,12 +171,75 @@
             </div>
         </div>
     </div>
+
+   <div class="message">
+       <div class="con">
+           <div class="icon"></div>
+           <h5>出游时间</h5>
+           <input type="text" value="请选择出游时间">
+       </div>
+       <div class="con">
+           <div class="icon"></div>
+           <h5>出游时间</h5>
+           <div class="count">
+               <div class="solid">
+                   <span class="red"></span>
+                   <span class="redpoint"></span>
+                   <span class="orange">
+                         <div class="circle">
+                             <div class="point"></div>
+                         </div>
+                   </span>
+                   <span class="redpoint"></span>
+                   <span class="orange">
+                       <div class="circle">
+                           <div class="point"></div>
+                       </div>
+                   </span>
+                   <span class="redpoint"></span>
+                   <span class="red"></span>
+               </div>
+               <div class="num">
+                   <span>1天</span>
+                   <span>3天</span>
+                   <span>5天</span>
+                   <span>7天</span>
+
+               </div>
+           </div>
+       </div>
+       <div class="con">
+           <div class="icon"></div>
+           <h5>出游时间</h5>
+           <div class="count">
+               <div class="solid">
+                   <span class="red"></span>
+                   <span class="redpoint"></span>
+                   <span class="orange"></span>
+                   <span class="redpoint"></span>
+                   <span class="orange"></span>
+                   <span class="redpoint"></span>
+                   <span class="red"></span>
+               </div>
+               <div class="num">
+                   <span>0元</span>
+                   <span>300元</span>
+                   <span>500元</span>
+                   <span>不限</span>
+               </div>
+           </div>
+       </div>
+   </div>
+
 
 </div>
 
 
 <div class="footer">
-    <h2>立即预定</h2>
+    <a href="/index.php/index/method">
+        <h2>立即预定</h2>
+        <span>HUODNGTUIJIAN</span>
+    </a>
 </div>
 </body>
 </html>

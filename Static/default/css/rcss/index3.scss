@@ -75,19 +75,54 @@ body{
     @include rect(3.9rem,2.6rem);
     .seek{
       height: 0.86rem;
-      line-height:0.86rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
       border-bottom: 0.01rem solid #BEB6B0;
       .i{
         @include rect(0.3rem,0.23rem);
         display: inline-block;
         background: url(../../images/r002.jpg)no-repeat;
         background-size: 100%;
+
       }
       .key{
         display: inline-block;
         @include rect(0.32rem,0.44rem);
         background: url(../../images/r003.png)no-repeat;
         background-size: 100%;
+      }
+      .circle{
+        display:flex;
+        @include rect(0.3rem,0.16rem);
+        justify-content: space-around;
+        .dot{
+          display:flex;
+          align-self: center;
+          @include rect(0.08rem,0.08rem);
+          background: url(../../images/r006.png);
+          background-size: 100%;
+        }
+        .dots{
+          display: flex;
+          @include rect(0.16rem,0.16rem);
+          background: url(../../images/r007.png);
+          background-size: 100%;
+        }
+        .small{
+          display: flex;
+          @include rect(0.08rem,0.08rem);
+          align-self: center;
+          background: url(../../images/r006.png);
+          background-size: 100%;
+        }
+        .smalls{
+          display: flex;
+          @include rect(0.16rem,0.16rem);
+          align-self: center;
+          background: url(../../images/r007.png);
+          background-size: 100%;
+        }
       }
       .login{
         @include rect(3rem,0.5rem);
@@ -96,14 +131,13 @@ body{
       }
     }
   }
-  .bottom{
+   .bottom{
     display: flex;
     align-self: center;
     @include rect(3.86rem,0.78rem);
-    background: #111211;
+    background: #FF0000;
     text-align: center;
     justify-content: center;
-    box-sizing: border-box;
     .span{
       display: flex;
       flex-direction: column;
@@ -113,7 +147,7 @@ body{
         font-size: 0.20rem;
       }
       .white{
-        color: #FFF;
+        color: #E2E0DE;
         font-size: 0.25rem;
         font-style:normal;
         margin-left: 0.1rem;
@@ -126,4 +160,3 @@ body{
 
   }
 }
-
