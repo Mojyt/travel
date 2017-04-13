@@ -33,13 +33,16 @@ class indexController extends Framework
     public function enroll(){
         $this->display('default/zr/login2.html');
     }
-    public function password(){
+    public function passwords(){
         $this->display('default/zr/login3.html');
     }
+<<<<<<< HEAD
 
     //搜索首页
 
 
+=======
+>>>>>>> f8f8dc0ed3db33d3f30988be69ea47b265737135
     //搜索
     public function search()
     {
