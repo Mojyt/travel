@@ -1,14 +1,14 @@
 @import "../base.css";
 @import "../bootstrap.min.css";
 @import "../mixin";
-@import "GEfont";
 h1,h2,h3,h4,h5,h6,p{
   margin: 0;
   padding: 0;
 }
+$imgs:"../../images/";
 body{
   @include cube(100%,100%);
-  background: url("../../img/xiao1.png")center/cover no-repeat;
+  background: url("../../images/xiao1.png")center/cover no-repeat;
 }
 .headerTop{
   @include cube(100%,1.57rem);
@@ -28,14 +28,51 @@ body{
     left: 0;
     top: 0;
   }
+  .searchWrap{
+    @include cube(100%,0.62rem);
+    position: absolute;
+    bottom: -25%;
+    .boxWrap{
+      @include cube(94%,100%);
+      position: absolute;
+      left: 0.24rem;
+    }
+    .searchBox{
+      @include cube(100%,100%);
+      background: #fff;
+      border: 1px solid #58585a;
+      border-radius: 0.1rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: left;
+      padding-left: 1rem;
+      color: #999999;
+      font-family: f, sans-serif;
+      font-size: 0.24rem;
+    }
+    .searchBut{
+      display: inline-block;
+      @include square(0.36rem);
+      background: url("../../images/xiaosearch_03.png")center/cover no-repeat;
+      @include tb;
+      left: 0.23rem;
+    }
+    .micBut{
+      display: inline-block;
+      @include square(0.36rem);
+      background: url("../../images/xiaomic_03.png")center/cover no-repeat;
+      @include tb;
+      right: 0.23rem;
+    }
+  }
 }
-$imgs:"../img/";
 .headerCon{
   .inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include cube(93%,100%);
+    @include cube(94%,100%);
     margin: 0 auto;
   }
   .moreBut{
@@ -43,7 +80,7 @@ $imgs:"../img/";
     a{
       display: inline-block;
       @include cube(100%,100%);
-      background: url("../../img/more_03.png")center/cover no-repeat;
+      background: url("../../images/xiaomore_03.png")center/cover no-repeat;
     }
   }
   .titleBox{
@@ -63,17 +100,17 @@ $imgs:"../img/";
       justify-content: center;
       .chinese{
         @include font(0.3rem,#fff,400);
-        font-family:guyue,sans-serif;
+        font-family:'宋体',sans-serif;
       }
       .english{
         margin-top:2%;
         text-align: center;
         @include font(0.18rem,#fff,400);
-        font-family:guyue,sans-serif;
+        font-family:'苹方',sans-serif;
       }
     }
     .right-r{
-      background:url($imgs + 'right.png')center/cover no-repeat;
+      background:url($imgs + 'xiaoright.png')center/cover no-repeat;
     }
   }
   .mapBut{
@@ -81,70 +118,229 @@ $imgs:"../img/";
     a{
       display: inline-block;
       @include cube(100%,100%);
-      background: url("../../img/map_03.png")center/cover no-repeat;
+      background: url("../../images/xiaomap_03.png")center/cover no-repeat;
     }
   }
 }
-.searchWrap{
-  @include cube(100%,1.5rem);
-  position: relative;
-  .boxWrap{
-    @include cube(93%,0.75rem);
-    position: absolute;
-    top: -25%;
-    left: 0.24rem;
+.card{
+  @include cube(100%,auto);
+  margin: 0.8rem 0 0;
+  .card-inner{
+    @include cube(97%,100%);
+    margin: 0 3% 0;
+    overflow: hidden;
   }
-  .searchBox{
-    @include cube(100%,100%);
-    background: #fff;
-    border: 1px solid #58585a;
-    border-radius: 0.1rem;
+  .card-max-inner{
+    @include cube(108%,100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card-common{
+    @include cube(1.85rem,3.06rem);
+    margin-right:0.1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .card-common.card-1{
+    background: url($imgs + 'xiaocard1_03.png')center/cover no-repeat;
+  }
+  .card-common.card-2{
+    background: url($imgs + 'xiaocard2_03.png')center/cover no-repeat;
+  }
+  .card-common.card-3{
+    background: url($imgs + 'xiaocard3_03.png')center/cover no-repeat;
+  }
+  .card-common.card-4{
+    background: url($imgs + 'xiaocard4_03.png')center/cover no-repeat;
+  }
+  .card-1-inner{
+    @include cube(0.70rem,1.6rem);
+    margin:0.2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-transit{
+    @include cube(0.06rem,0.86rem);
+    background:url($imgs + 'yd-card-transit.png')center no-repeat;
+    background-size:100%;
+  }
+  .card-left{
+    margin-right: 0.08rem;
+    width:50%;
+    span{
+      display: block;
+      width:0.02rem;
+      font-size: 0.27rem;
+      line-height: 1;
+    }
+  }
+  .card-right {
+    width:0.1rem;
+    line-height: 1;
+    span{
+      display:block;
+      font-size:0.1rem ;
+      height: 0.15rem;
+      &:nth-child(1),&:nth-child(2){
+        color: #e62923;
+      }
+    }
+  }
+  .card-img{
+    @include square(1.3rem);
+    border-radius: 50%;
     position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-    color: #999999;
-    font-family: f, sans-serif;
+    @include center();
+    bottom:-45%;
+    background:url($imgs + 'yd-pic.png')center no-repeat;
+    overflow: hidden;
+  }
+  .lunbo-2{
+    background: url($imgs + 'lunbo-2.png')center no-repeat;
+    background-size:100%;
+  }
+  .lunbo-3{
+    background: url($imgs + 'lunbo-3.png')center no-repeat;
+    background-size:100%;
+  }
+}
+.historyBox{
+  @include cube(100%,1rem);
+  margin: 0.2rem 0;
+  .inner{
+    @include cube(93%,100%);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .historySearch{
+    @include cube(1.7rem,100%);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    h3{
+      margin: 0;
+      width: 100%;
+    }
+    .the{
+      color: #ffffff;
+      font-size: 0.22rem;
+    }
+    .xuan{
+      color: #e3b08b;
+      font-size: 0.22rem;
+    }
+    .HistoryText{
+      color: #ffffff;
+      font-size: 0.28rem;
+      span:nth-child(3),span:nth-child(4){
+        display: inline-block;
+        @include circle(0.07rem);
+        background: #e62923;
+        margin-left: 0.04rem;
+      }
+    }
+    .circle{
+      display: flex;
+      span{
+        display: inline-block;
+        margin-right: 0.05rem;
+        @include circle(0.04rem);
+        background: #fff;
+        &:nth-child(1),&:nth-child(10){
+          background: #e62923;
+        }
+      }
+    }
+  }
+  .historyChange{
+    @include cube(1.2rem,0.45rem);
+    background: url($imgs + "xiaochange_03.png")center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 0.24rem;
+    a{
+      color: #ffffff;
+      text-decoration: none;
+    }
   }
-  .searchBut{
-    display: inline-block;
-    @include square(0.36rem);
-    background: url("../../img/search_03.png")center/cover no-repeat;
-    @include tb;
-    left: 0.23rem;
-  }
-  .micBut{
-    display: inline-block;
-    @include square(0.36rem);
-    background: url("../../img/mic_03.png")center/cover no-repeat;
-    @include tb;
-    right: 0.23rem;
-  }
-  .position{
-    @include cube(2.4rem,0.62rem);
-    @include lr;
-    bottom: 0;
+  .level{
+    @include cube(3.7rem,0.04rem);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    a{
+    span{
       display: inline-block;
-      @include square(0.36rem);
+      &:nth-child(2){
+        @include cube(3.63rem,0.015rem);
+        background: #c6b390;
+      }
+      &:nth-child(1),&:nth-child(3){
+        @include circle(0.06rem);
+        background: #e62923;
+      }
     }
-    .positionIcon{
-      @include square(100%);
-      background: url("../../img/xiaopisition_03.png")center/contain no-repeat;
+  }
+}
+.hotSearch{
+  @include cube(100%,6.08rem);
+  .inner{
+    @include cube(93%,100%);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 0.25rem;
+    .zhujia,.shaoxing{
+      @include cube(100%,1.7rem);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
     }
-    .place{
-      color: #c3b08e;
-      font-size:0.24rem;
-      font-family: '苹方',sans-serif;
+    .zhujiaImg{
+      @include cube(1.88rem,100%);
+      background: url($imgs + "xiaozhuj_03.png")center/contain no-repeat;
     }
-    .city{
-      color: #a8a7a7;
-      font-size:0.24rem;
-      font-family: '苹方',sans-serif;
+    .shaoxingImg{
+      @include cube(1.88rem,100%);
+      background: url($imgs + "xiaoshao_03.png")center/contain no-repeat;
+    }
+    .introduce{
+      @include cube(5.09rem,100%);
+      background: url($imgs + "xiaointroduce_03.png")center/contain no-repeat;
+      padding: 0.1rem 0.2rem;
+      //display: flex;
+      //justify-content: space-around;
+      //align-items: center;
+      //flex-wrap: wrap;
+      p{
+        width: 100%;
+        height: 0.32rem;
+      }
+      .title{
+        font-size: 0.28rem;
+      }
+      .dian{
+        display: flex;
+        align-items: center;
+        height: 0.2rem;
+        span{
+          display: inline-block;
+          @include circle(0.05rem);
+          background: #cfcfcf;
+          margin-right: 0.06rem;
+        }
+      }
+      .english,.intro{
+        font-size: 0.2rem;
+      }
     }
   }
 }

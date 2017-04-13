@@ -49,18 +49,21 @@
 body {
   font-size: 16px; }
 
-@font-face {
-  font-family: guyue;
-  src: url(../../fonts/文悦古体仿宋.otf); }
-
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0; }
 
+* {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  list-style: none;
+  font-size: 0.12rem; }
+
 body {
   width: 100%;
   height: 100%;
-  background: url("../../img/xiaokaishi.png") center/cover no-repeat; }
+  background: url("../../images/xiaokaishi.png") center/cover no-repeat; }
 
 .headerTop {
   width: 100%;
@@ -97,7 +100,7 @@ body {
     display: inline-block;
     width: 100%;
     height: 100%;
-    background: url("../../img/more_03.png") center/cover no-repeat; }
+    background: url("../../images/xiaomore_03.png") center/cover no-repeat; }
 
 .headerCon .titleBox {
   width: 38%;
@@ -109,7 +112,7 @@ body {
   .headerCon .titleBox .left-r, .headerCon .titleBox .right-r {
     width: 0.51rem;
     height: 0.13rem;
-    background: url("../../img/xiaoleft.png") center/cover no-repeat; }
+    background: url("../../images/xiaoleft.png") center/cover no-repeat; }
   .headerCon .titleBox .title {
     width: 2rem;
     height: 0.8rem;
@@ -130,16 +133,14 @@ body {
       font-weight: 400;
       font-family: guyue,sans-serif; }
   .headerCon .titleBox .right-r {
-    background: url("../../img/right.png") center/cover no-repeat; }
+    background: url("../../images/xiaoright.png") center/cover no-repeat; }
 
 .search {
   width: 100%;
-  height: 6.2rem;
-  background: red; }
+  height: 6.2rem; }
   .search .inner {
     width: 94%;
     height: 100%;
-    background: #eeeeee;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -167,9 +168,114 @@ body {
       height: 0.25rem; }
   .search .sign .plus {
     margin-top: 0.2rem;
-    background: url("../../img/xiaoplus_03.png") center/cover no-repeat; }
+    background: url("../../images/xiaoplus_03.png") center/cover no-repeat; }
   .search .sign .reduce {
     margin-top: 0.2rem;
-    background: url("../../img/xiaoreduce_03.png") center/cover no-repeat; }
+    background: url("../../images/xiaoreduce_03.png") center/cover no-repeat; }
   .search .sign .compass {
-    background: url("../../img/compass_03.png") center/cover no-repeat; }
+    background: url("../../images/xiaocompass_03.png") center/cover no-repeat; }
+  .search .startsearch {
+    width: 5.4rem;
+    height: 100%;
+    background: url("../../images/xiaosousuo_03.png") center/cover no-repeat; }
+    .search .startsearch p {
+      width: 0.66rem;
+      height: 0.89rem; }
+    .search .startsearch div {
+      height: 1.3rem; }
+    .search .startsearch .p1 p {
+      margin-left: 3.5rem;
+      background: url("../../images/xiaodingwei_03.png") center/cover no-repeat; }
+    .search .startsearch .p2 p {
+      margin-left: 1.3rem;
+      background: url("../../images/xiaodingwei_03.png") center/cover no-repeat; }
+    .search .startsearch .p3 p {
+      margin-left: 4.2rem;
+      background: url("../../images/xiaodingwei_03.png") center/cover no-repeat; }
+    .search .startsearch .p4 p {
+      margin-left: 0.9rem;
+      background: url("../../images/xiaodingwei_03.png") center/cover no-repeat; }
+
+.scenicSpot {
+  width: auto;
+  height: 5.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden; }
+  .scenicSpot div {
+    position: relative; }
+  .scenicSpot .palace {
+    margin-left: -2rem;
+    width: 2.98rem;
+    height: 3.86rem;
+    background: url("../../images/xiaogu_03.png") center/cover no-repeat; }
+    .scenicSpot .palace p:nth-child(1) {
+      color: #111;
+      font-size: 0.44rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 1rem;
+      width: 100%;
+      padding-left: 0.3rem; }
+    .scenicSpot .palace p:nth-child(2) {
+      color: #666;
+      font-size: 0.2rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 0.6rem;
+      width: 100%;
+      padding-left: 0.3rem; }
+  .scenicSpot .Humanities {
+    width: 4.16rem;
+    height: 5.37rem;
+    background: url("../../images/xiaowen_03.png") center/cover no-repeat; }
+    .scenicSpot .Humanities p:nth-child(1) {
+      color: #111;
+      font-size: 0.64rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 1.4rem;
+      width: 100%;
+      padding-left: 0.3rem; }
+    .scenicSpot .Humanities p:nth-child(2) {
+      color: #666;
+      font-size: 0.4rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 0.6rem;
+      width: 100%;
+      padding-left: 0.3rem; }
+  .scenicSpot .selfGuide {
+    margin-right: -2rem;
+    width: 2.98rem;
+    height: 3.86rem;
+    background: url("../../images/xiaodao_03.png") center/cover no-repeat; }
+    .scenicSpot .selfGuide p:nth-child(1) {
+      color: #111;
+      font-size: 0.44rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 1rem;
+      width: 100%;
+      padding-left: 0.3rem; }
+    .scenicSpot .selfGuide p:nth-child(2) {
+      color: #666;
+      font-size: 0.2rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 0.6rem;
+      width: 100%;
+      padding-left: 0.3rem; }

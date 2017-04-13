@@ -1,5 +1,4 @@
 @import "../mixin";
-@import "../base.css";
 @import "fonts";
 *{
   margin:0;
@@ -157,8 +156,12 @@ $img:'../../images/';
     position: absolute;
     @include center();
     bottom:-45%;
-    background:url($img + 'yd-pic.png')center no-repeat;
+
     overflow: hidden;
+    img{
+      @include square(1.3rem);
+
+    }
   }
   .lunbo-2{
     background: url($img + 'lunbo-2.png')center no-repeat;
@@ -422,6 +425,7 @@ $img:'../../images/';
     }
 
     .img-heart{
+      z-index:1;
       display: block;
       @include cube(0.4rem,0.4rem);
       background: url($img + 'yd-point-heart.png')center no-repeat;
@@ -458,13 +462,77 @@ $img:'../../images/';
       @include cube(100%,2.22rem);
       display: flex;
     }
+    .find-left1{
+      flex: 0.5;
+      position: relative;
+      img{
+        @include cube(88.2%,1.77rem);
+      }
+      .find-img4{
+        //@include cube(90.2%,1.77rem);
+        @include center();
+        top:-8px;
+        left:-8px;
+        background: url($img + 'yd-find-img1.png')center no-repeat;
+      }
+      .find-img5{
+        //@include cube(90.2%,1.17rem);
+        @include center();
+        background: #DBDBDB;
+      }
+      .find-img6{
+        //@include cube(90.2%,1.17rem);
+        @include center();
+        top:8px;
+        left:8px;
+        background: #E6E6E6;
+      }
+    }
+    .find-last{
+      flex: 0.5;
+      position: relative;
+      margin:0.24rem;
+      display: flex;
+      flex-direction: column;
+      p{
+        text-align: center;
+      }
+      .en-span{
+        flex: 1;
+        display: block;
+        @include cube(0.69rem,0.07rem);
+        margin: 0 auto;
+        background: url($img +'yd-en.png')center no-repeat;
+        background-size:100%;
+      }
+      .transit{
+        flex:0.3;
+        @include cube(1.13rem,0.04rem);
+        margin: 0 auto;
+        background:url($img +'yd-tr.png')center no-repeat;
+        background-size:100%;
+      }
+      .chat{
+        flex:1;
+        float: left;
+      }
+      .p{
+        color:#333333;
+        font-size:0.2rem;
+        align-self: flex-start;
+        p{
+          text-align:center;
+        }
+      }
+
+    }
+    img{
+      @include cube(90.2%,1.8rem);
+    }
     .find-left{
       flex: 1;
       position: relative;
 
-      img{
-        @include cube(90.2%,1.8rem);
-      }
       .find-img1{
         @include center();
         top:-8px;
@@ -484,7 +552,8 @@ $img:'../../images/';
     }
     .find-right{
       flex: 1;
-        display: flex;
+      display: flex;
+      margin-left:0.1rem;
       flex-direction: column;
       position: relative;
     }
@@ -531,10 +600,14 @@ $img:'../../images/';
       background-size:88%;
     }
     .find-right2{
-      flex: 1;
+      flex: 0.5;
       display: flex;
       align-items: flex-end;
       color: #A5A5A5;
+      p{
+        font-size: 0.24rem;
+        color:#939393;
+      }
     }
     .dian{
       display: inline-block;
@@ -545,17 +618,24 @@ $img:'../../images/';
     .find-right3{
       flex: 1;
       font-size: 0.12rem;
-      color: #A5A5A5;
+      span{
+        font-size: 0.2rem;
+        color:#8A8A8A;
+      }
     }
     .transit{
-      @include cube(100%,0.2rem);
+      @include cube(98%,0.2rem);
+      margin: 0 auto;
       background:url($img + 'yd-transit.png')center no-repeat;
-      background-size:90%;
+      background-size:100%;
     }
     .chat{
       @include cube(100%,0.55rem);
-
     }
+  }
+  .hot-play2{
+    background: url($img + 'yd-bj.png')center no-repeat;
+    background-size:100%;
   }
 }
 //more
@@ -591,7 +671,8 @@ $img:'../../images/';
 .footer_table{
   position: fixed;
   bottom: 0;
-  @include cube(100%,0.99rem);
+  z-index: 1;
+  @include cube(100%,0.98rem);
   background: #000;
   margin-top:0.15rem;
   .inner{
@@ -604,6 +685,7 @@ $img:'../../images/';
     justify-content: space-between;
     align-items: center;
     .foot{
+      display: block;
       @include cube(1.685rem,100%);
       position:relative;
       .con{
@@ -613,29 +695,24 @@ $img:'../../images/';
         flex-direction:column;
         justify-content: space-around;
         align-content: space-around;
+
       }
       .img{
         @include cube(0.04rem,0.34rem);
         @include tb;
         right:0;
-        background:url($img + 'wzj-footer.png') center/cover no-repeat;
+        background:url($img + 'yd-footer.png') center/cover no-repeat;
+        background-size:100%;
       }
-      //.rightL{
-      //  @include cube(0.04rem,0.34rem);
-      //  @include tb;
-      //  right:0;
-      //  z-index: 20;
-      //  display: flex;
-      //  flex-wrap: wrap;
-      //  justify-content: space-between;
-      //  align-content: center;
-      //}
     }
     .foot .con .title{
       @include cube(0.63rem,0.5rem);
       color:#fff;
       font-size: 0.24rem;
       font-family: '方正仿宋繁体',sans-serif;
+    }
+    .foot .con .current{
+      color:#F2110D;
     }
     .foot .con .first{
       position: absolute;
@@ -649,23 +726,15 @@ $img:'../../images/';
     }
     .foot .con .en{
       @include cube(0.72rem,0.27rem);
+      display: block;
+      margin-top: 0.1rem;
       color:#fff;
       font-size: 0.12rem;
     }
     .foot .con .shouye{
       position: absolute;
-      bottom:0;
+      bottom: -0.06rem;
       left:0;
     }
-    //.foot .rightL .circle{
-    //  display: block;
-    //  @include circle(0.03rem);
-    //  background: #656666;
-    //}
-    //.foot .rightL .line{
-    //  display:block;
-    //  @include cube(0.01rem,0.3rem);
-    //  background: #656666;
-    //}
   }
 }

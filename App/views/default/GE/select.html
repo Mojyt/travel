@@ -1,19 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>搜索地址</title>
-    <meta name='viewport' content='width=device-width' />
-    <link rel="stylesheet" href="<?php echo CSS_PATH?>css/GE/GEselect.css">
-    <link rel="stylesheet" href="<?php echo CSS_PATH?>css/base.css">
-</head>
+<?php include VIEW.'default/header.html'?>
+<link rel="stylesheet" href="<?php echo CSS_PATH?>GE/GEselect.css">
+<link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
 <body>
     <div class="headerTop">
         <div class="headerInfo"></div>
         <div class="headerCon">
             <div class="inner">
                 <div class="moreBut">
-                    <a href=""></a>
+                    <a href="search"></a>
                 </div>
                 <ul class="titleBox">
                     <li class="left-r"></li>
@@ -24,7 +18,7 @@
                     <li class="right-r"></li>
                 </ul>
                 <div class="mapBut">
-                    <a href=""></a>
+                    <a href="stsearch"></a>
                 </div>
             </div>
         </div>
@@ -33,7 +27,7 @@
         <div class="boxWrap">
             <input type="text" name="text" placeholder="输入目的地" class="searchBox">
             <a href="" class="searchBut"></a>
-            <a href="" class="micBut"></a>
+            <a href="voice_begin" class="micBut"></a>
         </div>
         <div class="position">
             <a href="">

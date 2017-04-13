@@ -1,0 +1,179 @@
+@import 'mixin.scss';
+@import "index2.css";
+$device-list:320px,360px,375px,412px,414px,750px;
+html{
+  @each $i in $device-list{
+    @media screen and(min-width: #{$i}){
+      font-size: 100* ($i/750);
+    }
+  }
+}
+@font-face {
+  font-family: 'search';
+  src: url(../../fonts/文悦古体仿宋.otf);
+}
+body{
+  font-family: 'search';
+  font-size: 16px;
+  background: #ECE9E8;
+}
+.box{
+  background:url(../../images/r001.png)no-repeat;
+  background-size: 100%;
+}
+.table{
+  height: 1.2rem;
+  display: flex;
+  align-items: center;
+  .arrow{
+    display: block;
+    background: url(../../images/voice-back.png) center no-repeat;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    margin-left: 4%;
+    line-height: 0.6rem;
+    font-family: 'leftp',sans-serif;
+  }
+}
+.head{
+  @include rect(100%,5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .text{
+    @include rect(4.15rem,1.4rem);
+    background: url(../../images/r004.png)no-repeat;
+    background-size: 100%;
+    text-align: center;
+    .message{
+      font-size: 0.16rem;
+    }
+  }
+  .s{
+    font-size: 0.5rem;
+    color: #F4F4F2;
+  }
+}
+.center{
+  @include rect(6.58rem,7.55rem);
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  background: url(../../images/r1_03.png)no-repeat;
+  background-size: 100%;
+  .boxes{
+    @include rect(4.10rem,4.67rem);
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+  .oval{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    .post{
+    @include rect(1.63rem,0.31rem);
+      border-radius: 0.5rem;
+      color: #FFF;
+      text-align: center;
+      line-height: 0.31rem;
+      font-size: 0.2rem;
+      background: #FF0000;
+      border-bottom:  #F9CBC6;
+    }
+  }
+  .enroll{
+    @include rect(3.9rem,2.6rem);
+    .seek{
+      height: 0.86rem;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      border-bottom: 0.01rem solid #BEB6B0;
+      .i{
+        @include rect(0.3rem,0.23rem);
+        display: inline-block;
+        background: url(../../images/r002.jpg)no-repeat;
+        background-size: 100%;
+
+      }
+      .key{
+        display: inline-block;
+        @include rect(0.32rem,0.44rem);
+        background: url(../../images/r003.png)no-repeat;
+        background-size: 100%;
+      }
+      .circle{
+        display:flex;
+        @include rect(0.3rem,0.16rem);
+        justify-content: space-around;
+        .dot{
+          display:flex;
+          align-self: center;
+          @include rect(0.08rem,0.08rem);
+          background: url(../../images/r006.png);
+          background-size: 100%;
+        }
+        .dots{
+          display: flex;
+          @include rect(0.16rem,0.16rem);
+          background: url(../../images/r007.png);
+          background-size: 100%;
+        }
+        .small{
+          display: flex;
+          @include rect(0.08rem,0.08rem);
+          align-self: center;
+          background: url(../../images/r008.png);
+          background-size: 100%;
+        }
+        .smalls{
+          display: flex;
+          @include rect(0.16rem,0.16rem);
+          align-self: center;
+          background: url(../../images/r009.png);
+          background-size: 100%;
+        }
+      }
+      .login{
+        @include rect(3rem,0.5rem);
+        background: none;
+        font-size: 0.25rem;
+      }
+    }
+  }
+  .bottom{
+    display: flex;
+    align-self: center;
+    @include rect(3.86rem,0.78rem);
+    background: #A29D97;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    .span{
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      .next{
+        color:#D6BF9B;
+        font-size: 0.20rem;
+      }
+      .white{
+        color: #E2E0DE;
+        font-size: 0.25rem;
+        font-style:normal;
+        margin-left: 0.1rem;
+      }
+      .nsis{
+        color:#ECEBE9;
+        font-size: 0.1rem;
+      }
+    }
+
+  }
+}

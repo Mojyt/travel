@@ -1,12 +1,6 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <meta name='viewport' content='width=device-width' />
-    <link rel="stylesheet" href="<?php echo CSS_PATH?>GE/GEsearch.css">
-    <link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
-</head>
+<?php include VIEW.'default/header.html'?>
+<link rel="stylesheet" href="<?php echo CSS_PATH?>GE/GEsearch.css">
+<link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
 <body>
     <div class="headerTop">
         <div class="headerInfo"></div>
@@ -24,7 +18,7 @@
                     <li class="right-r"></li>
                 </ul>
                 <div class="mapBut">
-                    <a href=""></a>
+                    <a href="stsearch"></a>
                 </div>
             </div>
         </div>
@@ -32,11 +26,11 @@
     <div class="searchWrap">
         <div class="boxWrap">
             <input type="text" name="text" placeholder="目的地/景点/攻略/导游" class="searchBox">
-            <a href="" class="searchBut"></a>
-            <a href="" class="micBut"></a>
+            <a href="searching" class="searchBut"></a>
+            <a href="voice_begin" class="micBut"></a>
         </div>
         <div class="position">
-            <a href="">
+            <a href="select">
                 <div class="positionIcon">
                 </div>
             </a>

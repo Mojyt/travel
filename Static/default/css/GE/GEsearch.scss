@@ -149,10 +149,63 @@ $imgs:"../../images/";
     }
   }
 }
+.historyPlace{
+  @include cube(100%,3.95rem);
+  .inner{
+    @include cube(93%,100%);
+    margin: 0 auto;
+    padding: 0.3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .rank{
+      @include cube(100%,1rem);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      &:nth-child(1),&:nth-child(3){
+        width: 66.5%;
+      }
+    }
+    .rankSon{
+      @include cube(2.28rem,0.83rem);
+      background: #000 url($imgs + "xiao12_03.png")center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      padding-top: 0.1rem;
+      h1{
+        color: #030308;
+        font-size: 0.26rem;
+        &::after{
+          content: '';
+          display: inline-block;
+          @include square(0.17rem);
+          background: url($imgs + "xiao14_03.png")center/cover no-repeat;
+        }
+      }
+      p{
+        color: #171717;
+        font-size: 0.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        span{
+          font-size: 0.15rem;
+          &:nth-child(1),&:nth-child(4){
+            display: inline-block;
+            @include cube(0.2rem,0.01rem);
+            background: #171717;
+          }
+        }
+      }
+    }
+  }
+}
 .historyBox{
-  margin-top: 0.3rem;
   @include cube(100%,1rem);
-  //background: #f0ad4e;
   .inner{
     @include cube(93%,100%);
     margin: 0 auto;
@@ -230,61 +283,6 @@ $imgs:"../../images/";
     }
   }
 }
-.historyPlace{
-  @include cube(100%,3.95rem);
-  .inner{
-    @include cube(93%,100%);
-    margin: 0 auto;
-    padding: 0.3rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    .rank{
-      @include cube(100%,1rem);
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      &:nth-child(1),&:nth-child(3){
-        width: 66.5%;
-      }
-    }
-    .rankSon{
-      @include cube(2.28rem,0.83rem);
-      background: #000 url($imgs + "xiao12_03.png")center/cover no-repeat;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-      padding-top: 0.1rem;
-      h1{
-        color: #030308;
-        font-size: 0.26rem;
-        &::after{
-          content: '';
-          display: inline-block;
-          @include square(0.17rem);
-          background: url($imgs + "xiao14_03.png")center/cover no-repeat;
-        }
-      }
-      p{
-        color: #171717;
-        font-size: 0.1rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        span{
-          font-size: 0.15rem;
-          &:nth-child(1),&:nth-child(4){
-            display: inline-block;
-            @include cube(0.2rem,0.01rem);
-            background: #171717;
-          }
-        }
-      }
-    }
-  }
-}
 .hotSearch{
   @include cube(100%,4.08rem);
   .inner{
@@ -314,26 +312,31 @@ $imgs:"../../images/";
       @include cube(5.09rem,100%);
       background: url($imgs + "xiaointroduce_03.png")center/contain no-repeat;
       padding: 0.1rem 0.2rem;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-wrap: wrap;
+      //display: flex;
+      //justify-content: space-around;
+      //align-items: center;
+      //flex-wrap: wrap;
       p{
         width: 100%;
+        height: 0.32rem;
       }
-    }
-    .title{
-      font-size: 0.28rem;
-    }
-    .dian{
-      span{
-        display: inline-block;
-        @include circle(0.05rem);
-        background: #cfcfcf;
+      .title{
+        font-size: 0.28rem;
       }
-    }
-    .english,.intro{
-      font-size: 0.2rem;
+      .dian{
+        display: flex;
+        align-items: center;
+        height: 0.2rem;
+        span{
+          display: inline-block;
+          @include circle(0.05rem);
+          background: #cfcfcf;
+          margin-right: 0.06rem;
+        }
+      }
+      .english,.intro{
+        font-size: 0.2rem;
+      }
     }
   }
 }

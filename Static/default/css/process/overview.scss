@@ -1,6 +1,95 @@
 @import "../mixin";
 @import "../base.css";
 $IMG:'../../images/';
+
+.headerTop{
+  @include cube(100%,1.2rem);
+  position: relative;
+  background: #000;
+  .headerInfo{
+    @include cube(100%,100%);
+    background: #000000;
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .headerCon{
+    @include cube(100%,100%);
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+$imgs:"../../images/";
+
+.headerCon{
+  .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include cube(93%,100%);
+    margin: 0 auto;
+  }
+  .moreBut{
+    @include square(0.62rem);
+    a{
+      display: inline-block;
+      @include cube(100%,100%);
+      background: url($imgs + "xiaomore_03.png")center/cover no-repeat;
+    }
+  }
+  .titleBox{
+    @include cube(38%,100%);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    .left-r,.right-r{
+      @include cube(0.51rem,0.13rem);
+      background: url($imgs + 'xiaoleft.png')center/cover no-repeat;
+    }
+    .title{
+      @include cube(2rem,0.8rem);
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content: center;
+      .chinese{
+        @include font(0.3rem,#fff,400);
+        font-family:guyue,sans-serif;
+      }
+      .english{
+        margin-top:2%;
+        text-align: center;
+        @include font(0.18rem,#fff,400);
+        font-family:guyue,sans-serif;
+      }
+    }
+    .right-r{
+      background:url($imgs + 'right.png')center/cover no-repeat;
+    }
+  }
+  //.mapBut{
+  //  @include square(0.62rem);
+  //  a{
+  //    display: inline-block;
+  //    @include cube(100%,100%);
+  //    background: url($imgs + "xiaomap_03.png")center/cover no-repeat;
+  //  }
+  //}
+}
+
+
+
+
+
+
+
+
+
+
+
 .header{
   @include cube(100%,1.2rem);
   background: #000;
@@ -10,6 +99,7 @@ $IMG:'../../images/';
   .point{
     @include circle(0.62rem);
     background: #c6b390;
+
   }
   .text{
     width:80%;
@@ -36,13 +126,15 @@ $IMG:'../../images/';
 }
 .content{
    width:100%;
-   background: url($IMG + "bright-squares_02.png");
+  height:auto;
+   background: url($IMG + "zl-bright-squares_02.png");
     padding-left:0.24rem;
     padding-top: 0.4rem;
   display: flex;
     justify-content: space-between;
   .bg{
-    @include cube(1.5rem,0.55rem);
+    //@include cube(1.5rem,0.55rem);
+    height: 0.55rem;
     background:#c6b390;
     display: flex;
     align-items: center;
@@ -50,9 +142,14 @@ $IMG:'../../images/';
   }
   h2{
     color:#f00203;
+    font-size: 0.28rem;
   }
   .hot_scene{
-    @include cube(1.5rem,auto);
+
+    .xiaobj{
+      @include cube(0.45rem,0.25rem);
+      background: url($IMG + "xiaobj_03.png");
+    }
   }
 
   .hot_target{
@@ -63,27 +160,30 @@ $IMG:'../../images/';
     padding-right: 0.24rem;
   }
   ul{
-    @include cube(100%,7.6rem);
+    //@include cube(100%,7.6rem);
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
   }
   li{
     //@include cube(100%,)
+    width:100%;
     text-align: center;
     display:flex;
     justify-content: center;
     align-items: center;
+    line-height: 0.76rem;
     a{
-      @include cube(100%,100%);
-      display: block;
+      @include cube(65%,100%);
+      //display: block;
       display:flex;
       justify-content: center;
       align-items: center;
       color:#fcfbfb;
-
-
+      font-size: 0.12rem;
+      line-height: 0.76rem;
 
     }
   }
@@ -99,13 +199,26 @@ $IMG:'../../images/';
   }
   .right{
     @include cube(96%,100%);
+    h1{
+      font-size: 0.36rem;
+
+    }
 
   }
+
+  $list:(
+          cubeyi:'../../images/zl-18324_03.png',
+          cubeer:'../../images/zl-aaa_03.png',
+          cubesan:'../../images/zl-bbb_03.png',
+          cubesi:'../../images/zl-ccc_03.png'
+
+
+
+  );
   .con{
     //margin-left:0.24rem;
-    @include cube(80%,5.1rem);
+    @include cube(100%,auto);
     .page{
-      padding-right: 0.48rem;
       margin-top:0.2rem;;
       @include cube(100%,5.1rem);
       display: flex;
@@ -113,17 +226,57 @@ $IMG:'../../images/';
       //align-items: flex-end;
       justify-content: space-between;
       align-content: space-between;
-      div{
-        @include cube(2.4rem,2.4rem);
+      div {
+        @include cube(2.4rem, 2.4rem);
         border-radius: 5%;
         background: red;
       }
+
+
+
+      @each $i in map_keys($list){
+        div.#{$i}{
+          background: url(map_get($list,$i))center/cover no-repeat;
+        }
+      }
+
     }
   }
-  .list{
+
+.list{
+      @include cube(100%,auto);
+      margin-top: 0.3rem;
+  ul{
     @include cube(100%,auto);
-    li{
-       //@include cube(100%,)
-    }
+    display: flex;
+    justify-content: flex-start;
   }
+  li{
+    width: 100%;
+    text-align: left;
+    border-bottom: 0.01rem solid #b6c1dc;
+    line-height: 0.60rem;
+  }
+  li a{
+    width:100%;
+    color:#666666;
+    font-size: 0.26rem;
+    display: block;
+    padding-left: 0.24rem;
+    line-height: 0.60rem;
+
+  }
+    li a.active{
+      color: #000;
+      font-weight: 100;
+      font-size:0.32rem;
+    }
+   li.active{
+     border-bottom:0;
+     border-left: 0.08rem solid #fdbc68;
+   }
 }
+
+
+}
+

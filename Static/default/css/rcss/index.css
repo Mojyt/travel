@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(index2.css);
 @media screen and (min-width: 320px) {
   html {
@@ -24,27 +25,50 @@
     font-size: 100px; } }
 
 @font-face {
-  font-family: 'search'; }
+  font-family: 'search';
+  src: url(../../fonts/文悦古体仿宋.otf); }
 
 body {
+  font-family: 'search';
   font-size: 16px;
-  background: #ECE9E8;
-  box-sizing: border-box;
+  background: #ECE9E8; }
+
+.box {
+  background: url(../../images/r001.png) no-repeat;
   background-size: 100%; }
+
+.table {
+  height: 1.2rem;
+  display: flex;
+  align-items: center; }
+  .table .arrow {
+    display: block;
+    background: url(../../images/voice-back.png) center no-repeat;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    margin-left: 4%;
+    line-height: 0.6rem;
+    font-family: 'leftp',sans-serif; }
 
 .head {
   width: 100%;
   height: 5rem;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
   .head .text {
     width: 4.15rem;
-    height: 2.1rem;
-    background: rgba(238, 137, 70, 0.7);
+    height: 1.4rem;
+    background: url(../../images/r004.png) no-repeat;
+    background-size: 100%;
     text-align: center; }
     .head .text .message {
       font-size: 0.16rem; }
+  .head .s {
+    font-size: 0.5rem;
+    color: #F4F4F2; }
 
 .center {
   width: 6.58rem;
@@ -54,7 +78,14 @@ body {
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: center;
-  background: url(../../img/r1_03.png) no-repeat; }
+  background: url(../../images/r1_03.png) no-repeat;
+  background-size: 100%; }
+  .center .boxes {
+    width: 4.1rem;
+    height: 4.5rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center; }
   .center .enroll {
     width: 3.9rem;
     height: 2.6rem; }
@@ -66,27 +97,40 @@ body {
         width: 0.3rem;
         height: 0.23rem;
         display: inline-block;
-        background: url(../../img/r002.jpg) no-repeat;
+        background: url(../../images/r002.jpg) no-repeat;
         background-size: 100%; }
       .center .enroll .seek .key {
         display: inline-block;
         width: 0.32rem;
         height: 0.44rem;
-        background: url(../../img/r003.jpg) no-repeat; }
+        background: url(../../images/r003.png) no-repeat;
+        background-size: 100%; }
       .center .enroll .seek .login {
         width: 3rem;
         height: 0.5rem;
         background: none;
         font-size: 0.25rem; }
   .center .bottom {
+    display: flex;
     align-self: center;
     width: 3.86rem;
     height: 0.78rem;
     background: #111211;
-    text-align: center; }
-    .center .bottom .next {
-      color: #D6BF9B;
-      line-height: 0.5rem; }
-    .center .bottom .nsis {
-      line-height: 0.0rem;
-      color: #ECEBE9; }
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box; }
+    .center .bottom .span {
+      display: flex;
+      flex-direction: column;
+      align-self: center; }
+      .center .bottom .span .next {
+        color: #D6BF9B;
+        font-size: 0.20rem; }
+      .center .bottom .span .white {
+        color: #FFF;
+        font-size: 0.25rem;
+        font-style: normal;
+        margin-left: 0.1rem; }
+      .center .bottom .span .nsis {
+        color: #ECEBE9;
+        font-size: 0.1rem; }
