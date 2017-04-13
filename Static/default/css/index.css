@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/*函数*/
+/*@function bg(){
+	$r:floor(random()*56+200);
+	$g:floor(random()*56);
+	$b:floor(random()*56);
+	$color:rgb($r,$g,$b);
+	@debug $color;  
+	@return $color;
+}*/
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 365px) {
+  html {
+    font-size: 48.66667px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body {
+  font-size: 16px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  list-style: none;
+  font-size: 20px; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+.head {
+  width: 100%;
+  height: 1rem;
+  background: #030012;
+  display: flex;
+  justify-content: center; }
+  .head .head-inner {
+    margin: 0 23px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between; }
+  .head .head-back {
+    width: 0.37rem;
+    height: 100%; }
+  .head .head-logo {
+    width: 3.08rem;
+    height: 100%;
+    background: url(../img/head-logo.png) center no-repeat;
+    background-size: 100%; }
+  .head .head-search {
+    width: 0.37rem;
+    height: 100%;
+    align-self: flex-end;
+    float: right;
+    background: url(../img/search.png) center no-repeat;
+    background-size: 100%; }
+
+.banner {
+  width: 100%;
+  height: 4.01rem;
+  background: url("../img/banner-bj.png") center no-repeat;
+  background-size: 100%;
+  display: flex;
+  align-items: center; }
+  .banner .banner-logo {
+    width: 100%;
+    height: 0.36rem;
+    background: url("../img/banner-logo.png") center no-repeat;
+    background-size: 40%; }
+
+.lunbo {
+  width: 100%;
+  height: 4.29rem;
+  background: #000; }
+  .lunbo .lunbo-inner {
+    width: 94%;
+    height: 100%;
+    background: #f40;
+    overflow: hidden;
+    margin: 0 auto; }
+  .lunbo .lunbo-max-inner {
+    display: flex;
+    align-items: center; }
+  .lunbo .lunbo-common {
+    width: 2.06rem;
+    height: 3.46rem;
+    background: #fff; }
+
+.voice {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  background: url("../img/voice-bj.png");
+  background-size: 105%; }
+
+body {
+  width: 100%;
+  height: 100%; }
