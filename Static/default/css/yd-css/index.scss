@@ -710,16 +710,10 @@ $img:'../../images/';
 }
 //foot
 .footer_table{
-<<<<<<< HEAD
   position:fixed;
   bottom:0;right:0;
   @include cube(100%,1.14rem);
-=======
-  position: fixed;
-  bottom: 0;
   z-index: 1;
-  @include cube(100%,0.98rem);
->>>>>>> bcc82118dfc80863336a66f971e8a5627162a7b2
   background: #000;
   margin-top:0.15rem;
   .inner{
