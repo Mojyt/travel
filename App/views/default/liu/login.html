@@ -6,23 +6,45 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="<?php echo CSS_PATH; ?>liucss/login.css"/>
-    <link rel="stylesheet" href="<?php echo CSS_PATH; ?>liucss/iconfont.css"/>
-    <link rel="stylesheet" href="<?php echo CSS_PATH; ?>base.css"/>
-
+    <link rel="stylesheet" href="<?php echo CSS_PATH; ?>liu/login.css"/>
+    <link rel="stylesheet" href="<?php echo ZT_PATH; ?>iconfont.css"/>
+    <script src="<?php echo JS_PATH; ?>jquery.js"></script>
+    <script src="<?php echo JS_PATH; ?>login.js"></script>
 </head>
 <body>
 <div class="bg">
     <div class="parcel">
         <div class="top">
-            <a href="" class="return iconfont icon-back"></a>
+            <a href="login" class="return iconfont icon-back"></a>
             <a href="" class="registered">注 册</a>
         </div>
         <div class="welcometo">
             <div></div>
         </div>
         <div class="login">
-            <div class="bg"></div>
+            <div class="login_1">
+                <div class="touxiang"></div>
+                <div class="login_2">
+                    <div class="account">
+                        <div class="account_1"></div>
+                        <input type="text"name="user"placeholder="请输入用户名/邮箱/手机号">
+                    </div>
+                    <div class="password">
+                        <div class="password_1"></div>
+                        <input type="password"name="password" placeholder="请输入密码">
+                    </div>
+                    <div class="jizhu">
+                        <a href=""><input type="radio">记住密码</a>
+                        <a href="">忘记密码？</a>
+                    </div>
+                </div>
+                <a href="login_2" class="next">
+                    <div class="next_1">
+                        <span class="bu">下一步!</span>
+                        <span class="The">Thenextstep</span>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </div>

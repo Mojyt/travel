@@ -19,6 +19,7 @@ $(function () {
         $(list).eq(state.next).addClass('dis youjin');
         state.current=state.next;
     }
-    t=setInterval(move,2000);
+    t=setInterval(move,3000);
+    // $(document).on('touchmove',move);
 
 })

@@ -1,0 +1,174 @@
+@import "base";
+html{
+  $widths : (
+          320px,360px,375px,412px,414px,750px
+  );
+  @each $name in $widths{
+    @media screen and(min-width: #{$name}){
+      font-size: 100*($name/750);
+    }
+  }
+}
+body{
+  background: url(../../images/liu/bgq.png);
+  background-size: 100%;
+}
+.bg{
+  @include center(7.02rem,12.96rem,0);
+  .qq{
+    @include chang(100%,6.90rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+      @include yuan(1.63rem);
+      background:url(../../images/liu/qqqqqq.png) no-repeat;
+      background-size: 100%;
+    }
+  }
+  .login{
+    @include chang(100%,3.12rem);
+    margin: 0 auto;
+    .login_1{
+      @include chang(100%,55%);
+      background: url(../../images/liu/lllll_03.png) no-repeat;
+      background-size: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      .touxiang{
+        @include chang(22%,100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .touxiang_1{
+          @include fang(0.80rem);
+          border-radius: 0.05rem;
+          background: url(../../images/liu/touxianga_03.png) no-repeat;
+          background-size: 100%;
+        }
+      }
+      .neirong{
+        @include chang(78%,100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .neirong_1{
+          @include chang(85%,70%);
+          display: flex;
+          flex-wrap: wrap;
+          align-content: space-between;
+          h3{
+            color: #C6B390;
+            font-size: 0.40rem;
+          }
+          .xian{
+            width: 1.80rem;
+            border-bottom:0.01rem dotted #CECCCC;
+          }
+          span{
+            display: block;
+            width: 100%;
+            color:#A3A2A2 ;
+            font-size: 0.30rem;
+          }
+        }
+      }
+    }
+    .login_2{
+      @include chang(100%,50%);
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+        .login_3{
+          display: block;
+          @include chang(2.33rem,0.96rem);
+          background: url(../../images/liu/kk_04.png) no-repeat;
+          background-size: 100%;
+          border-radius: 1rem;
+          @include zi(#fff,0.44rem,0.91rem,center);
+        }
+      .login_3.acctive{
+        display: none;
+      }
+    }
+  }
+  .zhezhao{
+    @include chang(100%,100%);
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    display: none;
+    .zhezhao_1{
+      @include chang(100%,100%);
+      position: fixed;
+      top: 0rem;
+      left: 0rem;
+      background: #000000;
+      opacity: 0.5;
+    }
+    .zhezhao_2{
+      @include chang(100%,100%);
+      position: fixed;
+      top: 0rem;
+      left: 0rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .look{
+        @include chang(5.55rem,4.55rem);
+        background: url(../../images/liu/look_03.png) no-repeat;
+        background-size: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        .guanbi{
+          @include yuan(0.60rem);
+          background: url(../../images/liu/guanbi.png) no-repeat;
+          background-size: 100%;
+          position: absolute;
+          top:0.80rem;
+          right: -0.30rem;
+        }
+        .zi{
+          width: 80%;
+          display: flex;
+          justify-content: space-between;
+          span{
+            display: block;
+             color: #333333;
+             font-size: 0.22rem;
+           }
+        }
+        .liuliang-jixu{
+          @include chang(3.85rem,0.85rem);
+          border-radius: 1rem;
+          position: absolute;
+          bottom: 0rem;
+          background: url(../../images/liu/play_03.png) no-repeat;
+          background-size: 100%;
+          display: flex;
+          align-items: center;
+          .liuliang{
+            display: block;
+            @include chang(50%,100%);
+            border-radius: 1rem;
+            background: url(../../images/liu/kk_04.png) no-repeat center;
+            background-size: 100%;
+            @include zi(#fff,0.35rem,0.85rem,center);
+          }
+          .jixu{
+            display: block;
+            border-radius: 1rem;
+            @include chang(50%,100%);
+            @include zi(#464F54,0.35rem,0.85rem,center);
+          }
+        }
+      }
+    }
+
+  }
+  .zhezhao.acctive{
+    display: block;
+  }
+}
