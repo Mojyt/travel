@@ -178,6 +178,11 @@ class indexController extends Framework
         $this->display('default/bx/success.html');
     }
 
+    public function package()
+    {
+        $this->display('default/bx/new-package.html');
+    }
+
 
 
 

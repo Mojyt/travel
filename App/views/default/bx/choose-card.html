@@ -1,27 +1,21 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="<?php echo CSS_PATH?>bx/choose.css">
-    <link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
-</head>
-<body>
+<?php include VIEW . "default/header.html" ?>
+
+<title>选择银行卡</title>
+<link rel="stylesheet" href="<?php echo CSS_PATH ?>bx/choose.css">
+
+
 <div class="choose-card-top">
     <div class="table">
-    <div class="inner">
-        <div class="content">
-            <a  href="/index.php/index/payment" class="go-prev"></a>
-            <ul class="titleBox">
+        <div class="inner">
+            <div class="content">
+                <a href="/index.php/index/payment" class="go-prev"></a>
+                <ul class="titleBox">
 
-            </ul>
-            <a href="/index.php/index/confirm_add" class="add">添加银行卡</a>
+                </ul>
+                <a href="/index.php/index/confirm_add" class="add">添加银行卡</a>
+            </div>
         </div>
     </div>
-</div>
     <ul class="header">
         <li class="photo-box">
             <div class="photo"></div>
@@ -43,7 +37,7 @@
                 </div>
                 <ul class="card-info">
                     <li class="card-item">CHINA ZHAOSHANGBANK
-                    <span class="point">。</span></li>
+                        <span class="point">。</span></li>
                     <li class="card-item"></li>
                     <span class="card-item">6219******************6580</span>
                 </ul>
@@ -71,7 +65,9 @@
                     </ul>
                 </div>
                 <ul class="card-info">
-                    <li class="card-item" style="color:#878787;">CHINA ZHAOSHANGBANK<span class="point" style="color:#878787;">。</span></li>
+                    <li class="card-item" style="color:#878787;">CHINA ZHAOSHANGBANK<span class="point"
+                                                                                          style="color:#878787;">。</span>
+                    </li>
                     <li class="card-item" style="background:#878787;"></li>
                     <span class="card-item" style="color:#878787;">6219******************6580</span>
                 </ul>
@@ -82,8 +78,8 @@
         </div>
     </div>
 </div>
-</body>
-</html>
+<?php include VIEW . "default/footer.html"?>
+
 
 
 <!--status-->
