@@ -1,0 +1,139 @@
+@charset "UTF-8";
+body, p, pre, ul, ol, li, dl, dt, dd, form, input, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+ul, li, ol, dl, dt, dd {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  border: 0; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body {
+  background: url(../../images/liu/bg.png);
+  background-size: 100%; }
+
+.welcometo {
+  width: 100%;
+  height: 0.92rem;
+  position: absolute;
+  left: 0px;
+  top: 3.14rem;
+  display: flex;
+  justify-content: center; }
+  .welcometo div {
+    width: 4.18rem;
+    height: 100%;
+    background: url(../../images/liu/gjighi.png) no-repeat; }
+
+.login_registered {
+  width: 100%;
+  height: 3.43rem;
+  position: absolute;
+  left: 0px;
+  bottom: 0.85rem;
+  display: flex;
+  justify-content: center; }
+  .login_registered .login_registered1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 5.68rem;
+    height: 100%; }
+    .login_registered .login_registered1 .login {
+      width: 100%;
+      height: 0.91rem;
+      display: flex;
+      justify-content: space-between; }
+      .login_registered .login_registered1 .login .login_1 {
+        width: 2.33rem;
+        height: 100%;
+        background: url(../../images/liu/kk_04.png) no-repeat;
+        background-size: 100%;
+        border-radius: 1rem;
+        font-family: '文悦古体仿宋', sans-serif;
+        color: #fff;
+        font-size: 0.44rem;
+        text-align: center;
+        line-height: 0.91rem; }
+      .login_registered .login_registered1 .login .login_2 {
+        width: 2.33rem;
+        height: 100%;
+        background: url(../../images/liu/kk_04.png) no-repeat;
+        background-size: 100%;
+        border-radius: 1rem;
+        font-family: '文悦古体仿宋', sans-serif;
+        color: #fff;
+        font-size: 0.44rem;
+        text-align: center;
+        line-height: 0.91rem; }
+    .login_registered .login_registered1 .login1 {
+      width: 100%;
+      height: 1.85rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: space-between; }
+      .login_registered .login_registered1 .login1 .login1_1 {
+        width: 2.85rem;
+        height: 0.44rem;
+        background: url(../../images/liu/kljkh.png) no-repeat;
+        background-size: 100%;
+        font-family: '文悦古体仿宋', sans-serif;
+        color: #333;
+        font-size: 0.22rem;
+        text-align: center;
+        line-height: 0.44rem; }
+      .login_registered .login_registered1 .login1 .login1_2 {
+        width: 2.85rem;
+        height: 0.65rem;
+        display: flex;
+        justify-content: space-between; }
+        .login_registered .login_registered1 .login1 .login1_2 .qq {
+          width: 0.65rem;
+          height: 0.65rem;
+          border-radius: 50%;
+          background: url(../../images/liu/qq.png);
+          background-size: 100%;
+          display: block; }
+        .login_registered .login_registered1 .login1 .login1_2 .weixin {
+          width: 0.65rem;
+          height: 0.65rem;
+          border-radius: 50%;
+          background: url(../../images/liu/wx.png);
+          background-size: 100%;
+          display: block; }
+        .login_registered .login_registered1 .login1 .login1_2 .weibo {
+          width: 0.65rem;
+          height: 0.65rem;
+          border-radius: 50%;
+          background: url(../../images/liu/wb.png);
+          background-size: 100%;
+          display: block; }

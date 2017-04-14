@@ -191,7 +191,6 @@ body{
 
 .third{
   @include cube(100%,6.4rem);
-  overflow-x: hidden;
 
   .inner{
     padding:0 0 0 5%;
