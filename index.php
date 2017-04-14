@@ -6,6 +6,7 @@ define('CSS_PATH','/Static/default/css/');
 define('JS_PATH','/Static/default/js/');
 define('IMG_PATH','/Static/default/images/');
 define('FONT_PATH','/Static/default/fonts/');
+define('ZT_PATH','/Static/default/zt/');
 
 
 require 'Cord/common.php';

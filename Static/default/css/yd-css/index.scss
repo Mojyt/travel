@@ -1,5 +1,4 @@
 @import "../mixin";
-@import "../base.css";
 @import "fonts";
 //*{
 //  margin:0;
@@ -516,6 +515,7 @@ $img:'../../images/';
       .chat{
         flex:1;
         float: left;
+
       }
       .p{
         color:#333333;
@@ -630,8 +630,36 @@ $img:'../../images/';
       background:url($img + 'yd-transit.png')center no-repeat;
       background-size:100%;
     }
-    .chat{
-      @include cube(100%,0.55rem);
+    .chater{
+      @include cube(60%,0.34rem);
+      display:flex;
+      justify-content: center;
+      .chat-1{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+          display: block;
+        }
+      }
+      .chat-pic{
+        margin-right: 0.1rem;
+        @include cube(0.28rem,0.28rem);
+        background:url($img + 'yd-point.png')center no-repeat;
+        background-size:100%;
+      }
+      .pic-1{
+        background:url($img + 'yd-point-heart.png')center no-repeat;
+        background-size:100%;
+
+      }
+      .pic-2{
+        background:url($img + 'yd-chat.png')center no-repeat;
+        background-size:100%;
+
+      }
+
     }
   }
   .hot-play2{
@@ -661,8 +689,20 @@ $img:'../../images/';
     color:#fff;
     font-size: 12px;
     top:36%;
-    //background: url(../img/yd-more.png)center no-repeat;
-    //background-size:4%;
+  }
+  .flash{
+    animation: fill 4s linear infinite;
+  }
+  @keyframes fill {
+    0% {
+      transform:rotate(0deg);
+    }
+    50% {
+      transform:rotate(180deg);
+    }
+    100% {
+      transform:rotate(360deg);
+    }
   }
 }
 .foot-db{
@@ -670,9 +710,16 @@ $img:'../../images/';
 }
 //foot
 .footer_table{
+<<<<<<< HEAD
   position:fixed;
   bottom:0;right:0;
   @include cube(100%,1.14rem);
+=======
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  @include cube(100%,0.98rem);
+>>>>>>> bcc82118dfc80863336a66f971e8a5627162a7b2
   background: #000;
   margin-top:0.15rem;
   .inner{
@@ -725,13 +772,15 @@ $img:'../../images/';
     }
     .foot .con .en{
       @include cube(0.72rem,0.27rem);
+      display: block;
+      margin-top: 0.1rem;
       color:#fff;
       font-size: 0.1rem;
       padding-top:0.05rem;
     }
     .foot .con .shouye{
       position: absolute;
-      bottom:0;
+      bottom: -0.06rem;
       left:0;
     }
   }

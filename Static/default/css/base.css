@@ -1,18 +1,17 @@
-body,p,pre,ul,li,ol,dd,dl,dt,form,input,h1,h2,h3,h4,h5,h6{
-    margin:0;
-    padding:0;
+body,p,pre,ul,ol,li,dl,dt,dd,form,input,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
 }
-ul,li,ol,dl,dd,dt{
-    list-style: none;
+ul,li,ol,dl,dt,dd{
+	list-style:none;
 }
 a{
-    text-decoration: none;
-    color:#333;
-    /*-webkit-tap-highlight-color: transparent;*/
+	text-decoration:none;
 }
-img,button{
-    border:0;
+img{
+	border:0;
 }
+<<<<<<< HEAD
 
 s,i{
     font-style: normal;
@@ -27,3 +26,5 @@ s,i{
 
 
 
+=======
+>>>>>>> bcc82118dfc80863336a66f971e8a5627162a7b2

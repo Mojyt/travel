@@ -6,66 +6,120 @@ h1,h2,h3,h4,h5,h6,p{
   padding: 0;
 }
 $imgs:"../../images/xiao";
-.headerTop .searchWrap{
-  @include cube(100%,1.5rem);
+body{
+  width: 100%;
+  height: 100%;
+  background:url($imgs + "1.png")center/cover no-repeat;
+}
+.headerTop{
+  @include cube(100%,1.57rem);
   position: relative;
-  .boxWrap{
-    @include cube(93%,0.75rem);
-    position: absolute;
-    top: -25%;
-    left: 0.24rem;
-  }
-  .searchBox{
+  .headerInfo{
     @include cube(100%,100%);
-    background: #fff;
-    border: 1px solid #58585a;
-    border-radius: 0.1rem;
+    background: #000000;
+    opacity: 0.4;
     position: absolute;
-    top: 0;
     left: 0;
-    text-align: center;
-    color: #999999;
-    font-family: f, sans-serif;
-    font-size: 0.24rem;
+    top: 0;
   }
-  .searchBut{
-    display: inline-block;
-    @include square(0.36rem);
-    background: url($imgs + "search_03.png")center/cover no-repeat;
-    @include tb;
-    left: 0.23rem;
+  .headerCon{
+    @include cube(100%,100%);
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    top: 0;
   }
-  .micBut{
-    display: inline-block;
-    @include square(0.36rem);
-    background: url($imgs +"mic_03.png")center/cover no-repeat;
-    @include tb;
-    right: 0.23rem;
-  }
-  .position{
-    @include cube(2.4rem,0.62rem);
-    @include lr;
-    bottom: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    a{
+  .searchWrap{
+    @include cube(100%,0.62rem);
+    position: absolute;
+    bottom: -25%;
+    .boxWrap{
+      @include cube(94%,100%);
+      position: absolute;
+      left: 0.24rem;
+    }
+    .searchBox{
+      @include cube(100%,100%);
+      background: #fff;
+      border: 1px solid #58585a;
+      border-radius: 0.1rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: left;
+      padding-left: 1rem;
+      color: #999999;
+      font-family: f, sans-serif;
+      font-size: 0.24rem;
+    }
+    .searchBut{
       display: inline-block;
       @include square(0.36rem);
+      background: url("../../images/xiaosearch_03.png")center/cover no-repeat;
+      @include tb;
+      left: 0.23rem;
     }
-    .positionIcon{
-      @include square(100%);
-      background: url($imgs +"pisition_03.png")center/contain no-repeat;
+    .micBut{
+      display: inline-block;
+      @include square(0.36rem);
+      background: url("../../images/xiaomic_03.png")center/cover no-repeat;
+      @include tb;
+      right: 0.23rem;
     }
-    .place{
-      color: #c3b08e;
-      font-size:0.24rem;
-      font-family: '苹方',sans-serif;
+  }
+}
+.headerCon{
+  .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include cube(94%,100%);
+    margin: 0 auto;
+  }
+  .moreBut{
+    @include square(0.62rem);
+    a{
+      display: inline-block;
+      @include cube(100%,100%);
+      background: url("../../images/xiaomore_03.png")center/cover no-repeat;
     }
-    .city{
-      color: #a8a7a7;
-      font-size:0.24rem;
-      font-family: '苹方',sans-serif;
+  }
+  .titleBox{
+    @include cube(38%,100%);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    .left-r,.right-r{
+      @include cube(0.51rem,0.13rem);
+      background: url($imgs + 'left.png')center/cover no-repeat;
+    }
+    .title{
+      @include cube(2rem,0.8rem);
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content: center;
+      .chinese{
+        @include font(0.3rem,#fff,400);
+        font-family:'宋体',sans-serif;
+      }
+      .english{
+        margin-top:2%;
+        text-align: center;
+        @include font(0.18rem,#fff,400);
+        font-family:'苹方',sans-serif;
+      }
+    }
+    .right-r{
+      background:url($imgs + 'right.png')center/cover no-repeat;
+    }
+  }
+  .mapBut{
+    @include square(0.62rem);
+    a{
+      display: inline-block;
+      @include cube(100%,100%);
+      background: url("../../images/xiaomap_03.png")center/cover no-repeat;
     }
   }
 }
@@ -109,7 +163,6 @@ $imgs:"../../images/xiao";
   }
 }
 .historyBox{
-  margin-top: 0.3rem;
   @include cube(100%,1rem);
   .inner{
     @include cube(93%,100%);
@@ -171,7 +224,7 @@ $imgs:"../../images/xiao";
     }
   }
   .level{
-    @include cube(5rem,0.04rem);
+    @include cube(4rem,0.04rem);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -179,7 +232,7 @@ $imgs:"../../images/xiao";
     span{
       display: inline-block;
       &:nth-child(2){
-        @include cube(99%,0.015rem);
+        @include cube(99%,0.02rem);
         background: #c6b390;
       }
       &:nth-child(1),&:nth-child(3){
@@ -191,11 +244,104 @@ $imgs:"../../images/xiao";
 }
 .Relevant{
   @include cube(100%,6.92rem);
-  background: #000;
-  margin: 0.3rem 0 0;
+  padding: 0.3rem 0;
   .inner{
     @include cube(94%,100%);
-    background: #eee;
     margin: 0 auto;
+  }
+  .rele1{
+    @include cube(100%,2.3rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Scenic-name{
+    @include cube(2.35rem,2.3rem);
+    padding-top: 0.5rem;
+    line-height: 1.5;
+    p{
+      color: #fff;
+      font-size: 0.36rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span{
+        display: inline-block;
+        @include circle(0.04rem);
+        background: #e62923;
+        margin: 0 0.03rem;
+      }
+      &:nth-child(2){
+        color: #C6B390;
+        font-size: 0.14rem;
+        span{
+          background: #C6B390;
+        }
+      }
+    }
+  }
+  .rele2 {
+    .Scenic-name{
+      background: url($imgs + "re1_03.png")center/cover no-repeat;
+    }
+    .Scenic-img{
+      @include cube(4.7rem,2.3rem);
+      background: url($imgs + "re2_03.png")center/cover no-repeat;
+    }
+  }
+  .rele3{
+    .Scenic-name{
+      background: url($imgs + "re4_03.png")center/cover no-repeat;
+      p{
+        color: #323743;
+        span{
+          background: #e62923;
+        }
+        &:nth-child(2){
+          color: #757679;
+          span{
+            background: #C6B390;
+          }
+        }
+      }
+    }
+    .Scenic-img{
+      @include cube(2.35rem,2.3rem);
+      &:nth-child(1){
+        background: url($imgs + "re3_03.png")center/cover no-repeat;
+      }
+      &:nth-child(3){
+        background: url($imgs + "re5_03.png")center/cover no-repeat;
+      }
+    }
+  }
+  .rele4{
+    .Scenic-name{
+        background: url($imgs + "re6_03.png")center/contain no-repeat;
+    }
+    a{
+      display: inline-block;
+      @include cube(2.35rem,2.3rem);
+      text-decoration: none;
+      .Scenic-name{
+        background: url($imgs + "re8_03.png")center/cover no-repeat;
+      }
+    }
+    .Scenic-img{
+      @include cube(2.35rem,2.3rem);
+      background: url($imgs + "re7_03.png")center/cover no-repeat;
+    }
+    p{
+      color: #323743;
+      span{
+        background: #e62923;
+      }
+      &:nth-child(2){
+        color: #757679;
+        span{
+          background: #C6B390;
+        }
+      }
+    }
   }
 }

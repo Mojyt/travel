@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@import url(../base.css);
+/*函数*/
+/*@function bg(){
+	$r:floor(random()*56+200);
+	$g:floor(random()*56);
+	$b:floor(random()*56);
+	$color:rgb($r,$g,$b);
+	@debug $color;  
+	@return $color;
+}*/
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 365px) {
+  html {
+    font-size: 48.66667px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body {
+  font-size: 16px; }
+
+@font-face {
+  font-family: Wyue;
+  src: url(../../fonts/文悦古体仿宋.otf); }
+
+@font-face {
+  font-family: leftp;
+  src: url(../../fonts/font_pnt9i8feioyfogvi/iconfont.woff); }
+
+@font-face {
+  font-family: edit;
+  src: url(../../fonts/font_2ufxsdqp0b4t2o6r/iconfont.woff); }
+
+@font-face {
+  font-family: heart;
+  src: url(../../fonts/font_iy9aleziz1if6r/iconfont.woff); }
+
+@font-face {
+  font-family: forward;
+  src: url(../../fonts/font_tf3e62n9i1ss8aor/iconfont.woff); }
+
+@font-face {
+  font-family: pitch;
+  src: url(../../fonts/font_7rks8t34e7hnnrk9/iconfont.woff); }
+
+.parcel {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: rgba(185, 190, 175, 0.4);
+  display: flex; }
+  .parcel a {
+    flex: 1; }
+  .parcel img {
+    width: 13.34rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotateZ(90deg) translate3d(0, 2.91rem, 0); }
