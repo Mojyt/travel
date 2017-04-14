@@ -172,5 +172,14 @@ class indexController extends Framework
         $this->display('default/bx/success.html');
     }
 
+
+    public function  write(){
+        $this->display('default/process/write.html');
+    }
+    public function confirm(){
+        $this->display('default/process/confirm.html');
+    }
+
+
 }
 
