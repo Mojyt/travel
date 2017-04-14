@@ -1,0 +1,280 @@
+@charset "UTF-8";
+/*函数*/
+/*@function bg(){
+	$r:floor(random()*56+200);
+	$g:floor(random()*56);
+	$b:floor(random()*56);
+	$color:rgb($r,$g,$b);
+	@debug $color;
+	@return $color;
+}*/
+@font-face {
+  font-family: leftp;
+  src: url(../../fonts/font_pnt9i8feioyfogvi/iconfont.woff); }
+
+@font-face {
+  font-family: guyue;
+  src: url(../../fonts/文悦古体仿宋.otf); }
+
+@font-face {
+  font-family: adob;
+  src: url(../../fonts/字体); }
+
+@font-face {
+  font-family: "San Francisco Display B";
+  src: url(../../fonts/字体/sanfranciscodisplay-bold-webfont.ttf); }
+
+@font-face {
+  font-family: "San Francisco Display se";
+  src: url(../../fonts/字体/sanfranciscodisplay-semibold-webfont.ttf); }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px; } }
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 85.33333px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box; }
+
+body {
+  background: url("../../images/bx-background.jpg") center/cover repeat; }
+
+.inner {
+  width: 100%;
+  height: 100%;
+  padding: 0 5%; }
+
+.table {
+  width: 100%;
+  height: 1.2rem;
+  padding-top: 0.22rem;
+  background: #020202; }
+  .table .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .table .content .go-prev {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background: #c6b390;
+    font-size: 0.3rem;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    line-height: 0.6rem;
+    font-family: leftp,sans-serif; }
+    .table .content .go-prev::before {
+      content: '\e60b'; }
+  .table .content .titleBox {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .table .content .titleBox .left-r, .table .content .titleBox .right-r {
+      width: 20%;
+      height: 0.13rem;
+      background: url("../../images/bx-left.png") center/cover no-repeat; }
+    .table .content .titleBox .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap; }
+      .table .content .titleBox .title .chinese {
+        font-size: 0.3rem;
+        color: #fff;
+        font-weight: 400;
+        font-family: guyue,sans-serif; }
+      .table .content .titleBox .title .english {
+        margin-top: 2%;
+        font-size: 0.18rem;
+        color: #fff;
+        font-weight: 400;
+        font-family: guyue,sans-serif; }
+    .table .content .titleBox .right-r {
+      background: url("../../images/bx-right.png") center/cover no-repeat; }
+
+.package {
+  width: 100%;
+  height: 6.78rem; }
+  .package .new-p {
+    width: 100%;
+    height: 16%; }
+  .package .historyBox {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 0.24rem; }
+    .package .historyBox .historySearch {
+      width: 1.7rem;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center; }
+      .package .historyBox .historySearch h3 {
+        margin: 0;
+        width: 100%; }
+      .package .historyBox .historySearch .the {
+        color: #ffffff;
+        font-size: 0.22rem; }
+      .package .historyBox .historySearch .xuan {
+        color: #e3b08b;
+        font-size: 0.22rem; }
+      .package .historyBox .historySearch .HistoryText {
+        color: #ffffff;
+        font-size: 0.28rem; }
+        .package .historyBox .historySearch .HistoryText span:nth-child(3), .package .historyBox .historySearch .HistoryText span:nth-child(4) {
+          display: inline-block;
+          width: 0.07rem;
+          height: 0.07rem;
+          border-radius: 50%;
+          background: #e62923;
+          margin-left: 0.04rem; }
+      .package .historyBox .historySearch .circle {
+        display: flex; }
+        .package .historyBox .historySearch .circle span {
+          display: inline-block;
+          margin-right: 0.05rem;
+          width: 0.04rem;
+          height: 0.04rem;
+          border-radius: 50%;
+          background: #fff; }
+          .package .historyBox .historySearch .circle span:nth-child(1), .package .historyBox .historySearch .circle span:nth-child(10) {
+            background: #e62923; }
+    .package .historyBox .HistoryText {
+      display: flex;
+      align-items: center; }
+    .package .historyBox .level {
+      margin: 0.72rem 0 0 3%;
+      width: 4.6rem;
+      height: 0.04rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      .package .historyBox .level span {
+        display: inline-block; }
+        .package .historyBox .level span:nth-child(2) {
+          width: 4.9rem;
+          height: 0.015rem;
+          background: #c6b390; }
+        .package .historyBox .level span:nth-child(1), .package .historyBox .level span:nth-child(3) {
+          width: 0.06rem;
+          height: 0.06rem;
+          border-radius: 50%;
+          background: #e62923; }
+  .package .money-kind {
+    width: 100%;
+    height: 84%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; }
+    .package .money-kind .kinds {
+      flex: 1;
+      position: relative; }
+      .package .money-kind .kinds .item {
+        width: 100%;
+        height: 1.41rem;
+        background: url("../../images/bx-package.png") center/cover repeat; }
+      .package .money-kind .kinds .item .money {
+        width: 20%;
+        height: 100%;
+        float: left;
+        display: flex;
+        justify-content: flex-start;
+        padding: 2% 0 0 1%; }
+        .package .money-kind .kinds .item .money .m-f {
+          font-size: 0.3rem;
+          color: #fd1716;
+          font-weight: 300;
+          padding-top: 16%; }
+        .package .money-kind .kinds .item .money .m-s {
+          font-size: 0.5rem;
+          color: #fd1716;
+          font-weight: 400; }
+      .package .money-kind .kinds .item .kind {
+        width: 80%;
+        height: 100%;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 3% 0 0 6%; }
+        .package .money-kind .kinds .item .kind .kind-item1 {
+          font-size: 0.36rem;
+          color: #030303;
+          font-weight: 300;
+          font-family: '仿宋',sans-serif;
+          padding-left: 10%; }
+        .package .money-kind .kinds .item .kind .kind-item2 {
+          width: 74%;
+          height: 0.44rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          .package .money-kind .kinds .item .kind .kind-item2 .english-item1, .package .money-kind .kinds .item .kind .kind-item2 .english-item3 {
+            width: 0.38rem;
+            height: 0.07rem;
+            background: url("../../images/bx-point-l.png") center/cover repeat; }
+          .package .money-kind .kinds .item .kind .kind-item2 .english-item2 {
+            font-size: 0.24rem;
+            color: #666;
+            font-weight: 300; }
+            .package .money-kind .kinds .item .kind .kind-item2 .english-item2 h4 {
+              font-size: 0.24rem;
+              color: #ff0606;
+              font-weight: 300;
+              display: inline-block; }
+          .package .money-kind .kinds .item .kind .kind-item2 .english-item3 {
+            background: url("../../images/bx-point-r.png") center/cover repeat; }
+      .package .money-kind .kinds .look {
+        display: block;
+        width: 0.69rem;
+        height: 0.69rem;
+        border-radius: 50%;
+        background: url("../../images/bx-item.png") center/cover no-repeat;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 9%; }
