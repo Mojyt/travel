@@ -75,7 +75,7 @@ body{
     justify-content: space-around;
   }
   .kind-warp .kind{
-    @include cube(100%,1.75rem);
+    @include cube(100%,1.42rem);
     background: url($img + 'wzj-set.png') center/cover no-repeat;
     display: flex;
     justify-content: center;
