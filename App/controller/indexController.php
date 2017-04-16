@@ -36,7 +36,15 @@ class indexController extends Framework
     public function userpass(){
         $this->display('default/zr/login3.html');
     }
-
+    public  function portrait(){
+        $this->display('default/zr/login4.html');
+    }
+    public  function share(){
+        $this->display('default/zr/login5.html');
+    }
+    public function experience(){
+        $this->display('default/zr/login6.html');
+    }
     //搜索
     public function search()
     {
