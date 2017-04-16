@@ -128,6 +128,6 @@ CREATE TABLE admin_user
   hash VARCHAR (255)
 )DEFAULT CHARSET=utf8;
 
-INSERT INTO user (id, account, password, hash)
+INSERT INTO admin_user (id, account, password, hash)
 VALUES
 (1,'admin','e10adc3949ba59abbe56e057f20f883e','c30807e6587ade285ba7ade9f881b3d7');
