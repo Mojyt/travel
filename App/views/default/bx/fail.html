@@ -1,16 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="<?php echo CSS_PATH?>bx/fail.css">
-    <link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
-    <!--    <script src="--><?php //echo JS_PATH?><!--jquery.js"></script>-->
-</head>
-<body>
+<?php include VIEW . "default/header.html" ?>
+
+<title>支付失败</title>
+<link rel="stylesheet" href="<?php echo CSS_PATH ?>bx/fail.css">
 <div class="table">
     <div class="inner">
         <div class="content">
@@ -34,7 +25,7 @@
         <li class="pay-k kind-one">
             <div class="left-p">
                 <div class="photo-box">
-                    <img src="<?php echo IMG_PATH?>bx-payment-h1.png" alt="">
+                    <img src="<?php echo IMG_PATH ?>bx-payment-h1.png" alt="">
                     <div class="red"></div>
                 </div>
 
@@ -61,7 +52,7 @@
         <li class="pay-k kind-two">
             <div class="left-p">
                 <div class="photo-box">
-                    <img src="<?php echo IMG_PATH?>bx-payment-h2.png" alt="">
+                    <img src="<?php echo IMG_PATH ?>bx-payment-h2.png" alt="">
                     <div class="red"></div>
                 </div>
                 <div class="line"></div>
@@ -131,7 +122,7 @@
     <span class="chinese">
         去支付
         <div class="yy-parcel">
-            <img src="<?php echo IMG_PATH?>bx-parcel-footer-bg.png" alt="">
+            <img src="<?php echo IMG_PATH ?>bx-parcel-footer-bg.png" alt="">
         </div>
     </span>
     <span class="english">HUODNGTUIJIAN</span>
@@ -152,7 +143,7 @@
                 </div>
                 <div class="fen-item"></div>
                 <h4 class="discount-item">
-<!--                    恭喜获得<span style="color:#ff0000;font-size:0.89rem;line-height:1.75rem;">10</span>元优惠券-->
+                    <!--                    恭喜获得<span style="color:#ff0000;font-size:0.89rem;line-height:1.75rem;">10</span>元优惠券-->
                 </h4>
             </li>
         </ul>
@@ -178,12 +169,4 @@
         <div class="bird"></div>
     </div>
 </div>
-</body>
-</html>
-<!--<script>-->
-<!--    $(function(){-->
-<!--        $('.close').on('touchstart',function(){-->
-<!--            -->
-<!--        })-->
-<!--    })-->
-<!--</script>-->
+<?php include VIEW . "default/footer.html"?>

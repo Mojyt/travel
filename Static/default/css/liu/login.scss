@@ -1,0 +1,144 @@
+@import "base";
+html{
+  $widths : (
+          320px,360px,375px,412px,414px,750px
+  );
+  @each $name in $widths{
+    @media screen and(min-width: #{$name}){
+      font-size: 100*($name/750);
+    }
+  }
+}
+body{
+  background: url(../../images/liu/bgq.png);
+  background-size: 100%;
+}
+.bg{
+  background: url(../../images/liu/01.png);
+  background-size: 100%;
+  .parcel{
+    @include center(7.02rem,auto,0);
+    .top{
+    @include chang(100%,1.20rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .return{
+      @include yuan(0.60rem);
+      display: block;
+      background: #C6B390;
+      @include zi(#fff,0.44rem,0.60rem,center);
+    }
+    .registered{
+      @include chang(1.41rem,0.57rem);
+      display: block;
+      background: url(../../images/liu/kk_04.png);
+      background-size: 100%;
+      font-family: '文悦古体仿宋', sans-serif;
+      @include zi(#fff,0.26rem,0.57rem,center);
+      border-radius: 1rem;
+    }
+  }
+    .welcometo{
+    @include chang(100%,3.30rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+      @include chang(4.18rem,50%);
+      background: url(../../images/liu/gjighi.png) no-repeat;
+      background-size: 100%;
+    }
+  }
+    .login{
+    @include chang(100%,8.45rem);
+      .login_1{
+        @include center(60%,5.44rem,0);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .touxiang{
+          @include yuan(1.63rem);
+          background: url(../../images/liu/touxiang_03.png) no-repeat;
+          background-size: 100%;
+        }
+        .login_2{
+          @include chang(100%,1.90rem);
+          .account{
+            @include chang(100%,33%);
+            border-bottom: 1px solid #B9B7B7;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .account_1{
+              @include chang(15%,100%);
+              background:url(../../images/liu/yonghu.png) no-repeat center;
+              background-size: 50%;
+            }
+            input{
+              width: 80%;
+              background: none;
+              border: none;
+            }
+          }
+          .password{
+            @include chang(100%,33%);
+            border-bottom: 1px solid #B9B7B7;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .password_1{
+              @include chang(15%,100%);
+              background:url(../../images/liu/mima.png) no-repeat center;
+              background-size: 50%;
+            }
+            input{
+              width: 80%;
+              background: none;
+              border: none;
+            }
+          }
+          .jizhu{
+            @include chang(100%,33%);
+            border-bottom: 1px solid #B9B7B7;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            a{
+              @include chang(30%,100%);
+              @include zi(#999999,0.18rem,0.62rem,center);
+            }
+          }
+        }
+        .next{
+          @include chang(100%,0.85rem);
+          background: #010101;
+          display: flex;
+          align-items: center;
+          .next_1{
+            @include center(30%,60%,0);
+            display: flex;
+            flex-wrap: wrap;
+            cursor: pointer;
+
+            .bu{
+              width: 100%;
+              display: block;
+              text-align: center;
+              color: #CEBFA3;
+              font-size: 0.26rem;
+              font-weight: bold;
+            }
+            .The{
+              width: 100%;
+              display: block;
+              color: #fff;
+              font-size: 0.14rem;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

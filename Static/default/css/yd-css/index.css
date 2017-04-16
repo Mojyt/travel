@@ -63,15 +63,6 @@ body {
   font-family: edit;
   src: url(../../fonts/font_2ufxsdqp0b4t2o6r/iconfont.woff); }
 
-* {
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  list-style: none;
-  font-size: 0.12rem;
-  font-family: song,sans-serif;
-  -webkit-tap-highlight-color: transparent; }
-
 body {
   width: 100%;
   height: 100%;
@@ -141,11 +132,21 @@ body {
 .banner {
   width: 100%;
   height: 4.01rem;
-  background: url("../../images/yd-banner-bj.png") center no-repeat;
-  background-size: 100%;
+  background: rgba(0, 0, 0, 0.93);
   display: flex;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
+  .banner img {
+    width: 100%;
+    height: 100%; }
   .banner .banner-logo {
+    position: absolute;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     width: 100%;
     height: 0.36rem; }
   .banner .banner-inner {
@@ -157,34 +158,46 @@ body {
 
 .card {
   width: 100%;
-  height: 4.29rem; }
-  .card .card-inner {
-    width: 94%;
-    height: 100%;
+  height: 4.29rem;
+  overflow: hidden; }
+  .card .swiper-container {
+    margin-left: 0.25rem;
     overflow: hidden;
-    margin: 0 auto; }
-  .card .card-max-inner {
-    width: 120%;
-    height: 100%;
+    width: 100%;
+    height: 100%; }
+  .card .swiper-slide {
+    margin-right: 0.05rem !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    align-items: center;
-    justify-content: space-between; }
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; }
   .card .card-common {
     width: 27.3%;
     height: 3.4rem;
-    margin-right: 0.1rem;
-    position: relative; }
-  .card .card-1 {
-    width: 27.3%;
-    height: 3.4rem;
+    flex: 1;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    margin-right: 0.2rem;
     background: url("../../images/yd-card.png") center no-repeat;
-    background-size: 100%; }
+    background-size: 100%;
+    position: relative; }
+    .card .card-common img {
+      width: 1.3rem;
+      height: 1.3rem; }
   .card .card-1-inner {
+    margin-top: 0.3rem;
     width: 0.7rem;
     height: 1.6rem;
-    margin: 10px auto;
-    display: flex;
-    align-items: center; }
+    display: flex; }
   .card .card-transit {
     width: 0.06rem;
     height: 0.86rem;
@@ -195,8 +208,7 @@ body {
     width: 1px; }
     .card .card-left span, .card .card-right span {
       display: block;
-      width: 0.03rem;
-      font-family: 'Wyue',sans-serif; }
+      width: 0.03rem; }
     .card .card-left .card-logo, .card .card-right .card-logo {
       width: 0.14rem;
       height: 0.14rem;
@@ -219,8 +231,7 @@ body {
     right: 0;
     bottom: 0;
     margin: auto;
-    bottom: -45%;
-    overflow: hidden; }
+    bottom: -45%; }
     .card .card-img img {
       width: 1.3rem;
       height: 1.3rem; }
@@ -340,7 +351,6 @@ body {
     flex: 1;
     text-align: center; }
   .point-time p, .point-city p {
-    font-family: 'song',sans-serif;
     text-align: center;
     color: #fff;
     font-size: 0.24rem; }
@@ -394,75 +404,161 @@ body {
 
 .point-pre {
   width: 100%;
-  height: 5.18rem; }
-  .point-pre .point-pre-inner {
-    width: 94%;
-    height: 100%;
-    margin: 0 auto;
-    overflow: hidden; }
-  .point-pre .point-pre-max {
-    width: 145%;
-    height: 100%;
-    display: flex; }
-  .point-pre .point-pre1, .point-pre .point-pre2, .point-pre .point-pre3 {
+  height: 5.18rem;
+  overflow: hidden; }
+  .point-pre .point-pre1, .point-pre .point-pre2, .point-pre .point-pre3, .point-pre .point-pre4 {
     width: 42.23%;
     height: 4.85rem;
+    flex: 1;
+    flex-wrap: nowrap;
     background: #fff;
+    border-radius: 3px; }
+  .point-pre .top {
+    width: 100%;
+    height: 3.05rem;
+    background: url("../../images/yd-point-wz.png") center no-repeat;
+    background-size: 100%; }
+  .point-pre .middle {
+    width: 100%;
+    height: 1.06rem;
+    background: url("../../images/yd-zz.png") center no-repeat; }
+  .point-pre .middle-inner {
+    width: 56.78%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center; }
+  .point-pre .buy-position {
+    font-family: 'song', sans-serif;
+    flex: 1;
+    width: 1px; }
+  .point-pre .buy-img {
+    display: block;
+    width: 100%;
+    height: 0.35rem;
+    background: url("../../images/yd-buy-english.png") center no-repeat;
+    background-size: 85%; }
+  .point-pre .buy-logo {
+    width: 1px;
+    flex: 1.5; }
+  .point-pre .buy-img-logo {
+    display: block;
+    width: 100%;
+    height: 0.35rem;
+    background: url("../../images/yd-buy-logo.png") center no-repeat;
+    background-size: 12%; }
+  .point-pre .buy-xie {
+    display: block;
+    width: 100%;
+    height: 0.35rem;
+    background: url("../../images/yd-buy-xie.png") center no-repeat;
+    background-size: 12%; }
+  .point-pre .buy-money {
+    font-family: 'song', sans-serif;
+    font-size: 0.08rem;
+    width: 1px;
+    flex: 1; }
+  .point-pre .bottom {
+    width: 100%;
+    height: 1.78rem;
+    background: url("../../images/yd-point-wz-bottom.png") 0 57px no-repeat;
+    background-size: 100%;
+    position: relative; }
+  .point-pre .img-heart {
+    z-index: 1;
+    display: block;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: url("../../images/yd-point-heart.png") center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: -10%;
+    left: 4%; }
+  .point-pre .img-money {
+    display: block;
+    width: 100%;
+    height: 0.74rem;
+    z-index: 1;
+    background: url("../../images/yd-point-money.png") center no-repeat;
+    background-size: 20%;
+    position: absolute;
+    bottom: -15%; }
+  .point-pre .swiper-container {
+    margin-left: 0.25rem;
+    overflow: hidden;
+    width: 145%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap; }
+  .point-pre .swiper-slide {
+    margin-right: 0.3rem !important;
+    width: 40.23%;
+    height: 4.85rem;
     border-radius: 3px;
-    margin-right: 2.13%; }
-    .point-pre .point-pre1 .top, .point-pre .point-pre2 .top, .point-pre .point-pre3 .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; }
+    .point-pre .swiper-slide .top {
       width: 100%;
       height: 3.05rem;
       background: url("../../images/yd-point-wz.png") center no-repeat;
       background-size: 100%; }
-    .point-pre .point-pre1 .middle, .point-pre .point-pre2 .middle, .point-pre .point-pre3 .middle {
+    .point-pre .swiper-slide .middle {
       width: 100%;
       height: 1.06rem;
       background: url("../../images/yd-zz.png") center no-repeat; }
-    .point-pre .point-pre1 .middle-inner, .point-pre .point-pre2 .middle-inner, .point-pre .point-pre3 .middle-inner {
+    .point-pre .swiper-slide .middle-inner {
       width: 56.78%;
       height: 100%;
       display: flex;
       margin: 0 auto;
       align-items: center;
       justify-content: center; }
-    .point-pre .point-pre1 .buy-position, .point-pre .point-pre2 .buy-position, .point-pre .point-pre3 .buy-position {
-      font-family: 'song',sans-serif;
+    .point-pre .swiper-slide .buy-position {
       flex: 1;
       width: 1px; }
-    .point-pre .point-pre1 .buy-img, .point-pre .point-pre2 .buy-img, .point-pre .point-pre3 .buy-img {
+    .point-pre .swiper-slide .buy-img {
       display: block;
       width: 100%;
       height: 0.35rem;
       background: url("../../images/yd-buy-english.png") center no-repeat;
       background-size: 85%; }
-    .point-pre .point-pre1 .buy-logo, .point-pre .point-pre2 .buy-logo, .point-pre .point-pre3 .buy-logo {
+    .point-pre .swiper-slide .buy-logo {
       width: 1px;
       flex: 1.5; }
-    .point-pre .point-pre1 .buy-img-logo, .point-pre .point-pre2 .buy-img-logo, .point-pre .point-pre3 .buy-img-logo {
+    .point-pre .swiper-slide .buy-img-logo {
       display: block;
       width: 100%;
       height: 0.35rem;
       background: url("../../images/yd-buy-logo.png") center no-repeat;
       background-size: 12%; }
-    .point-pre .point-pre1 .buy-xie, .point-pre .point-pre2 .buy-xie, .point-pre .point-pre3 .buy-xie {
+    .point-pre .swiper-slide .buy-xie {
       display: block;
       width: 100%;
       height: 0.35rem;
       background: url("../../images/yd-buy-xie.png") center no-repeat;
       background-size: 12%; }
-    .point-pre .point-pre1 .buy-money, .point-pre .point-pre2 .buy-money, .point-pre .point-pre3 .buy-money {
-      font-family: 'song',sans-serif;
+    .point-pre .swiper-slide .buy-money {
       font-size: 0.08rem;
       width: 1px;
       flex: 1; }
-    .point-pre .point-pre1 .bottom, .point-pre .point-pre2 .bottom, .point-pre .point-pre3 .bottom {
+    .point-pre .swiper-slide .bottom {
       width: 100%;
       height: 1.78rem;
       background: url("../../images/yd-point-wz-bottom.png") 0 57px no-repeat;
       background-size: 100%;
       position: relative; }
-    .point-pre .point-pre1 .img-heart, .point-pre .point-pre2 .img-heart, .point-pre .point-pre3 .img-heart {
+    .point-pre .swiper-slide .img-heart {
       z-index: 1;
       display: block;
       width: 0.4rem;
@@ -472,7 +568,7 @@ body {
       position: absolute;
       top: -10%;
       left: 4%; }
-    .point-pre .point-pre1 .img-money, .point-pre .point-pre2 .img-money, .point-pre .point-pre3 .img-money {
+    .point-pre .swiper-slide .img-money {
       display: block;
       width: 100%;
       height: 0.74rem;
@@ -675,9 +771,30 @@ body {
       margin: 0 auto;
       background: url("../../images/yd-transit.png") center no-repeat;
       background-size: 100%; }
-    .hot-play .hot-play1 .chat, .hot-play .hot-play2 .chat, .hot-play .hot-play3 .chat {
-      width: 100%;
-      height: 0.55rem; }
+    .hot-play .hot-play1 .chater, .hot-play .hot-play2 .chater, .hot-play .hot-play3 .chater {
+      width: 60%;
+      height: 0.34rem;
+      display: flex;
+      justify-content: center; }
+      .hot-play .hot-play1 .chater .chat-1, .hot-play .hot-play2 .chater .chat-1, .hot-play .hot-play3 .chater .chat-1 {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .hot-play .hot-play1 .chater .chat-1 span, .hot-play .hot-play2 .chater .chat-1 span, .hot-play .hot-play3 .chater .chat-1 span {
+          display: block; }
+      .hot-play .hot-play1 .chater .chat-pic, .hot-play .hot-play2 .chater .chat-pic, .hot-play .hot-play3 .chater .chat-pic {
+        margin-right: 0.1rem;
+        width: 0.28rem;
+        height: 0.28rem;
+        background: url("../../images/yd-point.png") center no-repeat;
+        background-size: 100%; }
+      .hot-play .hot-play1 .chater .pic-1, .hot-play .hot-play2 .chater .pic-1, .hot-play .hot-play3 .chater .pic-1 {
+        background: url("../../images/yd-point-heart.png") center no-repeat;
+        background-size: 100%; }
+      .hot-play .hot-play1 .chater .pic-2, .hot-play .hot-play2 .chater .pic-2, .hot-play .hot-play3 .chater .pic-2 {
+        background: url("../../images/yd-chat.png") center no-repeat;
+        background-size: 100%; }
   .hot-play .hot-play2 {
     background: url("../../images/yd-bj.png") center no-repeat;
     background-size: 100%; }
@@ -714,6 +831,16 @@ body {
     color: #fff;
     font-size: 12px;
     top: 36%; }
+  .more .flash {
+    animation: fill 4s linear infinite; }
+
+@keyframes fill {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 .foot-db {
   width: 100%;
@@ -722,9 +849,10 @@ body {
 .footer_table {
   position: fixed;
   bottom: 0;
-  z-index: 1;
+  right: 0;
   width: 100%;
-  height: 0.98rem;
+  height: 1.14rem;
+  z-index: 1;
   background: #000;
   margin-top: 0.15rem; }
   .footer_table .inner {
@@ -763,12 +891,11 @@ body {
         bottom: 0;
         margin: auto;
         right: 0;
-        background: url("../../images/yd-footer.png") center/cover no-repeat;
-        background-size: 100%; }
+        background: url("../../images/wzj-footer.png") center/cover no-repeat; }
     .footer_table .inner .content .foot .con .title {
       width: 0.63rem;
       height: 0.5rem;
-      color: #fff;
+      color: #CEBFA3;
       font-size: 0.24rem;
       font-family: '方正仿宋繁体',sans-serif; }
     .footer_table .inner .content .foot .con .current {
@@ -789,7 +916,8 @@ body {
       display: block;
       margin-top: 0.1rem;
       color: #fff;
-      font-size: 0.12rem; }
+      font-size: 0.1rem;
+      padding-top: 0.05rem; }
     .footer_table .inner .content .foot .con .shouye {
       position: absolute;
       bottom: -0.06rem;

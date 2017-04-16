@@ -1,16 +1,9 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
-    <link rel="stylesheet" href="<?php echo CSS_PATH?>wzj_personal_css/tell.css">
-</head>
-<body>
-    <div class="table">
+
+<?php include VIEW . 'default/header.html'?>
+<link rel="stylesheet" href="<?php echo CSS_PATH?>wzj_personal_css/tell.css">
+<link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
+
+        <div class="table">
     <div class="inner">
         <div class="content">
             <a href="/index.php/index/follow_detail" class="go-prev"></a>
@@ -25,34 +18,124 @@
         </div>
     </div>
 </div>
-    <div class="tellWindows">
-        <div class="inner">
-            <div class="tell_window">
+        <div class="tellWindows">
+            <div class="tell-window" style="height:10.54rem;width:7.04rem">
                 <div class="con">
                     <div class="doing friends">
                         <div class="head"><img src="<?php echo IMG_PATH?>wzj-follow-tx.png" alt=""></div>
                         <div class="cont">
                             <div class="talk">
                                 <div class="name"><span>D</span><span>ora</span></div>
-                                <div class="date"><span></span><span></span><span></span></div>
-                                <div></div>
-                                <div><p></p></div>
+                                <div class="date"><span>12.5</span><span>2016</span></div>
+                                <div class="line"></div>
+                                <div class="wenzi">我更喜欢独自旅行，因为我自己可以花我的时间。</div>
                             </div>
                         </div>
                     </div>
-                    <div class="doing me"></div>
-                    <div class="time"></div>
-                    <div class="doing friends">
+                    <div class="doing me">
+                        <div class="cont">
+                            <div class="talk">
+                                <div class="date"><span>12.5</span><span>2016</span></div>
+                                <div class="line"></div>
+                                <div class="wenzi">我喜欢结伴旅行。</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <span>早上</span><span>8:57</span>
+                    </div>
+                    <div class="doing friends fails">
                         <div class="head"><img src="<?php echo IMG_PATH?>wzj-follow-tx.png" alt=""></div>
-                        <div class="cont"></div>
+                        <div class="cont">
+                            <div class="talk">
+                                <div class="name"><span>D</span><span>ora</span></div>
+                                <div class="date"><span>12.5</span><span>2016</span></div>
+                                <div class="line"></div>
+                                <div class="wenzi">发送失败</div>
+                            </div>
+                        </div>
+                        <div class="fail">!</div>
                     </div>
                     <div class="doing friends">
                         <div class="head"><img src="<?php echo IMG_PATH?>wzj-follow-tx.png" alt=""></div>
-                        <div class="cont"></div>
+                        <div class="cont">
+                            <div class="talk">
+                                <div class="name"><span>D</span><span>ora</span></div>
+                                <div class="date"><span>12.5</span><span>2016</span></div>
+                                <div class="line"></div>
+                                <div class="len">
+                                    <div class="voice"></div>
+                                    <span>2:30</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foot">
+            <div class="inner">
+                <div class="input_box">
+                    <div class="microphone"></div>
+                    <input type="text">
+                    <div class="more">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
-</html>
+            <div class="kind">
+                <div class="kind-wrap">
+                    <div class="warp">
+                        <div class="box ">
+                            <img src="<?php echo IMG_PATH?>/wzj-tell10.png" alt="">
+                            <div class="names">
+                                <div class="first">相</div>
+                                <div class="second">册</div>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <img src="<?php echo IMG_PATH?>/wzj-tell12.png" alt="">
+                            <div class="names">
+                                <div class="first">拍</div>
+                                <div class="second">摄</div>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <img src="<?php echo IMG_PATH?>/wzj-tell11.png" alt="">
+                            <div class="names">
+                                <div class="first">视</div>
+                                <div class="second">频</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="warp">
+                        <div class="box ">
+                            <img src="<?php echo IMG_PATH?>/wzj-tell13.png" alt="">
+                            <div class="names">
+                                <div class="first">位</div>
+                                <div class="second">置</div>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <img src="<?php echo IMG_PATH?>/wzj-tell15.png" alt="">
+                            <div class="names">
+                                <div class="first">名</div>
+                                <div class="second">片</div>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <img src="<?php echo IMG_PATH?>/wzj-tell14.png" alt="">
+                            <div class="names">
+                                <div class="first">红</div>
+                                <div class="second">包</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<?php include VIEW . 'default/footer.html'?>

@@ -1,15 +1,6 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+<?php include VIEW . 'default/header.html'?>
     <link rel="stylesheet" href="<?php echo CSS_PATH?>wzj_personal_css/personal.css">
     <link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
-</head>
-<body>
     <div class="header">
         <div class="content">
             <div class="headPortrait">
@@ -20,7 +11,7 @@
                         </a>
                         <img src="<?php echo IMG_PATH?>wzj-touxiang_03.png" alt="">
                     </div>
-                    <div class="set">
+                    <a href="/index.php/index/set" class="set">
                         <div class="wrap">
                             <div class="_set">
                                 <span>设</span>
@@ -29,7 +20,7 @@
                             </div>
                             <span class="en">UANXIAN</span>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="userName">
@@ -157,7 +148,7 @@
             <div class="content">
                 <a href="/index.php/index" class="foot">
                     <div class="con">
-                        <span class="title first" style="width:0.3rem">首页</span>
+                        <span class="title first current" style="width:0.3rem">首页</span>
                         <img src="<?php echo IMG_PATH?>yy-parcel-footer-bg.png" alt="">
                         <span class="en shouye">HUOD ONGTUIGIAN</span>
                     </div>
@@ -181,7 +172,7 @@
                 </a>
                 <a href="/index.php/index/personal" class="foot">
                     <div class="con">
-                        <span class="title current">个人中心</span>
+                        <span class="title">个人中心</span>
                         <img src="<?php echo IMG_PATH?>yy-parcel-footer-bg.png" alt="">
                         <span class="en">HUOD ONGTUIGIAN</span>
                     </div>
@@ -191,5 +182,4 @@
         </div>
     </div>
 
-</body>
-</html>
+<?php include VIEW . 'default/footer.html'?>
