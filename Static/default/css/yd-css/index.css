@@ -63,15 +63,6 @@ body {
   font-family: edit;
   src: url(../../fonts/font_2ufxsdqp0b4t2o6r/iconfont.woff); }
 
-* {
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  list-style: none;
-  font-size: 0.12rem;
-  font-family: song,sans-serif;
-  -webkit-tap-highlight-color: transparent; }
-
 body {
   width: 100%;
   height: 100%;
@@ -360,7 +351,6 @@ body {
     flex: 1;
     text-align: center; }
   .point-time p, .point-city p {
-    font-family: 'song',sans-serif;
     text-align: center;
     color: #fff;
     font-size: 0.24rem; }
@@ -518,6 +508,74 @@ body {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center; }
+    .point-pre .swiper-slide .top {
+      width: 100%;
+      height: 3.05rem;
+      background: url("../../images/yd-point-wz.png") center no-repeat;
+      background-size: 100%; }
+    .point-pre .swiper-slide .middle {
+      width: 100%;
+      height: 1.06rem;
+      background: url("../../images/yd-zz.png") center no-repeat; }
+    .point-pre .swiper-slide .middle-inner {
+      width: 56.78%;
+      height: 100%;
+      display: flex;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center; }
+    .point-pre .swiper-slide .buy-position {
+      flex: 1;
+      width: 1px; }
+    .point-pre .swiper-slide .buy-img {
+      display: block;
+      width: 100%;
+      height: 0.35rem;
+      background: url("../../images/yd-buy-english.png") center no-repeat;
+      background-size: 85%; }
+    .point-pre .swiper-slide .buy-logo {
+      width: 1px;
+      flex: 1.5; }
+    .point-pre .swiper-slide .buy-img-logo {
+      display: block;
+      width: 100%;
+      height: 0.35rem;
+      background: url("../../images/yd-buy-logo.png") center no-repeat;
+      background-size: 12%; }
+    .point-pre .swiper-slide .buy-xie {
+      display: block;
+      width: 100%;
+      height: 0.35rem;
+      background: url("../../images/yd-buy-xie.png") center no-repeat;
+      background-size: 12%; }
+    .point-pre .swiper-slide .buy-money {
+      font-size: 0.08rem;
+      width: 1px;
+      flex: 1; }
+    .point-pre .swiper-slide .bottom {
+      width: 100%;
+      height: 1.78rem;
+      background: url("../../images/yd-point-wz-bottom.png") 0 57px no-repeat;
+      background-size: 100%;
+      position: relative; }
+    .point-pre .swiper-slide .img-heart {
+      z-index: 1;
+      display: block;
+      width: 0.4rem;
+      height: 0.4rem;
+      background: url("../../images/yd-point-heart.png") center no-repeat;
+      background-size: 100%;
+      position: absolute;
+      top: -10%;
+      left: 4%; }
+    .point-pre .swiper-slide .img-money {
+      display: block;
+      width: 100%;
+      height: 0.74rem;
+      background: url("../../images/yd-point-money.png") center no-repeat;
+      background-size: 20%;
+      position: absolute;
+      bottom: -20%; }
 
 .hot-play {
   width: 100%;
@@ -791,9 +849,10 @@ body {
 .footer_table {
   position: fixed;
   bottom: 0;
-  z-index: 1;
+  right: 0;
   width: 100%;
-  height: 0.98rem;
+  height: 1.14rem;
+  z-index: 1;
   background: #000;
   margin-top: 0.15rem; }
   .footer_table .inner {
@@ -832,12 +891,11 @@ body {
         bottom: 0;
         margin: auto;
         right: 0;
-        background: url("../../images/yd-footer.png") center/cover no-repeat;
-        background-size: 100%; }
+        background: url("../../images/wzj-footer.png") center/cover no-repeat; }
     .footer_table .inner .content .foot .con .title {
       width: 0.63rem;
       height: 0.5rem;
-      color: #fff;
+      color: #CEBFA3;
       font-size: 0.24rem;
       font-family: '方正仿宋繁体',sans-serif; }
     .footer_table .inner .content .foot .con .current {
@@ -858,7 +916,8 @@ body {
       display: block;
       margin-top: 0.1rem;
       color: #fff;
-      font-size: 0.12rem; }
+      font-size: 0.1rem;
+      padding-top: 0.05rem; }
     .footer_table .inner .content .foot .con .shouye {
       position: absolute;
       bottom: -0.06rem;

@@ -1,14 +1,14 @@
 @import "../mixin";
 @import "fonts";
-*{
-  margin:0;
-  padding: 0;
-  cursor: pointer;
-  list-style: none;
-  font-size: 0.12rem;
-  font-family: song,sans-serif;
-  -webkit-tap-highlight-color: transparent;
-}
+//*{
+//  margin:0;
+//  padding: 0;
+//  cursor: pointer;
+//  list-style: none;
+//  font-size: 0.12rem;
+//  font-family: song,sans-serif;
+//  -webkit-tap-highlight-color: transparent;
+//}
 body{
   width: 100%;
   height: 100%;
@@ -154,6 +154,7 @@ $img:'../../images/';
     span{
       display: block;
       width:0.03rem;
+      //font-family: 'Wyue',sans-serif;
     }
     .card-logo{
       @include cube(0.14rem,0.14rem);
@@ -294,7 +295,7 @@ $img:'../../images/';
   }
 }
 
-//point-time
+//point-timeF
 .point-time,.point-city{
   @include cube(100%,3.23rem);
   background:url($img + 'point-time.png')center no-repeat;
@@ -305,7 +306,7 @@ $img:'../../images/';
     text-align: center;
   }
   p{
-    font-family: 'song',sans-serif;
+    //font-family: 'song',sans-serif;
     text-align: center;
     color:#fff;
     font-size: 0.24rem;
@@ -458,6 +459,85 @@ $img:'../../images/';
     margin-right: 0.3rem !important;
     @include cube(40.23%, 4.85rem);
     border-radius: 3px;
+    //margin-right: 2.13%;
+    .top{
+      @include cube(100%,3.05rem);
+      background:url($img + 'yd-point-wz.png')center no-repeat;
+      background-size:100%;
+    }
+    .middle{
+      @include cube(100%,1.06rem);
+      background: url($img + 'yd-zz.png')center no-repeat;
+    }
+    .middle-inner{
+      @include cube(56.78%,100%);
+      display: flex;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+    }
+    .buy-position{
+      //font-family: 'song',sans-serif;
+      flex: 1;
+      width:1px;
+    }
+    .buy-img{
+      display: block;
+      @include cube(100%,0.35rem);
+      background: url($img + 'yd-buy-english.png')center no-repeat;
+      background-size:85%;
+    }
+    .buy-logo{
+      width:1px;
+      flex:1.5;
+      //@include cube(100%,1rem);
+    }
+    .buy-img-logo{
+      display: block;
+      @include cube(100%,0.35rem);
+      background:url($img + 'yd-buy-logo.png')center no-repeat;
+      background-size:12%;
+    }
+    .buy-xie{
+      display: block;
+      @include cube(100%,0.35rem);
+      background:url($img + 'yd-buy-xie.png')center no-repeat;
+      background-size:12%;
+    }
+    .buy-money{
+      //font-family: 'song',sans-serif;
+      font-size:0.08rem;
+      width:1px;
+      flex: 1;
+      //background: red;
+
+    }
+    .bottom{
+      @include cube(100%,1.78rem);
+      background:url($img + 'yd-point-wz-bottom.png')0 57px no-repeat;
+      background-size:100%;
+      position: relative;
+    }
+
+    .img-heart{
+      z-index:1;
+      display: block;
+      @include cube(0.4rem,0.4rem);
+      background: url($img + 'yd-point-heart.png')center no-repeat;
+      background-size:100%;
+      position: absolute;
+      top:-10%;
+      left:4%;
+    }
+    .img-money{
+      display: block;
+      @include cube(100%,0.74rem);
+      background: url($img + 'yd-point-money.png')center no-repeat;
+      background-size:20%;
+      position: absolute;
+      bottom:-20%;
+    }
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -738,10 +818,10 @@ $img:'../../images/';
 }
 //foot
 .footer_table{
-  position: fixed;
-  bottom: 0;
+  position:fixed;
+  bottom:0;right:0;
+  @include cube(100%,1.14rem);
   z-index: 1;
-  @include cube(100%,0.98rem);
   background: #000;
   margin-top:0.15rem;
   .inner{
@@ -770,13 +850,12 @@ $img:'../../images/';
         @include cube(0.04rem,0.34rem);
         @include tb;
         right:0;
-        background:url($img + 'yd-footer.png') center/cover no-repeat;
-        background-size:100%;
+        background:url($img + 'wzj-footer.png') center/cover no-repeat;
       }
     }
     .foot .con .title{
       @include cube(0.63rem,0.5rem);
-      color:#fff;
+      color:#CEBFA3;
       font-size: 0.24rem;
       font-family: '方正仿宋繁体',sans-serif;
     }
@@ -798,7 +877,8 @@ $img:'../../images/';
       display: block;
       margin-top: 0.1rem;
       color:#fff;
-      font-size: 0.12rem;
+      font-size: 0.1rem;
+      padding-top:0.05rem;
     }
     .foot .con .shouye{
       position: absolute;

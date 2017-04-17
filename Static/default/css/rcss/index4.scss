@@ -1,0 +1,150 @@
+@import 'mixin.scss';
+@import "index2.css";
+$device-list:320px,360px,375px,412px,414px,750px;
+html{
+  @each $i in $device-list{
+    @media screen and(min-width: #{$i}){
+      font-size: 100* ($i/750);
+    }
+  }
+}
+@font-face {
+  font-family: 'search';
+  src: url(../../fonts/文悦古体仿宋.otf);
+}
+body{
+  font-family: 'search';
+  font-size: 16px;
+  background: #ECE9E8;
+}
+.box{
+  background:url(../../images/r001.png)no-repeat;
+  background-size: 100%;
+}
+.table{
+  height: 1.2rem;
+  display: flex;
+  align-items: center;
+  .arrow{
+    display: block;
+    background: url(../../images/voice-back.png) center no-repeat;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    margin-left: 4%;
+    line-height: 0.6rem;
+    font-family: 'leftp',sans-serif;
+  }
+}
+.head{
+  @include rect(100%,5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .text{
+    @include rect(4.15rem,1.4rem);
+    background:url(../../images/rtwo.png)center no-repeat;
+    background-size: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    //.box-1{
+    //  @include rect(1.30rem,0.27rem);
+    //  background-size: 100%;
+    //  background: url(../../images/r010.png)no-repeat;
+    //}
+    //.box-2{
+    //  font-size: 0.45rem;
+    //  color: #111211;
+    //}
+    //.box-3{
+    //  @include rect(3.99rem,0.2rem);
+    //  background-size: 100%;
+    //  background: url(../../images/r011.png)no-repeat;
+    //}
+    .message{
+      font-size: 0.16rem;
+    }
+  }
+  .sub{
+    font-size: 0.5rem;
+    color: #F4F4F2;
+  }
+}
+.center{
+  @include rect(6.58rem,7.55rem);
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: url(../../images/r666.png)no-repeat;
+  background-size: 100%;
+  .boxs{
+    //@include rect(5.71rem,5.30rem);
+    height: 6rem;
+    flex-wrap: wrap;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    .login{
+      @include rect(3.91rem,0.58rem);
+      background: url(../../images/r012.png)no-repeat;
+      background-size: 100%;
+    }
+    .rect{
+       @include rect(2.87rem,2.61rem);
+      background: url(../../images/r013.png)no-repeat;
+      background-size: 100%;
+      display: flex;
+      justify-content: center;
+      .user{
+        @include rect(1.65rem,1.65rem);
+        background: url(../../images/r019.png)no-repeat;
+        background-size: 100%;
+        display: flex;
+        align-self: center;
+        border-radius: 50%;
+      }
+    }
+    .button{
+      @include rect(5.74rem,0.95rem);
+      display: flex;
+      justify-content: space-between;
+      .camera{
+        @include rect(2.35rem,0.93rem);
+        border-radius: 0.5rem;
+        background:url(../../images/r018.png);
+        background-size: 100%;
+        display: flex;
+        justify-content: center;
+        border: 0.01rem solid #F4F3F2;
+        .cameras{
+          @include rect(2.12rem,0.77rem);
+          display: flex;
+          align-self: center;
+          background-size: 100%;
+          border-radius: 0.5rem;
+          font-size: 0.32rem;
+          color: #FFFFFF;
+          align-content: center;
+          flex-wrap: wrap;
+          justify-content: center;
+          .span{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 0.1rem;
+          }
+          .uanxian{
+            font-size: 0.18rem;
+            color: #EFEEEC;
+          }
+        }
+      }
+    }
+  }
+}

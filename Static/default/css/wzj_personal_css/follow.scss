@@ -80,17 +80,21 @@ $img:'../../images/';
       align-items: center;
     }
     .info .set .wrap{
+      height:0.44rem;
       color:#fff;
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-content: center;
       ._set{
+        height:50%;
         display: flex;
         align-items: center;
       }
     }
     .info .set .wrap ._set span:nth-child(1){
-      font-size: 0.3rem;
-      font-family: 'Wyue',sans-serif;
+      font-size: 0.26rem;
+      //font-family: 'Wyue',sans-serif;
       padding-right:0.14rem;
     }
     .info .set .wrap ._set span:nth-child(2){
@@ -105,13 +109,14 @@ $img:'../../images/';
       }
     }
     .info .set .wrap ._set span:nth-child(3){
-      font-size: 0.3rem;
-      font-family: 'Wyue',sans-serif;
+      font-size: 0.26rem;
+      //font-family: 'Wyue',sans-serif;
       padding-left:0.14rem;
     }
     .info .set .wrap .en{
-      font-size: 0.15rem;
-      font-family: 'Wyue',sans-serif;
+      height:50%;
+      font-size: 0.3rem;
+      //font-family: 'Wyue',sans-serif;
     }
   }
   .content .userName{
@@ -125,7 +130,7 @@ $img:'../../images/';
       flex-direction: column;
     }
     .information .name{
-      font-family: 'Wyue',sans-serif;
+      //font-family: 'Wyue',sans-serif;
       font-size: 0.48rem;
       color:#646262;
     }
@@ -152,7 +157,7 @@ $img:'../../images/';
     justify-content: center;
     align-items: center;
     span{
-      font-family: 'Wyue',sans-serif;
+      //font-family: 'Wyue',sans-serif;
       font-size: 0.24rem;
       color:#646262;
     }
@@ -290,12 +295,12 @@ $img:'../../images/';
   }
   li .isFollow .wrap ._set span:nth-child(3){
     font-size: 0.2rem;
-    font-family: 'Wyue',sans-serif;
+    //font-family: 'Wyue',sans-serif;
     padding:0 0.05rem;
   }
   li .isFollow .wrap .en{
     font-size: 0.15rem;
-    font-family: 'Wyue',sans-serif;
+    //font-family: 'Wyue',sans-serif;
   }
   li .yes{
     @include cube(1.41rem,0.57rem);

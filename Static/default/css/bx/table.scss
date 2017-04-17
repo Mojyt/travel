@@ -16,7 +16,7 @@ html{
   list-style:none;
   box-sizing: border-box;
 }
-$imgs:"../../img/bx/";
+$img:"../../img/bx/";
 .inner{
   @include cube(100%,100%);
   padding:0 5%;

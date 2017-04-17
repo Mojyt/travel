@@ -11,3 +11,18 @@ a{
 img{
 	border:0;
 }
+
+
+s,i{
+    font-style: normal;
+    text-decoration: none;
+}
+
+*{
+    font-family: 'Microsoft Himalaya',sans-serif;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+
