@@ -19,6 +19,7 @@ html {
 }
 $font:'仿宋',sans-serif;
 $imgs: "../../images/bx-";
+$Img: "../../images/";
 
 body {
   background: url($imgs + 'background.jpg') center/cover repeat;
@@ -157,85 +158,9 @@ body {
       }
     }
   }
-  .money-kind {
-    @include cube(100%, 84%);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    .kinds {
-      flex: 1;
-      position: relative;
 
-      .item {
-        @include cube(100%, 1.41rem);
-        background: url($imgs + 'package.png') center/cover repeat;
 
-      }
-      .item .money {
-        @include cube(20%, 100%);
-        float: left;
-        display: flex;
-        justify-content: flex-start;
-        padding: 2% 0 0 1%;
 
-        .m-f {
-          @include font(0.30rem, #fd1716, 300);
-          padding-top: 16%
-
-        }
-        .m-s {
-          @include font(0.5rem, #fd1716, 400);
-
-        }
-      }
-
-      .item .kind {
-        @include cube(80%, 100%);
-        float: left;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: 3% 0 0 6%;
-        .kind-item1 {
-          @include font(0.36rem, #030303, 300);
-          font-family: '仿宋', sans-serif;
-          padding-left: 10%;
-        }
-        .kind-item2 {
-          @include cube(74%, 0.44rem);
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          .english-item1, .english-item3 {
-            @include cube(0.38rem, 0.07rem);
-            background: url($imgs + 'point-l.png') center/cover repeat;
-
-          }
-          .english-item2 {
-            h4 {
-              @include font(0.24rem, #ff0606, 300);
-              display: inline-block;
-            }
-            @include font(0.24rem, #666, 300);
-          }
-          .english-item3 {
-            background: url($imgs + 'point-r.png') center/cover repeat;
-
-          }
-        }
-
-        //@include bg;
-      }
-
-      .look {
-        display: block;
-        @include circle(0.69rem);
-        background: url($imgs + 'item.png') center/cover no-repeat;
-        @include lr;
-        bottom: 9%;
-      }
-    }
-  }
 }
 
 .Recommend {
@@ -310,144 +235,5 @@ body {
   }
 }
 
-.mask{
-  position: fixed;
-  top:0;left:0;
-  right:0;
-  bottom:0;
-  margin:auto;
-  @include cube(100%,100%);
-  background:rgba(0,0,0,0.7);
-  display:flex;
-  justify-content: center;
-  align-items:center;
-  .content{
-    @include cube(5.95rem,7.70rem);
-    display:flex;
-    flex-direction:column;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-  }
-  .content .success-box{
-    @include cube(100%,100%);
-    background:url($imgs + 'success-bg.png')center/cover no-repeat;
-    display:flex;
-    flex-direction:column;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
-    .picture-item{
-      @include cube(100%,52.8%);
-      background:url($imgs + 'area-one.png')center/cover no-repeat;
-      position: relative;
-      .point-line{
-        @include cube(100%,0.38rem);
-        background:url($imgs + 'point.png')center/cover no-repeat;
-        position: absolute;
-        left:0;
-        bottom:-0.16rem;
-      }
-    }
 
-    .item{
-      @include cube(100%,47.4%);
-      display:flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      .success-item{
-        @include cube(100%,43.2%);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        .success-pay{
-          @include font(0.45rem,#1b1928,300);
-          font-family: guyue, sans-serif;
-          z-index: 1;
-        }
-        .success-pay-english{
-          padding-top:2%;
-          @include font(0.32rem,#666,400);
-          font-family: guyue, sans-serif;
-          letter-spacing: 2px;
-          z-index: 1;
-        }
-        .red{
-          @include circle(0.77rem);
-          position: absolute;
-          right:24%;
-          top:20%;
-          background:url($imgs + 'red.png')center/cover no-repeat;
 
-        }
-      }
-      .fen-item{
-        @include cube(100%,9.4%);
-        background:url($imgs + 'fen2.png')center/cover no-repeat;
-
-      }
-      .discount-item{
-        @include cube(100%,39.2%);
-        @include font(0.4rem,#080808,400);
-        font-family: guyue, sans-serif;
-        display:flex;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-      }
-    }
-
-  }
-
-  .content .receive{
-    @include cube(100%,11%);
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    @include lr;
-    bottom:-3%;
-    .btn{
-      @include cube(39%,100%);
-      background:url($imgs + 'recieve.png')center/cover no-repeat;
-      border-radius: 40px;
-      display:flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding:2% 3% 0 3%;
-      .recieve-c{
-        @include cube(100%,0.39rem);
-        display:flex;
-        justify-content: space-around;
-        align-items: center;
-        @include font(0.32rem,#fff,300);
-        font-family: guyue, sans-serif;
-      }
-      .recieve-e{
-        @include font(0.18rem,#fff,300);
-        font-family: sanfranciscodisplay, sans-serif;
-
-      }
-    }
-  }
-
-  .close{
-    position: absolute;
-    top:-0.25rem;right:-0.25rem;
-    @include circle(0.64rem);
-    background:url($imgs + 'close.png')center/cover no-repeat;
-
-  }
-  .bird{
-    @include cube(3.74rem,4.94rem);
-    background:url($imgs + 'bird.png')center/cover no-repeat;
-    position: absolute;
-    top:-8%;
-    left:10%;
-
-  }
-
-}

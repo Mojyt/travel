@@ -119,29 +119,29 @@
     }
   }
 
-  .parcel-main-map .parcel-main-map-bourn-parcel {
-    @include cube(100%, 100%);
-    position: absolute;
-    top: 0;
-    .parcel-main-map-bourn {
-      @include cube(0.96rem, 0.88rem);
-      background: url($Img + "yy-bourn-bg.png") no-repeat center center;
-      background-size: 100%;
-      position: absolute;
-      &:nth-child(1) {
-        left: 2.39rem;
-        bottom: 0.7rem;
-      }
-      &:nth-child(2) {
-        right: 2.22rem;
-        top: 0.19rem;
-      }
-      &:nth-child(3) {
-        right: 1.4rem;
-        bottom: 0.14rem;
-      }
-    }
-  }
+  //.parcel-main-map .parcel-main-map-bourn-parcel {
+  //  @include cube(100%, 100%);
+  //  position: absolute;
+  //  top: 0;
+  //  .parcel-main-map-bourn {
+  //    @include cube(0.96rem, 0.88rem);
+  //    background: url($Img + "yy-bourn-bg.png") no-repeat center center;
+  //    background-size: 100%;
+  //    position: absolute;
+  //    &:nth-child(1) {
+  //      left: 2.39rem;
+  //      bottom: 0.7rem;
+  //    }
+  //    &:nth-child(2) {
+  //      right: 2.22rem;
+  //      top: 0.19rem;
+  //    }
+  //    &:nth-child(3) {
+  //      right: 1.4rem;
+  //      bottom: 0.14rem;
+  //    }
+  //  }
+  //}
   .parcel-main-route {
     flex: 1;
     padding-bottom: 0.22rem;

@@ -175,10 +175,10 @@ class indexController extends Framework
         $this->display('default/bx/add-card.html');
     }
 
-    /*public function userpass()
-    {
+public function password()
+   {
         $this->display('default/bx/password.html');
-    }*/
+    }
 
     public function success()
     {
@@ -190,6 +190,10 @@ class indexController extends Framework
         $this->display('default/bx/new-package.html');
     }
 
+    public function discount()
+    {
+        $this->display('default/bx/discount.html');
+    }
 
     public function  write(){
         $this->display('default/process/write.html');
@@ -197,6 +201,7 @@ class indexController extends Framework
     public function confirm(){
         $this->display('default/process/confirm.html');
     }
+
 
 
 }
